@@ -19,7 +19,7 @@ Here are the categories and rules:
 
 Entries:
 
-- [guess1 <img src="gam-10-80-hs-base/guess1.png" width=50 height=50>](gam-10-80-hs-base/guess1.hs)
+- [<img src="gam-10-80-hs-base/guess1.png" width=100 height=100><br>guess1](gam-10-80-hs-base/guess1.hs)
 
 ## gam-10-80-hs-default ("default")
 
@@ -28,7 +28,7 @@ Entries:
 
 Entries:
 
-- [guess2 <img src="gam-10-80-hs-default/guess2.png" width=50 height=50>](gam-10-80-hs-default/guess2.hs)
+- [<img src="gam-10-80-hs-default/guess2.png" width=100 height=100><br>guess2](gam-10-80-hs-default/guess2.hs)
 
 ## gam-10-80-hs-hackage ("hackage")
 
