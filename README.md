@@ -22,18 +22,18 @@ Here are the categories, rules and entries for February.
 - The game must be accompanied by a small square screenshot.
 - Contest entries will be collected in this repo.
 
+[<img src="prelude/guess1.png" width=100 height=100><br>guess1](prelude/guess1.hs) (sm)
+
 ## base (gam-10-80-hs-base)
 
 - As above, but imports from the base package may be used.
-
-[<img src="prelude/guess1.png" width=100 height=100><br>guess1](prelude/guess1.hs)
 
 ## default (gam-10-80-hs-default)
 
 - As above, but all packages installed by default with the tested ghc version may be used.
 - A second file named Import.hs may be used, to gather imports and re-exports (only).
 
-[<img src="default/guess2.png" width=100 height=100><br>guess2](default/guess2.hs)
+[<img src="default/guess2.png" width=100 height=100><br>guess2](default/guess2.hs) (sm)
 
 ## hackage (gam-10-80-hs-hackage)
 
