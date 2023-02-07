@@ -9,7 +9,7 @@ The prize.. glory! <!-- and advancing the Haskell game dev craft -->
 
 Submit your entries now (as many as you like) to this repo,
 or paste in the #haskell-game chat ([Matrix] or [IRC]).
-f-a and sm are your judges, informed by #haskell-game.
+sm and f-a are your judges, informed by #haskell-game.
 Here are the general rules for February:
 
 - Write a playable game in haskell, in one file of up to 10 lines of up to 80 characters each.
