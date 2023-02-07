@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for c in prelude base default hackage; do
+    for t in "$c"/template*.hs; do
+        printf "\nTesting %s:\n" "$t"
+        echo 1 | "$t"
+    done
+done
