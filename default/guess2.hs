@@ -8,4 +8,4 @@ main = let m = 10 in do { n <- randomRIO (1,m::Int);
  then putStrLn ("Wrong! It was "++show n++". Try again.") >> main
  else putStrLn "Right! You win." }
 
---11---------------------------------80-----------------------------------------
+-- ^10 ------------------------------- 80> -------------------------------------
