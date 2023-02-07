@@ -26,7 +26,7 @@ Here are the categories, rules and entries for February.
 
 - As above, but imports from the base package may be used.
 
-[<img src="base/guess1.png" width=100 height=100><br>guess1](base/guess1.hs)
+[<img src="prelude/guess1.png" width=100 height=100><br>guess1](prelude/guess1.hs)
 
 ## default (gam-10-80-hs-default)
 
