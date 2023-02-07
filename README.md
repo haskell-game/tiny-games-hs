@@ -17,14 +17,14 @@ Here are the categories, rules and entries:
 - The game should work, ideally on all major platforms.
 - The game must be accompanied by a small square screenshot.
 
-[<img src="gam-10-80-hs-base/guess1.png" width=100 height=100><br>guess1](gam-10-80-hs-base/guess1.hs)
+[<img src="base/guess1.png" width=100 height=100><br>guess1](base/guess1.hs)
 
 ## default (gam-10-80-hs-default)
 
 - As above, but a second file named Import.hs may be used, to gather imports and re-exports (only).
 - All packages installed by default with the tested ghc version may be used.
 
-[<img src="gam-10-80-hs-default/guess2.png" width=100 height=100><br>guess2](gam-10-80-hs-default/guess2.hs)
+[<img src="default/guess2.png" width=100 height=100><br>guess2](default/guess2.hs)
 
 ## hackage (gam-10-80-hs-hackage)
 
