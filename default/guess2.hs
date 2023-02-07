@@ -1,4 +1,4 @@
-#!/usr/bin/env stack  # default/guess2 (sm)
+#!/usr/bin/env stack  # gam-10-80-hs-default/guess2 (sm)
 -- stack script --resolver=lts-20.9 --package random --verbosity=error
 import System.IO (hFlush, stdout)
 import System.Random (randomRIO)
