@@ -30,6 +30,12 @@ General:
 
 ## Games
 
-| base                                  | default                                  | hackage |
-|---------------------------------------|------------------------------------------|---------|
-| [guess1](gam-10-80-hs-base/guess1.hs) | [guess2](gam-10-80-hs-default/guess2.hs) |         |
+### base
+
+- [guess1<br>![](gam-10-80-hs-base/guess1.png)](gam-10-80-hs-base/guess1.hs)
+
+### default
+
+- [guess2<br>![](gam-10-80-hs-default/guess2.png)](gam-10-80-hs-default/guess2.hs)
+
+### hackage
