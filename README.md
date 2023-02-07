@@ -15,11 +15,11 @@ Here are the categories and rules:
 - This can be a stack, cabal, or runghc script. runghc scripts must note the ghc version tested with.
 - Only the base package may be used.
 - The game should work, ideally on all major platforms.
-- The game must be accompanied by a small screenshot.
+- The game must be accompanied by a small square screenshot.
 
 Entries:
 
-- [guess1 <img src="gam-10-80-hs-base/guess1.png" height=50>](gam-10-80-hs-base/guess1.hs)
+- [guess1 <img src="gam-10-80-hs-base/guess1.png" width=50 height=50>](gam-10-80-hs-base/guess1.hs)
 
 ## gam-10-80-hs-default ("default")
 
@@ -28,7 +28,7 @@ Entries:
 
 Entries:
 
-- [guess2 <img src="gam-10-80-hs-default/guess2.png" height=50>](gam-10-80-hs-default/guess2.hs)
+- [guess2 <img src="gam-10-80-hs-default/guess2.png" width=50 height=50>](gam-10-80-hs-default/guess2.hs)
 
 ## gam-10-80-hs-hackage ("hackage")
 
