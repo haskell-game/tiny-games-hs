@@ -16,7 +16,8 @@ Here are the categories, rules and entries for February.
 
 - Write a playable game in haskell, in one file of up to 10 lines of up to 80 characters each,
   using only the standard prelude (no imports).
-- This can be a runghc, stack, or cabal script. runghc scripts must note the ghc version tested with.
+- This can be a runghc, stack, or cabal script. runghc scripts should mention the GHC version they were tested with.
+- Scripts should include their category/name, and optionally author info (abbrevations ok).
 - The game should just work, ideally on all major platforms.
 - The game must be accompanied by a small square screenshot.
 - Contest entries will be collected in this repo.
