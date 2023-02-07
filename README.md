@@ -1,13 +1,15 @@
-# Tiny games in haskell
+# Haskell Tiny Game Jam
 
-Inspired by the "write a game in 10 lines of basic" competition
-found by f-a at https://www.homeputerium.de (scroll to the bottom for their rules in english):
+Inspired by the [BASIC 10Liner contest](https://www.homeputerium.de) (see their english rules at the bottom):
+the first Haskell tiny games contest runs through February 2023!
 
-The first Haskell tiny games contest runs through February 2023!
-The prize is.. glory!
-Submit your entries now, here or in the #haskell-game chat
-([Matrix](https://matrix.to/#/#haskell-game:matrix.org) / [IRC](https://web.libera.chat/#haskell-game)).
-Here are the categories, rules and entries:
+[Matrix]: https://matrix.to/#/#haskell-game:matrix.org
+[IRC]:    https://web.libera.chat/#haskell-game
+
+Submit your entries now, here or in the #haskell-game chat ([Matrix] or [IRC]).
+The prize.. glory! <!-- and advancing the Haskell game dev craft -->
+f-a and sm are your judges, informed by #haskell-game.
+Here are the categories, rules and entries for February.
 
 ## prelude (gam-10-80-hs-prelude)
 
