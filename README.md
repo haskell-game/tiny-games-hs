@@ -7,7 +7,7 @@ The first Haskell tiny games contest runs through February 2023!
 The prize is.. glory!
 Submit your entries now, here or in the #haskell-game chat
 ([Matrix](https://matrix.to/#/#haskell-game:matrix.org) / [IRC](https://web.libera.chat/#haskell-game)).
-Here are the categories and rules:
+Here are the categories, rules and entries:
 
 ## gam-10-80-hs-base ("base")
 
@@ -17,8 +17,6 @@ Here are the categories and rules:
 - The game should work, ideally on all major platforms.
 - The game must be accompanied by a small square screenshot.
 
-Entries:
-
 [<img src="gam-10-80-hs-base/guess1.png" width=100 height=100><br>guess1](gam-10-80-hs-base/guess1.hs)
 
 ## gam-10-80-hs-default ("default")
@@ -26,12 +24,9 @@ Entries:
 - As above, but a second file named Import.hs may be used, to gather imports and re-exports (only).
 - All packages installed by default with the tested ghc version may be used.
 
-Entries:
-
 [<img src="gam-10-80-hs-default/guess2.png" width=100 height=100><br>guess2](gam-10-80-hs-default/guess2.hs)
 
 ## gam-10-80-hs-hackage ("hackage")
 
 - As above, but all packages released on Hackage may be used.
 
-Entries:
