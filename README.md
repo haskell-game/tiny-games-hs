@@ -9,13 +9,17 @@ Submit your entries now, here or in the #haskell-game chat
 ([Matrix](https://matrix.to/#/#haskell-game:matrix.org) / [IRC](https://web.libera.chat/#haskell-game)).
 Here are the categories, rules and entries:
 
-## base (gam-10-80-hs-base)
+## prelude (gam-10-80-hs-prelude)
 
 - Write a playable game in haskell, in one file containing up to 10 lines of up to 80 characters each.
 - This can be a stack, cabal, or runghc script. runghc scripts must note the ghc version tested with.
-- Only the base package may be used.
-- The game should work, ideally on all major platforms.
+- Only the standard prelude may be used (no imports).
+- The game should just work, ideally on all major platforms.
 - The game must be accompanied by a small square screenshot.
+
+## base (gam-10-80-hs-base)
+
+- As above, but imports from the base package may be used.
 
 [<img src="base/guess1.png" width=100 height=100><br>guess1](base/guess1.hs)
 
