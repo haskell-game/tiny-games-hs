@@ -11,6 +11,7 @@ here are suggested categories and rules for tiny haskell games!
 - Write a playable game in haskell, in one file containing up to 10 lines of up to 80 characters each.
 - This can be a stack, cabal, or runghc script. runghc scripts must note the ghc version tested with.
 - Only the base package may be used.
+- The game must be accompanied by a small screenshot.
 
 ### gam-10-80-hs-default ("default")
 
