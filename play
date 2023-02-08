@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# A simple front end to run all games easily.
+# XXX has to be updated as games are added/moved
+# XXX most games exit back to the menu, some do not
+# XXX a haskell port is welcome, maybe best for portability and power
 declare -A games  # associative array to make select render right
 for f in $(git ls-files | grep '.hs' | grep -Ev '(/template|/Import)'); do
     games[$(basename "$f" .hs)]="$f"
