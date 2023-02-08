@@ -51,5 +51,5 @@ Compete in any or all of these categories:
 <table><tr>
 <td><a href="hackage/guess2.hs"><img src="hackage/guess2.png" width=100 height=100><br>guess2</a> (sm)</td>
 <td><a href="hackage/wordle.hs"><img src="hackage/wordle.png" width=100 height=100><br>wordle</a> (halogenandtoast)</td>
-<td><a href="hackage/ski.hs"><img src="hackage/ski.png" width=100 height=100><br>ski</a> (sm)</td>
+<td><a href="hackage/ski/ski.hs"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a> (sm)</td>
 </tr></table>
