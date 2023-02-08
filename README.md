@@ -55,10 +55,14 @@ Compete in any or all of these categories:
 
 - As above, but all packages released on Hackage may be used. ([template1](hackage/template1.hs))
 
-<table><tr>
+<table>
+<tr>
 <td><a href="hackage/guess2.hs"><img src="hackage/guess2.png" width=100 height=100><br>guess2</a> (sm)</td>
 <td><a href="hackage/wordle.hs"><img src="hackage/wordle.png" width=100 height=100><br>wordle</a> (halogenandtoast)</td>
 <td><a href="hackage/ski/ski.hs"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a> (sm)</td>
 <td><a href="hackage/guesscolor"><img src="hackage/guesscolor/guesscolor.png" width=100 height=100><br>guesscolor</a> (TravisCardwell)</td>
+</tr>
+<tr>
 <td><a href="hackage/bulls-n-cows.hs"><img src="hackage/bulls-n-cows.png" width=100 height=100><br>bulls-n-cows</a> (akadude)</td>
-</tr></table>
+</tr>
+</table>
