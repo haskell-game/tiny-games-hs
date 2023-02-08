@@ -48,6 +48,7 @@ Compete in any or all of these categories:
 
 <table><tr>
 <td><a href="base/timing"><img src="base/timing/timing.png" width=100 height=100><br>timing</a><br>(TravisCardwell)</td>
+<td><a href="base/shoot"><img src="base/shoot/shoot.png" width=100 height=100><br>shoot</a><br>(migmit)</td>
 </tr></table>
 
 ## default (gam-10-80-hs-default)

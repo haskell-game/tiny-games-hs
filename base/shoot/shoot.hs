@@ -9,3 +9,4 @@ z(u:r,t,b,c)l f=i(all(`elem`[1,2])$k 19 t)(let y=q f b::[Int] in a(r,m u$x(y!!4)
 x b t=let(l,c:r)=p b t in q(\k->k-i(k>2)0 1)(l++(i(c==2)0 1):r); l=replicate
 m n t=let(l,c:r)=p(mod n 19)t in i(c==0)t(l++12:r);w="asdfghjkl"; o=show; k=take
 -- ^10 ------------------------------- 80> -------------------------------------
+{- gam-10-80-hs-base/shoot (migmit) -}
