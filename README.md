@@ -38,6 +38,7 @@ Compete in any or all of these categories:
 
 <table><tr>
 <td><a href="prelude/guess1.hs"><img src="prelude/guess1.png" width=100 height=100><br>guess1</a><br>(sm)</td>
+<td><a href="prelude/pure-doors.hs"><img src="prelude/pure-doors.png" width=100 height=100><br>pure-doors</a><br>(tristanC)</td>
 </tr></table>
 
 ## base (gam-10-80-hs-base)
