@@ -10,6 +10,9 @@ lp x c=do{let{l0=c-h w;(l,ml)=if l0<ll then(ll,0)else(l0,m);r0=c+h w+1;(r,mr)=
  k/="*")$lp(if i==','then x-1 else if i=='.'then x+1 else x).(c+)=<<ra(-ml,mr)}}
 -- ^10 ------------------------------------------------------------------ 80> --
 {-
+NB: for me the 🌲 emoji renders very slowly in some terminals (iTerm, Terminal),
+but normally in VS Code terminal.
+
 Legend
 s:  score
 sw: screen width
