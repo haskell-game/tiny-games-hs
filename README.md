@@ -31,7 +31,9 @@ Compete in any or all of these categories:
 
 - Only the standard prelude may be used (no imports). ([template1](prelude/template1.hs))
 
-[<img src="prelude/guess1.png" width=100 height=100><br>guess1](prelude/guess1.hs) (sm)
+<table><tr>
+<td><a href="prelude/guess1.hs"><img src="prelude/guess1.png" width=100 height=100><br>guess1</a> (sm)</td>
+</tr></table>
 
 ## base (gam-10-80-hs-base)
 
@@ -42,7 +44,10 @@ Compete in any or all of these categories:
 - All packages installed by default with the tested ghc version may be used. ([template1](default/template1.hs))
 - A second file named Import.hs may be used, to gather imports and re-exports (only).
 
-[<img src="default/guess2.png" width=100 height=100><br>guess2](default/guess2.hs) (sm)
+<table><tr>
+<td><a href="default/guess2.hs"><img src="default/guess2.png" width=100 height=100><br>guess2</a> (sm)</td>
+<td><a href="default/wordle.hs"><img src="default/wordle.png" width=100 height=100><br>wordle</a> (halogenandtoast)</td>
+</tr></table>
 
 ## hackage (gam-10-80-hs-hackage)
 
