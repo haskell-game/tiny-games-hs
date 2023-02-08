@@ -1,6 +1,6 @@
 #!/usr/bin/env runghc  # gam-10-80-hs-hackage/ski (sm), ghc-9.4.4
 import Import -- base, random. Player controls: , .
-s=0;sw=78;ll=6;rl=sw-6;c=sw`div`2;w=24;m=2;h=(`div`2);ra=randomRIO;t='🌲';e=when
+sw=78;ll=6;rl=sw-6;c=sw`div`2;w=24;m=2;t='🌲';h=(`div`2);ra=randomRIO;e=when
 rp=replicate;rm=replicateM_;d=threadDelay 50000;p s=putStrLn s>>d;sc=rm 10$p""
 main=hSetEcho stdin False>>hSetBuffering stdin NoBuffering>>p"Ski!">>sc>>lp c c
 lp x c=do{let{l0=c-h w;(l,ml)=if l0<ll then(ll,0)else(l0,m);r0=c+h w+1;(r,mr)=
@@ -14,18 +14,17 @@ NB: for me the 🌲 emoji renders very slowly in some terminals (iTerm, Terminal
 but normally in VS Code terminal.
 
 Legend
-s:  score
 sw: screen width
 ll: left path limit
 rl: right path limit
 c:  path center position
 w:  path width
 m:  maximum path center change
-x:  player position
+t:  character for rendering trees
 h, ra, rp, rm, d, p, sc: utilities
   h:  halve
   ra: random
-  rp: replicate a value
+  rp: repeat a value
   rm: repeat an action
   d:  delay
   p:  print and delay
@@ -34,6 +33,7 @@ lp: game loop
   ml,mr: max left,right path movement
   l,r:   left,right path edge positions
   lt,rt: left,right number of (double-width) trees
+  x:     player position
   ls,rs: left,right space around player
   k:     character for rendering player
   j:     does stdin have input ready ?
