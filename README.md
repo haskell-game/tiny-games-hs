@@ -44,12 +44,11 @@ Compete in any or all of these categories:
 - All packages installed by default with the tested ghc version may be used. ([template1](default/template1.hs))
 - A second file named Import.hs may be used, to gather imports and re-exports (only).
 
-<table><tr>
-<td><a href="default/guess2.hs"><img src="default/guess2.png" width=100 height=100><br>guess2</a> (sm)</td>
-<td><a href="default/wordle.hs"><img src="default/wordle.png" width=100 height=100><br>wordle</a> (halogenandtoast)</td>
-</tr></table>
-
 ## hackage (gam-10-80-hs-hackage)
 
 - As above, but all packages released on Hackage may be used. ([template1](hackage/template1.hs))
 
+<table><tr>
+<td><a href="hackage/guess2.hs"><img src="hackage/guess2.png" width=100 height=100><br>guess2</a> (sm)</td>
+<td><a href="hackage/wordle.hs"><img src="hackage/wordle.png" width=100 height=100><br>wordle</a> (halogenandtoast)</td>
+</tr></table>
