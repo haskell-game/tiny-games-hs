@@ -35,7 +35,7 @@ Compete in any or all of these categories:
 - Only the standard prelude may be used (no imports). ([template1](prelude/template1.hs))
 
 <table><tr>
-<td><a href="prelude/guess1.hs"><img src="prelude/guess1.png" width=100 height=100><br>guess1</a> (sm)</td>
+<td><a href="prelude/guess1.hs"><img src="prelude/guess1.png" width=100 height=100><br>guess1</a><br>(sm)</td>
 </tr></table>
 
 ## base (gam-10-80-hs-base)
@@ -43,7 +43,7 @@ Compete in any or all of these categories:
 - Imports from the base package may be used. ([template1](base/template1.hs))
 
 <table><tr>
-<td><a href="base/timing"><img src="base/timing/timing.png" width=100 height=100><br>timing</a> (TravisCardwell)</td>
+<td><a href="base/timing"><img src="base/timing/timing.png" width=100 height=100><br>timing</a><br>(TravisCardwell)</td>
 </tr></table>
 
 ## default (gam-10-80-hs-default)
@@ -57,13 +57,13 @@ Compete in any or all of these categories:
 
 <table>
 <tr>
-<td><a href="hackage/guess2.hs"><img src="hackage/guess2.png" width=100 height=100><br>guess2</a> (sm)</td>
-<td><a href="hackage/wordle.hs"><img src="hackage/wordle.png" width=100 height=100><br>wordle</a> (halogenandtoast)</td>
-<td><a href="hackage/ski/ski.hs"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a> (sm)</td>
-<td><a href="hackage/guesscolor"><img src="hackage/guesscolor/guesscolor.png" width=100 height=100><br>guesscolor</a> (TravisCardwell)</td>
+<td><a href="hackage/guess2.hs"><img src="hackage/guess2.png" width=100 height=100><br>guess2</a><br>(sm)</td>
+<td><a href="hackage/wordle.hs"><img src="hackage/wordle.png" width=100 height=100><br>wordle</a><br>(halogenandtoast)</td>
+<td><a href="hackage/ski/ski.hs"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a><br>(sm)</td>
+<td><a href="hackage/guesscolor"><img src="hackage/guesscolor/guesscolor.png" width=100 height=100><br>guesscolor</a><br>(TravisCardwell)</td>
 </tr>
 <tr>
-<td><a href="hackage/bulls-n-cows.hs"><img src="hackage/bulls-n-cows.png" width=100 height=100><br>bulls-n-cows</a> (akadude)</td>
+<td><a href="hackage/bulls-n-cows.hs"><img src="hackage/bulls-n-cows.png" width=100 height=100><br>bulls-n-cows</a><br>(akadude)</td>
 </tr>
 </table>
 
