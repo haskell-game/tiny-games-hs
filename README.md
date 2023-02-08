@@ -14,11 +14,14 @@ sm and f-a are your judges, informed by #haskell-game.
 Here are the general rules for February:
 
 - Make a playable game in one haskell file of up to 10 lines of up to 80 characters each.
-- This can be a [runghc], [stack], [cabal] script.. some templates are provided but you needn't use them. 
-- Non-stack/cabal scripts should mention the GHC version tested with and any non-default packages used.  
-- The game should just work, ideally on all major platforms.
-- The game should include its category/name, and optionally author info (abbrevs. ok).
-- The game must be accompanied by a small square screenshot.
+- This can be a [runghc], [stack] or [cabal] script, or a small haskell program, but not a multi-file project.
+  Some templates are provided to give ideas.
+- The script or program must run reliably (eg like a stack script),
+  or contain reliable build instructions (eg a ghc command line with all required package options).
+  This is a requirement and helps ensure a good experience for all.
+  Our ideal is a 10 line program that just works, like BASIC.
+- The game must be accompanied by a small square screenshot; this is a requirement.
+- The game should ideally run on all major platforms.
 - Contest entries will be collected in this repo.
 
 [runghc]: https://downloads.haskell.org/ghc/latest/docs/users_guide/runghc.html
