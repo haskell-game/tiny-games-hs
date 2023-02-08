@@ -11,6 +11,6 @@ b<>" bulls and "<>show c<>" cows");turn(a-1)s}}
 -- ^10 ------------------------------------------------------------------ 80> --
 {- gam-10-80-hs-hackage/bullsandcows (akadude)
 
-stack runghc --package random bullsandcows.hs
+stack runghc --resolver lts-20.10 --package random bullsandcows.hs
 
 -}

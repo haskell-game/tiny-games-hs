@@ -9,9 +9,13 @@ main = do
 
 
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/template1 (mynick). ghc-9.4, gloss
+{- gam-10-80-hs-hackage/template1 (mynick)
 
-gloss requires a compiled program, hence --compile above
+The build command, needed here if not included at the top:
+stack script --compile template1.hs --resolver lts-20.10 --package gloss
+
+gloss requires a compiled program, hence script --compile
+
 https://hackage.haskell.org/package/gloss/docs/Graphics-Gloss.html
 
 -}
