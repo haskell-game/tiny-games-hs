@@ -60,4 +60,5 @@ Compete in any or all of these categories:
 <td><a href="hackage/wordle.hs"><img src="hackage/wordle.png" width=100 height=100><br>wordle</a> (halogenandtoast)</td>
 <td><a href="hackage/ski/ski.hs"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a> (sm)</td>
 <td><a href="hackage/guesscolor"><img src="hackage/guesscolor/guesscolor.png" width=100 height=100><br>guesscolor</a> (TravisCardwell)</td>
+<td><a href="hackage/bulls-n-cows.hs"><img src="hackage/bulls-n-cows.png" width=100 height=100><br>bulls-n-cows</a> (akadude)</td>
 </tr></table>
