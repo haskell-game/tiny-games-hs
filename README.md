@@ -7,8 +7,9 @@ The prize.. glory! <!-- and advancing the Haskell game dev craft -->
 [Matrix]: https://matrix.to/#/#haskell-game:matrix.org
 [IRC]:    https://web.libera.chat/#haskell-game
 
-Submit your entries now (as many as you like) to this repo,
-or paste in the #haskell-game chat ([Matrix] or [IRC]).
+Submit your entries now (as many as you like) to this repo
+(push if you have access, or send a PR),
+or paste in the #haskell-game chat ([Matrix] or [IRC]) and we'll commit for you.
 sm and f-a are your judges, informed by #haskell-game.
 Here are the general rules for February:
 
