@@ -66,6 +66,7 @@ Compete in any or all of these categories:
 </tr>
 <tr>
 <td><a href="hackage/bulls-n-cows.hs"><img src="hackage/bulls-n-cows.png" width=100 height=100><br>bulls-n-cows</a><br>(akadude)</td>
+<td><a href="hackage/hallway-to-hell/hallway-to-hell.hs"><img src="hackage/hallway-to-hell/hallway-to-hell.gif" width=100 height=100><br>hallway-to-hell</a><br>(juliendehos)</td>
 </tr>
 </table>
 
