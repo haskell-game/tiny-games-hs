@@ -73,10 +73,30 @@ Compete in any or all of these categories:
 </tr>
 </table>
 
-## Running the games
+## Let's play!
 
 You will need a suitable version of GHC (8.10.7+, 9.2.5+, or 9.4.4+ are good bets), and stack (or cabal).
 See <https://www.haskell.org/get-started/>.
-Once Haskell is installed, if you have `bash` you can run the games easily by running `./play` in this repo.
+Once Haskell is installed, and if you have bash, you can run `./play` in this repo:
+```
+--------------------------------------------------------
+                 ___         __                          
+|__| _  _|  _||   | . _     / _  _  _  _    | _  _    /| 
+|  |(_|_)|((-||   | || )\/  \__)(_||||(-  __)(_||||    | 
+
+--------------------------------------------------------
+Here are the entries from HTGJ1, Feb 2023 !
+This script can run each game for you, using ghc or stack
+(if you don't have these yet, see https://www.haskell.org/get-started).
+Most games will return here on exit (others will require CTRL-c).
+
+1) prelude/pure-doors.hs			 7) hackage/bulls-n-cows.hs
+2) base/shoot/shoot.hs				 8) hackage/wordle.hs
+3) base/timing/timing.hs			 9) hackage/guesscolor/guesscolor.hs
+4) prelude/guess1.hs				10) hackage/hallway-to-hell/hallway-to-hell.hs
+5) hackage/guess2.hs				11) Quit
+6) hackage/ski/ski.hs
+** Enter a number to play or quit, or press enter to see the list again: 
+```
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
-If that fails, look for run/build instructions in the file or a nearby readme.
+If that fails, look for run/build instructions in that file or a nearby readme.
