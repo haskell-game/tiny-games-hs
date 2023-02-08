@@ -1,4 +1,4 @@
-#!/usr/bin/env stack  # gam-10-80-hs-default/guess2 (sm)
+#!/usr/bin/env stack
 -- stack script --resolver=lts-20.9 --package random --verbosity=error
 import System.IO (hFlush, stdout)
 import System.Random (randomRIO)
@@ -8,4 +8,7 @@ main = let m = 10 in do { n <- randomRIO (1,m::Int);
  then putStrLn ("Wrong! It was "++show n++". Try again.") >> main
  else putStrLn "Right! You win." }
 
--- ^10 ------------------------------- 80> -------------------------------------
+-- ^10 ------------------------------------------------------------------ 80> --
+{- gam-10-80-hs-hackage/guess2 (sm)
+
+-}
