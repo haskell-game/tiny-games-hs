@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+declare -A games  # associative array to make select render right
+for f in $(git ls-files | grep '.hs' | grep -Ev '(/template|/Import)'); do
+    games[$(basename "$f" .hs)]="$f"
+done
+PS3="Enter a number to play or quit, press enter to see the list again: "
+select game in "${games[@]}" "Quit"; do
+    # d="$(dirname "$game")"
+    # f="$(basename "$game")"
+    case "$REPLY" in
+    1) "$game";;
+    2) "$game";;
+    3) "$game";;
+    4) "$game";;
+    5) stack runghc --resolver=lts-20.9 --package random "$game";;  # bulls-n-cows
+    6) "$game";;
+    7) "$game";;
+    $((${#games[@]}+1))) break;;
+    *) echo "Invalid selection. Try another one.";continue;;
+    esac
+done
