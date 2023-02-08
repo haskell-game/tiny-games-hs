@@ -42,6 +42,10 @@ Compete in any or all of these categories:
 
 - Imports from the base package may be used. ([template1](base/template1.hs))
 
+<table><tr>
+<td><a href="base/timing"><img src="base/timing/timing.png" width=100 height=100><br>timing</a> (TravisCardwell)</td>
+</tr></table>
+
 ## default (gam-10-80-hs-default)
 
 - All packages installed by default with the tested ghc version may be used. ([template1](default/template1.hs))
@@ -55,4 +59,5 @@ Compete in any or all of these categories:
 <td><a href="hackage/guess2.hs"><img src="hackage/guess2.png" width=100 height=100><br>guess2</a> (sm)</td>
 <td><a href="hackage/wordle.hs"><img src="hackage/wordle.png" width=100 height=100><br>wordle</a> (halogenandtoast)</td>
 <td><a href="hackage/ski/ski.hs"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a> (sm)</td>
+<td><a href="hackage/guesscolor"><img src="hackage/guesscolor/guesscolor.png" width=100 height=100><br>guesscolor</a> (TravisCardwell)</td>
 </tr></table>
