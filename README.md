@@ -18,15 +18,21 @@ Here are the general rules for February:
    Some templates are provided to give ideas.
    Our ideal is a self-contained 10 line program that just works, like BASIC programs.
 3. Unlimited comments and notes are permitted after line 11.
-   The game's "category/name (author)" info should appear here.
+   The game's "category/name (author)" info should appear here,
+   and brief essential info like player controls (in case someone sees just this file,
+   eg in chat).
 4. The script or program must either be executable and run reliably (eg like a stack script),
    or it must contain reliable build instructions (eg a ghc command line with all needed package options).
    Entries which aren't straightforward to run are incomplete.
-5. The game must be accompanied by a small square screenshot, ideally static and non-gif.
+   Achieving programs that "just work" is a core principle and part of the challenge.
+5. The game should run on all major platforms, ideally.
+6. The game must be accompanied by a small square screenshot, ideally static and non-gif.
    (Not animated, because Github's player overlay will obscure it. 
    Not a gif, because you can't make those clickable on Github it seems.)
-6. The game should run on all major platforms, ideally.
-7. Contest entries will be collected in this repo.
+7. A separate README file is optional, but can add value,
+   such as animations, or discussion of the game/code/experience.
+   Website visitors will see this on clicking your game.
+8. Contest entries will be collected in this repo.
 
 Tips for rule 4 (runnability):
 - Avoid arguments on the shebang line and `env -S`, which is not available on
