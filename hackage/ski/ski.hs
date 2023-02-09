@@ -11,7 +11,8 @@ k/="*"then lp(o+1)(case i of ','->x-1;'.'->x+1;_->x).(c+)=<<ra(-ml,mr)else q o}}
 -- ^10 ------------------------------------------------------------------ 80> --
 {- gam-10-80-hs-hackage/ski (sm). Avoid trees. Player controls: , . 
 
-NB: for me the 🌲 emoji renders very slowly in some terminals (iTerm, Terminal).
+Uses emojis, may not look right with all fonts/machines.
+NB: the tree emojis render very slowly in some terminals (iTerm, Terminal).
 Try running it eg in VS Code terminal, and let me know if you have insights.
 
 Legend
