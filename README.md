@@ -100,20 +100,23 @@ This script can run each game for you, using ghc or stack
 (if you don't have these yet, see https://www.haskell.org/get-started).
 Most games will return here on exit (others will require CTRL-c).
 
- 1) prelude/pure-doors/pure-doors.hs
- 2) base/shoot/shoot.hs
- 3) base/timing/timing.hs
- 4) prelude/guess1/guess1.hs
- 5) hackage/guess2/guess2.hs
- 6) hackage/1234-hero/1234-hero.hs
- 7) hackage/ski/ski.hs
- 8) hackage/bulls-n-cows/bulls-n-cows.hs
+ 1) prelude/guess1/guess1.hs
+ 2) prelude/pure-doors/pure-doors.hs
+ 3) prelude/fifteen/fifteen.hs
+ 4) base/timing/timing.hs
+ 5) base/shoot/shoot.hs
+ 6) base/log2048/log2048.hs
+ 7) base/rhythm/rhythm.hs
+ 8) hackage/guess2/guess2.hs
  9) hackage/wordle/wordle.hs
-10) hackage/guesscolor/guesscolor.hs
-11) hackage/hallway-to-hell/hallway-to-hell.hs
-12) hackage/1234-hero/1234-hero.hs
-13) hackage/crappy-flappy/crappy-flappy.hs
-14) Quit
+10) hackage/ski/ski.hs
+11) hackage/guesscolor/guesscolor.hs
+12) hackage/bulls-n-cows/bulls-n-cows.hs
+13) hackage/hallway-to-hell/hallway-to-hell.hs
+14) hackage/1234-hero/1234-hero.hs
+15) hackage/crappy-flappy/crappy-flappy.hs
+16) hackage/pong/pong.hs
+17) Quit
 ** Enter a number to select, or press enter to see the list again: 
 ```
 If you don't have bash, cd into each game's directory and try running the game's .hs file.

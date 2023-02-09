@@ -4,21 +4,26 @@
 # XXX most games exit back to the menu, some do not
 # XXX a haskell port is welcome, maybe best for portability and power
 
-# All games, in same order as the README: category then submission order.
+# All games in category then submission order, same as in README.
+# When updating this also update the select items below,
+# eg move all non-standard invocations to their new locations.
 GAMES=(
-prelude/guess1.hs
-prelude/pure-doors.hs
+prelude/guess1/guess1.hs
+prelude/pure-doors/pure-doors.hs
+prelude/fifteen/fifteen.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
-hackage/guess2.hs
-hackage/wordle.hs
+base/rhythm/rhythm.hs
+hackage/guess2/guess2.hs
+hackage/wordle/wordle.hs
 hackage/ski/ski.hs
 hackage/guesscolor/guesscolor.hs
-hackage/bulls-n-cows.hs
+hackage/bulls-n-cows/bulls-n-cows.hs
 hackage/hallway-to-hell/hallway-to-hell.hs
 hackage/1234-hero/1234-hero.hs
 hackage/crappy-flappy/crappy-flappy.hs
+hackage/pong/pong.hs
 )
 
 cat <<HERE
@@ -43,15 +48,18 @@ select g in "${GAMES[@]}" "Quit"; do
     2) "$g";;
     3) "$g";;
     4) "$g";;
-    5) runghc "$g";;     # log2048
-    6) "$g";;
+    5) "$g";;
+    6) runghc "$g";;     # log2048
     7) "$g";;
     8) "$g";;
     9) "$g";;
-    10) stack runghc --resolver $RESOLVER --package random "$g";;                # bulls-n-cows  
-    11) stack runghc --resolver $RESOLVER --package random --package rio "$g";;  # hallway-to-hell
-    12) "$g";;
-    13) "$g";;
+    10) "$g";;
+    11) "$g";;
+    12) stack runghc --resolver $RESOLVER --package random "$g";;                # bulls-n-cows  
+    13) stack runghc --resolver $RESOLVER --package random --package rio "$g";;  # hallway-to-hell
+    14) "$g";;
+    15) "$g";;
+    16) "$g";;
     $((${#GAMES[@]}+1))) break;;
     *) echo "Invalid selection. Try another one.";continue;;
     esac
