@@ -23,7 +23,7 @@ Here are the general rules for February:
    or it must contain reliable build instructions (eg a ghc command line with all needed package options).
    Entries which aren't straightforward to run are incomplete.
 5. The game must be accompanied by a small square static screenshot for the main README.
-   (Animated gifs get obscured by Github's player overlay here, but they will work great in your game's readme.)
+   (Animated gifs get obscured by Github's player overlay - but are great at larger size in your game's readme.)
 6. The game should run on all major platforms, ideally.
 7. Contest entries will be collected in this repo.
 
