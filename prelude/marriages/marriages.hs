@@ -1,5 +1,5 @@
 #!/usr/bin/env -S runghc -cpp -DD=a=replicate;b=putStrLn;c=length;p=map;u=max(2)
-f=y"LMONRSVZ\nealoeaeo\nnjgrkrre\naaaaaaa ";main=n$p(`div`2^16)$iterate(\k->mod(
+f=y"LMNORSVZ\neaoleaeo\nnjrgkrre\naaaaaaa ";main=n$p(`div`2^16)$iterate(\k->mod(
  k*22695477+1)(2^32))9;m=y"Adam\nBela\nErik\nFeri\nGeza\nHugo\nImre\nJeno\nPal "
 n r=(\(l,q)->w 8l>>b(a 40'=')>>n q)$g r$a 10$a 8 1++[3];q n l=getLine>>= \r@(~[y
  ,x])->(\k j->z(c r/=2||l!!j!!k>0)[w(n-1)(p(i k u 8)$i j(p u)9l),q n l])(d x$f!!

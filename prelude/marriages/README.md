@@ -1,0 +1,7 @@
+In a small Hungarian village there are several guys: Adám, Béla, Erik, Feri, Géza, Hugó, Imre, Jenő, and Pál — and several girls: Léna, Maja, Nóra, Olga, Réka, Sára, Vera, and Zoé. Some of them like each other. Help each girl find herself a husband — it must be someone she likes, and who likes her.
+
+What you see is a table with the names of all the guys and girls (girls name are written vertically), where `.` means this guy would not make a suitable husband for this girl, and `O` means he is a good choice. Enter first letters of his and her names, without spaces, in that order, like `AL`. As you keep doing that, the entries in the rows and columns you indicated would be replaced by `X` — showing that those guys and girls aren't available anymore. You win if every girl finds a husband; you lose if there are no other matches to make.
+
+The game would start again after you finish it, with different possible couples. Rest assured, there is a solution for each puzzle.
+
+Note: the system depends on the `env` program supporting the `-S` switch — which should work in MacOS, any modern Linux, and MacOS.
