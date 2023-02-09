@@ -40,26 +40,25 @@ Most games will return here on exit (others will require CTRL-c).
 
 HERE
 
-RESOLVER=lts-20.10
 PS3="** Enter a number to select, or press enter to see the list again: "
 select g in "${GAMES[@]}" "Quit"; do
     case "$REPLY" in
     1) "$g";;
     2) "$g";;
-    3) "$g";;
+    3) runghc -XPatternSynonyms -XLambdaCase "$g";;   # fifteen
     4) "$g";;
     5) "$g";;
-    6) runghc "$g";;     # log2048
+    6) runghc "$g";;    # log2048
     7) "$g";;
     8) "$g";;
     9) "$g";;
     10) "$g";;
     11) "$g";;
-    12) stack runghc --resolver $RESOLVER --package random "$g";;                # bulls-n-cows  
-    13) stack runghc --resolver $RESOLVER --package random --package rio "$g";;  # hallway-to-hell
+    12) stack runghc --resolver lts-20.10 --package random "$g";;                # bulls-n-cows  
+    13) stack runghc --resolver lts-20.10 --package random --package rio "$g";;  # hallway-to-hell
     14) "$g";;
-    15) "$g";;
-    16) "$g";;
+    15) stack script --resolver=lts-20.10 --package ansi-terminal-game --ghc-options -threaded "$g";;  # crappy-flappy. Is -threaded needed on some platform ?
+    16) stack script --resolver=lts-20.10 --package ansi-terminal-game --ghc-options -threaded "$g";;  # pong
     $((${#GAMES[@]}+1))) break;;
     *) echo "Invalid selection. Try another one.";continue;;
     esac
