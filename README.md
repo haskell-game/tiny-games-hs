@@ -39,8 +39,8 @@ Compete in any or all of these categories:
 - Only the standard prelude may be used (no imports). ([template1](prelude/template1.hs))
 
 <table><tr>
-<td><a href="prelude/guess1.hs"><img src="prelude/guess1.png" width=100 height=100><br>guess1</a><br>(sm)</td>
-<td><a href="prelude/pure-doors.hs"><img src="prelude/pure-doors.png" width=100 height=100><br>pure-doors</a><br>(tristanC)</td>
+<td><a href="prelude/guess1"><img src="prelude/guess1/guess1.png" width=100 height=100><br>guess1</a><br>(sm)</td>
+<td><a href="prelude/pure-doors"><img src="prelude/pure-doors/pure-doors.png" width=100 height=100><br>pure-doors</a><br>(tristanC)</td>
 </tr></table>
 
 ## base (gam-10-80-hs-base)
@@ -64,9 +64,9 @@ Compete in any or all of these categories:
 
 <table>
 <tr>
-<td><a href="hackage/guess2.hs"><img src="hackage/guess2.png" width=100 height=100><br>guess2</a><br>(sm)</td>
-<td><a href="hackage/wordle.hs"><img src="hackage/wordle.png" width=100 height=100><br>wordle</a><br>(halogenandtoast)</td>
-<td><a href="hackage/ski/ski.hs"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a><br>(sm)</td>
+<td><a href="hackage/guess2"><img src="hackage/guess2/guess2.png" width=100 height=100><br>guess2</a><br>(sm)</td>
+<td><a href="hackage/wordle"><img src="hackage/wordle/wordle.png" width=100 height=100><br>wordle</a><br>(halogenandtoast)</td>
+<td><a href="hackage/ski"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a><br>(sm)</td>
 <td><a href="hackage/guesscolor"><img src="hackage/guesscolor/guesscolor.png" width=100 height=100><br>guesscolor</a><br>(TravisCardwell)</td>
 </tr>
 <tr>
@@ -95,16 +95,16 @@ This script can run each game for you, using ghc or stack
 (if you don't have these yet, see https://www.haskell.org/get-started).
 Most games will return here on exit (others will require CTRL-c).
 
- 1) prelude/guess1.hs
- 2) prelude/pure-doors.hs
+ 1) prelude/pure-doors/pure-doors.hs
+ 2) base/shoot/shoot.hs
  3) base/timing/timing.hs
- 4) base/shoot/shoot.hs
- 5) base/log2048/log2048.hs
- 6) hackage/guess2.hs
- 7) hackage/wordle.hs
- 8) hackage/ski/ski.hs
- 9) hackage/guesscolor/guesscolor.hs
-10) hackage/bulls-n-cows.hs
+ 4) prelude/guess1/guess1.hs
+ 5) hackage/guess2/guess2.hs
+ 6) hackage/1234-hero/1234-hero.hs
+ 7) hackage/ski/ski.hs
+ 8) hackage/bulls-n-cows/bulls-n-cows.hs
+ 9) hackage/wordle/wordle.hs
+10) hackage/guesscolor/guesscolor.hs
 11) hackage/hallway-to-hell/hallway-to-hell.hs
 12) hackage/1234-hero/1234-hero.hs
 13) hackage/crappy-flappy/crappy-flappy.hs
