@@ -36,6 +36,7 @@ select g in "${games[@]}" "Quit"; do
     8)  "$g";;
     9)  "$g";;
     10) stack runghc --resolver lts-20.10 --package rio --package random "$g";;  # hallway-to-hell
+    11) runghc "$g";;
     $((${#games[@]}+1))) break;;
     *) echo "Invalid selection. Try another one.";continue;;
     esac

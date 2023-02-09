@@ -11,6 +11,8 @@ main = print "keys: hjkl">>(l (cycle [3,14,15,9,2,65,3,5]) . e . h 2 . repeat) 0
 -- ^10 ------------------------------------------------------------------ 80> --
 {- gam-10-80-hs-base/log2048 (Lysxia), ghc 9.2.5
 
+runghc hallway-to-hell.hs
+
 A clone of the game 2048
 
 Goal: Combine the tiles to get logBase 2 2048!
