@@ -29,8 +29,8 @@ Here are the general rules for February:
 7. Contest entries will be collected in this repo.
 
 Tips for rule 4 (runnability):
-- We must avoid arguments on the shebang line and `env -S`, which is not available on
-  GNU/Linux, or at least not before coreutils 9.x. (See https://github.com/haskell-game/tiny-games-hs/issues/25)
+- Avoid arguments on the shebang line and `env -S`, which is not available on
+  GNU/Linux, or at least not before coreutils 9.x. (Open issue: https://github.com/haskell-game/tiny-games-hs/issues/25)
 - Avoid requiring problematic GHC versions, in particular GHC 9.0 which doesn't run on mac
   (and stackage lts-19). If you specify a GHC version/stackage snapshot, the current release
   is ideal (GHC 9.2, lts-20).
