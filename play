@@ -11,6 +11,7 @@ GAMES=(
 prelude/guess1/guess1.hs
 prelude/pure-doors/pure-doors.hs
 prelude/fifteen/fifteen.hs
+prelude/chess/chess.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
