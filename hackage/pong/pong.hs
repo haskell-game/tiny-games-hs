@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --resolver=lts-19.21 --package ansi-terminal-game
+#!/usr/bin/env -S stack script --resolver=lts-20.10 --package ansi-terminal-game
 -- stack script --ghc-options -threaded
 import Terminal.Game;main=playGame(Game 20(10,10,1,1,10,0)logic draw end)
 end(x,y,a,b,z,s)=x<2&&(y<z||y>z+8);logic _(x,y,a,b,z,s)e=(x+a,y+b,f 79 x a,
