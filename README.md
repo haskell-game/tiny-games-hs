@@ -27,6 +27,10 @@ Here are the general rules for February:
    Not a gif, because you can't make those clickable on Github it seems.)
 6. The game should run on all major platforms, ideally.
 7. Contest entries will be collected in this repo.
+8. Try to avoid arguments on the shebang line and `env -S`.
+   `env -S` is accepted for now but we may find that it hurts runnability on some platforms.
+9. Avoid GHC versions which hurt runnability, eg GHC 9.0 doesn't work on mac and should be avoided
+   (as should stackage lts-19. The current lts-20 is a good choice.)   
 
 [runghc]: https://downloads.haskell.org/ghc/latest/docs/users_guide/runghc.html
 [stack]:  https://docs.haskellstack.org/en/stable/script_command
