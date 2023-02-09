@@ -121,19 +121,7 @@ Most games will return here on exit (others will require CTRL-c).
  3) prelude/fifteen/fifteen.hs
  4) prelude/chess/chess.hs
  5) base/timing/timing.hs
- 6) base/shoot/shoot.hs
- 7) base/log2048/log2048.hs
- 8) base/rhythm/rhythm.hs
- 9) hackage/guess2/guess2.hs
-10) hackage/wordle/wordle.hs
-11) hackage/ski/ski.hs
-12) hackage/guesscolor/guesscolor.hs
-13) hackage/bulls-n-cows/bulls-n-cows.hs
-14) hackage/hallway-to-hell/hallway-to-hell.hs
-15) hackage/1234-hero/1234-hero.hs
-16) hackage/crappy-flappy/crappy-flappy.hs
-17) hackage/pong/pong.hs
-18) Quit
+...
 ** Enter a number to select, or press enter to see the list again: 
 ```
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
