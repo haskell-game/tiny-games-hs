@@ -32,11 +32,12 @@ select g in "${games[@]}" "Quit"; do
     4)  "$g";;
     5)  "$g";;
     6)  "$g";;
-    7)  stack runghc --resolver lts-20.10 --package random "$g";;  # bulls-n-cows  
-    8)  "$g";;
+    7)  "$g";;
+    8)  stack runghc --resolver lts-20.10 --package random "$g";;  # bulls-n-cows  
     9)  "$g";;
-    10) stack runghc --resolver lts-20.10 --package rio --package random "$g";;  # hallway-to-hell
-    11) runghc "$g";;
+    10) "$g";;
+    11) stack runghc --resolver lts-20.10 --package rio --package random "$g";;  # hallway-to-hell
+    12) runghc "$g";;  # log2048
     $((${#games[@]}+1))) break;;
     *) echo "Invalid selection. Try another one.";continue;;
     esac
