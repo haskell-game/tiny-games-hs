@@ -93,6 +93,7 @@ Compete in any or all of these categories:
 </tr>
 <tr>
 <td><a href="hackage/pong"><img src="hackage/pong/pong.png" width=100 height=100><br>pong</a><br>(gergoerdi)</td>
+<td><a href="hackage/minesweeper"><img src="hackage/minesweeper/minesweeper.png" width=100 height=100><br>minesweeper</a><br>(Greg8128)</td>
 </tr>
 </table>
 

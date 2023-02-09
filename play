@@ -25,6 +25,7 @@ hackage/hallway-to-hell/hallway-to-hell.hs
 hackage/1234-hero/1234-hero.hs
 hackage/crappy-flappy/crappy-flappy.hs
 hackage/pong/pong.hs
+hackage/minesweeper/minesweeper.hs
 )
 
 cat <<HERE
@@ -61,6 +62,7 @@ select g in "${GAMES[@]}" "Quit"; do
     15) "$g";;
     16) stack script --resolver=lts-20.10 --package ansi-terminal-game --ghc-options -threaded "$g";;  # crappy-flappy. Is -threaded needed on some platform ?
     17) stack script --resolver=lts-20.10 --package ansi-terminal-game --ghc-options -threaded "$g";;  # pong
+    18) "$g";;
     $((${#GAMES[@]}+1))) break;;
     *) echo "Invalid selection. Try another one.";continue;;
     esac
