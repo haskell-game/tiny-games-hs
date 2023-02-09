@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --resolver=lts-19.21 --package ansi-terminal-game
+#!/usr/bin/env -S stack script --resolver=lts-20.10 --package ansi-terminal-game
 -- stack script --ghc-options -threaded
 import Terminal.Game;end ps (y,dy,x)=y>120||y<0||x>3950||
   (x`mod`40==0&&let(t,b)=ps!!(x`div`40)in y`div`5<t||y`div`5>(t+b)); main=do
