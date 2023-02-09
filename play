@@ -4,10 +4,22 @@
 # XXX most games exit back to the menu, some do not
 # XXX a haskell port is welcome, maybe best for portability and power
 
-declare -A games  # associative array to make select render right
-for f in $(git ls-files | grep '.hs' | grep -Ev '(/template|/Import)'); do
-    games[$(basename "$f" .hs)]="$f"
-done
+# All games, in same order as the README: category then submission order.
+GAMES=(
+prelude/guess1.hs
+prelude/pure-doors.hs
+base/timing/timing.hs
+base/shoot/shoot.hs
+base/log2048/log2048.hs
+hackage/guess2.hs
+hackage/wordle.hs
+hackage/ski/ski.hs
+hackage/guesscolor/guesscolor.hs
+hackage/bulls-n-cows.hs
+hackage/hallway-to-hell/hallway-to-hell.hs
+hackage/1234-hero/1234-hero.hs
+hackage/crappy-flappy/crappy-flappy.hs
+)
 
 cat <<HERE
 --------------------------------------------------------
@@ -23,22 +35,23 @@ Most games will return here on exit (others will require CTRL-c).
 
 HERE
 
-PS3="** Enter a number to play or quit, or press enter to see the list again: "
-select g in "${games[@]}" "Quit"; do
+PS3="** Enter a number to select, or press enter to see the list again: "
+select g in "${GAMES[@]}" "Quit"; do
     case "$REPLY" in
-    1)  "$g";;
-    2)  "$g";;
-    3)  "$g";;
-    4)  "$g";;
-    5)  "$g";;
-    6)  "$g";;
-    7)  "$g";;
-    8)  stack runghc --resolver lts-20.10 --package random "$g";;  # bulls-n-cows  
-    9)  "$g";;
-    10) "$g";;
+    1) "$g";;
+    2) "$g";;
+    3) "$g";;
+    4) "$g";;
+    5) runghc "$g";;     # log2048
+    6) "$g";;
+    7) "$g";;
+    8) "$g";;
+    9) "$g";;
+    10) stack runghc --resolver lts-20.10 --package random "$g";;                # bulls-n-cows  
     11) stack runghc --resolver lts-20.10 --package rio --package random "$g";;  # hallway-to-hell
-    12) runghc "$g";;  # log2048
-    $((${#games[@]}+1))) break;;
+    12) "$g";;
+    13) "$g";;
+    $((${#GAMES[@]}+1))) break;;
     *) echo "Invalid selection. Try another one.";continue;;
     esac
 done
