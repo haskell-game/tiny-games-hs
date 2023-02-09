@@ -49,7 +49,7 @@ Compete in any or all of these categories:
 <td><a href="prelude/guess1"><img src="prelude/guess1/guess1.png" width=100 height=100><br>guess1</a><br>(sm)</td>
 <td><a href="prelude/pure-doors"><img src="prelude/pure-doors/pure-doors.png" width=100 height=100><br>pure-doors</a><br>(tristanC)</td>
 <td><a href="prelude/fifteen"><img src="prelude/fifteen/fifteen.png" width=100 height=100><br>fifteen</a><br>(bradrn)</td>
-<td><img src="prelude/chess/chess.gif" height=100><a href="prelude/chess"><br>chess</a><br>(fizruk)</td>
+<td><img src="prelude/chess/chess.gif" width=100 height=100><a href="prelude/chess"><br>chess</a><br>(fizruk)</td>
 </tr></table>
 
 ## base (gam-10-80-hs-base)
