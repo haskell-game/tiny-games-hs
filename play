@@ -33,6 +33,8 @@ base/flower-seeds/flower-seeds.hs
 base/lambda-ray/lambda-ray.hs
 base/7up7down/7up7down.hs
 base/snake/snake.hs
+base/woosh/woosh.caves.hs
+base/woosh/woosh.forest.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs
