@@ -72,6 +72,7 @@ Compete in any or all of these categories:
 <td><a href="hackage/bulls-n-cows.hs"><img src="hackage/bulls-n-cows.png" width=100 height=100><br>bulls-n-cows</a><br>(akadude)</td>
 <td><img src="hackage/hallway-to-hell/hallway-to-hell.gif" width=100 height=100><br><a href="hackage/hallway-to-hell">hallway-to-hell</a><br>(juliendehos)</td>
 <td><a href="hackage/1234-hero/1234-hero.hs"><img src="hackage/1234-hero/1234-hero.png" width=100 height=100><br>1234-hero</a> (gelisam)</td>
+<td><a href="hackage/crappy-flappy/crappy-flappy.hs"><img src="hackage/crappy-flappy/crappy-flappy.gif" width=100 height=100><br>crappy-flappy</a> (gergoerdi)</td>
 </tr>
 </table>
 
