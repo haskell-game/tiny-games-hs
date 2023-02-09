@@ -22,9 +22,9 @@ Here are the general rules for February:
 4. The script or program must either be executable and run reliably (eg like a stack script),
    or it must contain reliable build instructions (eg a ghc command line with all needed package options).
    Entries which aren't straightforward to run are incomplete.
-5. The game must be accompanied by a small square static screenshot, ideally not in .gif format.
-   (Static, because Github's player overlay obscures small animated gifs. 
-   Not a gif, because you can't hyperlink those on Github it seems.)
+5. The game must be accompanied by a small square screenshot, ideally static and non-gif.
+   (Not animated, because Github's player overlay will obscure it. 
+   Not a gif, because you can't make those clickable on Github it seems.)
 6. The game should run on all major platforms, ideally.
 7. Contest entries will be collected in this repo.
 
