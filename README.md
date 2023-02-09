@@ -94,20 +94,21 @@ This script can run each game for you, using ghc or stack
 (if you don't have these yet, see https://www.haskell.org/get-started).
 Most games will return here on exit (others will require CTRL-c).
 
- 1) prelude/pure-doors.hs
- 2) base/shoot/shoot.hs
+ 1) prelude/guess1.hs
+ 2) prelude/pure-doors.hs
  3) base/timing/timing.hs
- 4) prelude/guess1.hs
- 5) hackage/guess2.hs
- 6) hackage/1234-hero/1234-hero.hs
- 7) hackage/ski/ski.hs
- 8) hackage/bulls-n-cows.hs
- 9) hackage/wordle.hs
-10) hackage/guesscolor/guesscolor.hs
+ 4) base/shoot/shoot.hs
+ 5) base/log2048/log2048.hs
+ 6) hackage/guess2.hs
+ 7) hackage/wordle.hs
+ 8) hackage/ski/ski.hs
+ 9) hackage/guesscolor/guesscolor.hs
+10) hackage/bulls-n-cows.hs
 11) hackage/hallway-to-hell/hallway-to-hell.hs
-12) base/log2048/log2048.hs
-13) Quit
-** Enter a number to play or quit, or press enter to see the list again: 
+12) hackage/1234-hero/1234-hero.hs
+13) hackage/crappy-flappy/crappy-flappy.hs
+14) Quit
+** Enter a number to select, or press enter to see the list again: 
 ```
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
 If that fails, look for run/build instructions in that file or a nearby readme.
