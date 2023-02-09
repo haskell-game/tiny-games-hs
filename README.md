@@ -49,6 +49,7 @@ Compete in any or all of these categories:
 <td><a href="prelude/guess1"><img src="prelude/guess1/guess1.png" width=100 height=100><br>guess1</a><br>(sm)</td>
 <td><a href="prelude/pure-doors"><img src="prelude/pure-doors/pure-doors.png" width=100 height=100><br>pure-doors</a><br>(tristanC)</td>
 <td><a href="prelude/fifteen"><img src="prelude/fifteen/fifteen.png" width=100 height=100><br>fifteen</a><br>(bradrn)</td>
+<td><img src="base/chess/chess.gif" height=100><a href="base/chess"><br>chess</a><br>(fizruk)</td>
 </tr></table>
 
 ## base (gam-10-80-hs-base)
@@ -110,20 +111,21 @@ Most games will return here on exit (others will require CTRL-c).
  1) prelude/guess1/guess1.hs
  2) prelude/pure-doors/pure-doors.hs
  3) prelude/fifteen/fifteen.hs
- 4) base/timing/timing.hs
- 5) base/shoot/shoot.hs
- 6) base/log2048/log2048.hs
- 7) base/rhythm/rhythm.hs
- 8) hackage/guess2/guess2.hs
- 9) hackage/wordle/wordle.hs
-10) hackage/ski/ski.hs
-11) hackage/guesscolor/guesscolor.hs
-12) hackage/bulls-n-cows/bulls-n-cows.hs
-13) hackage/hallway-to-hell/hallway-to-hell.hs
-14) hackage/1234-hero/1234-hero.hs
-15) hackage/crappy-flappy/crappy-flappy.hs
-16) hackage/pong/pong.hs
-17) Quit
+ 4) prelude/chess/chess.hs
+ 5) base/timing/timing.hs
+ 6) base/shoot/shoot.hs
+ 7) base/log2048/log2048.hs
+ 8) base/rhythm/rhythm.hs
+ 9) hackage/guess2/guess2.hs
+10) hackage/wordle/wordle.hs
+11) hackage/ski/ski.hs
+12) hackage/guesscolor/guesscolor.hs
+13) hackage/bulls-n-cows/bulls-n-cows.hs
+14) hackage/hallway-to-hell/hallway-to-hell.hs
+15) hackage/1234-hero/1234-hero.hs
+16) hackage/crappy-flappy/crappy-flappy.hs
+17) hackage/pong/pong.hs
+18) Quit
 ** Enter a number to select, or press enter to see the list again: 
 ```
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
