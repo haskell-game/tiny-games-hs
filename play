@@ -25,13 +25,10 @@ hackage/pong/pong.hs
 hackage/minesweeper/minesweeper.hs
 )
 
-# Games needing special invocation.
+# Games needing special invocation have a runner function with their name:
 fifteen()           { runghc -XPatternSynonyms -XLambdaCase "$1"; }
 log2048()           { runghc "$1"; }
-bulls-n-cows()      { stack runghc --resolver lts-20.10 --package random "$1"; }
 hallway-to-hell()   { stack runghc --resolver lts-20.10 --package random --package rio "$1"; }
-crappy-flappy()     { stack script --resolver=lts-20.10 --package ansi-terminal-game --ghc-options -threaded "$1"; } # Is -threaded needed on some platform ?
-pong()              { stack script --resolver=lts-20.10 --package ansi-terminal-game --ghc-options -threaded "$1"; }
 
 # Help
 gamecat()  { echo "$1" | cut -d/ -f1; }
