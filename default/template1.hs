@@ -9,7 +9,7 @@ main = randomRIO (1,100::Int) >>= print
 
 
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-default/template1 (mynick). ghc-9.4, random
+{- default-10-80/template1 (mynick). ghc-9.4, random
 
 https://hackage.haskell.org/package/base/docs/System-IO.html
 https://hackage.haskell.org/package/random

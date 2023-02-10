@@ -9,7 +9,7 @@ _]<-[l i(p:q)h]];v(x,y)g d=e x(e y(d<$))g;z=concat;e 0 f(x:r)=f x:r;e n f(x:r)=x
 :e(n-1)f r;u _[]=[];u n x=let y:z=w n x in y:u(0xe817fb2d*n)z;i=['1'..'9'];r(h,x
 )|h=[x];r(_,x)="\27[31m"++x:"\27[0m";w n y=x const(drop(n`mod`81)$cycle y)y}{--}
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-prelude/sudoku (elderephemera), ghc 9.2.5
+{- prelude-10-80/sudoku (elderephemera), ghc 9.2.5
 
 This is a Sudoku puzzle generator and interactive solver. Sudokus are solved by
 filling in a 9x9 grid with digits 1 through 9 such that each of the 9 columns, 9

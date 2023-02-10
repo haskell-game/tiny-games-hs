@@ -9,6 +9,6 @@ rectangleSolid 8 2)(zip[0..]$take 5 g))(\e o@(x:g,s,y,h)->case e of{EventKey(
 Char k)Down _ _|y> -2&&y<1&&ord k-ord '0'==x->(g,s+1,y+8,h`max`(s+1));_->o})(\d(
 g,s,y,h)->let{z=y-(8+f s/4)*d}in if z< -4then(drop 1 g,0,z+8,h)else(g,s,z,h))}
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/1234-hero (gelisam)
+{- hackage-10-80/1234-hero (gelisam)
 
 -}

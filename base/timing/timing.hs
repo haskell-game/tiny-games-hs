@@ -2,7 +2,7 @@
 -- stack script --resolver=lts-20.10
 import GHC.Clock (getMonotonicTime)
 import System.Environment (getArgs)
-main = do -- gam-10-80-hs-base/timing (TravisCardwell)
+main = do -- base-10-80/timing (TravisCardwell)
   secs <- read . head . (++ ["30"]) <$> getArgs
   putStrLn $ "Press enter.  Wait " ++ show secs ++ " seconds.  Press enter."
   (t0,t1) <- (,) <$> (getLine>>getMonotonicTime) <*> (getLine>>getMonotonicTime)

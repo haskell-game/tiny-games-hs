@@ -9,7 +9,7 @@ else return '-');let{lt=h$l-1;rt=h$s-r-1;ls=x-lt*2;rs=s-rt*2-x-1;k=if min ls rs
 <1 then"*"else"V"} in do {p(take s$rp lt t++rp ls ' '++k++rp rs ' '++rp rt t);if
 k/="*"then lp(o+1)(case i of ','->x-1;'.'->x+1;_->x).(c+)=<<ra(-ml,mr)else q o}}
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/ski (sm). Avoid trees. Player controls: , . 
+{- hackage-10-80/ski (sm). Avoid trees. Player controls: , . 
 
 Uses emojis, may not look right with all fonts/machines.
 NB: the tree emojis render very slowly in some terminals (iTerm, Terminal).

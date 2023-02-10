@@ -9,7 +9,7 @@ go x m p i = "\ESCcpure-doors\n" <> s 0 (head m) p (tail m) (\m -> case (m,i) of
  (_:_, c:'\n':xs) | c > 'h' && c < 'n' -> go (x+1) m (p + fromEnum c - 107) xs
  _ -> (if x>5 then " GG, your score is: " <> show (div x 5) else "") <> "\n")
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-prelude/pure-doors (tristanC)
+{- prelude-10-80/pure-doors (tristanC)
 
 The goal of pure-doors is to pass through doors by moving the player
 left/forward/right with 'j'/'k'/'l'.

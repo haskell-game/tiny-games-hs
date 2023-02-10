@@ -9,6 +9,6 @@ main=let d=["pearl","rogue","rusty","sheet","label","fjord","orate","haunt"] in
       >> l (n + 1) in l 0
 
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/wordle (halogenandtoast)
+{- hackage-10-80/wordle (halogenandtoast)
 
 -}

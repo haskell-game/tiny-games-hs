@@ -9,6 +9,6 @@ main = let m = 10 in do { n <- randomRIO (1,m::Int);
  else putStrLn "Right! You win." }
 
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/guess2 (sm)
+{- hackage-10-80/guess2 (sm)
 
 -}

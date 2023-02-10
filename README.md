@@ -50,7 +50,7 @@ Tips for rule 4 (runnability):
 
 Compete in any or all of these categories:
 
-## prelude (gam-10-80-hs-prelude)
+## prelude-10-80
 
 - Only the standard prelude may be used (no imports). ([template1](prelude/template1.hs))
 
@@ -67,7 +67,7 @@ Compete in any or all of these categories:
 </tr>
 </table>
 
-## base (gam-10-80-hs-base)
+## base-10-80
 
 - Imports from the base package may be used. ([template1](base/template1.hs))
 
@@ -78,12 +78,12 @@ Compete in any or all of these categories:
 <td><img src="base/rhythm/rhythm.gif" width=100 height=100><a href="base/rhythm"><br>rhythm</a><br>(elderephemera)</td>
 </tr></table>
 
-## default (gam-10-80-hs-default)
+## default-10-80
 
 - All packages installed by default with the tested ghc version may be used. ([template1](default/template1.hs))
 - A second file named Import.hs may be used, to gather imports and re-exports (only).
 
-## hackage (gam-10-80-hs-hackage)
+## hackage-10-80
 
 - As above, but all packages released on Hackage may be used. ([template1](hackage/template1.hs))
 

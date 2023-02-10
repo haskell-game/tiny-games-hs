@@ -9,7 +9,7 @@ main = do
 
 
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-prelude/template1 (mynick), ghc 9.2.5
+{- prelude-10-80/template1 (mynick), ghc 9.2.5
 
 https://hackage.haskell.org/package/base/docs/Prelude.html
 

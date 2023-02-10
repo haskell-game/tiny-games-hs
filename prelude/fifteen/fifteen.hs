@@ -9,7 +9,7 @@ u(a:y)=a:u y;main=interact$g"1234\n5678\n9abc\nfde \n".(S:);g _[]=[]
 g s(x:xs)=q++n++m s++v++g((case x of{'w'->o;'a'->r;'s'->u;'d'->l;_->id})s)xs
 n="+----+\n";v=n++"[wasd] ";m=unlines.fmap(('|':).(++"|")).lines
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-prelude/fifteen (bradrn)
+{- prelude-10-80/fifteen (bradrn)
 
 This is an implementation of the famous 'Fifteen Puzzle'. The goal is to
 get all fifteen blocks in the puzzle (represented as hexadecimal digits)

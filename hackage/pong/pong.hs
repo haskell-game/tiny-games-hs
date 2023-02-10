@@ -9,6 +9,6 @@ end(x,y,a,b,z,s)=x<2&&(y<z||y>z+8);logic _(x,y,a,b,z,s)e=(x+a,y+b,f 79 x a,
 f m x a=if x<3 then 1 else if x>m then -1 else a
 
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/pong (gergoerdi)
+{- hackage-10-80/pong (gergoerdi)
 
 -}

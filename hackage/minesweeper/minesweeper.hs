@@ -10,7 +10,7 @@ j(j(p"not in zone.">>g m c b w h)(do{g m (filter(/=(x,y))c)b w h})(e(x,y)b))
 (p"boom")(e(x,y)m)})(p"you win!")(l c<1)
 -- ^10 ------------------------------------------------------------------ 80> --
 -- Author: Greg B.
--- Category: hackage (gam-10-80-hs-hackage)
+-- Category: hackage (hackage-10-80)
 -- Thumbnail: https://files.catbox.moe/ccs0dv.png
 -- This is minesweeper.
 -- Visit every safe cell to win. Visit a mine to lose.

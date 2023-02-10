@@ -9,7 +9,7 @@ key v = readIORef v >>= \k -> getChar >>= writeIORef v . move k>> key v
 main = hSetBuffering stdin NoBuffering >> newIORef 11 >>= \v->
   concurrently_ (key v) (run v $ replicate 10 $ "X" ++ replicate 21 ' ' ++ "X")
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/hallway-to-hell (juliendehos)
+{- hackage-10-80/hallway-to-hell (juliendehos)
 
 stack runghc hallway-to-hell.hs --resolver lts-20.10 --package rio --package random
 

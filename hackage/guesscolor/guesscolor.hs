@@ -1,7 +1,7 @@
 #!/usr/bin/env stack
 -- stack script --compile --resolver=lts-20.10 --package gloss --package random
 import Import
-main = do -- gam-10-80-hs-hackage/guesscolor (TravisCardwell)
+main = do -- hackage-10-80/guesscolor (TravisCardwell)
   [r, g, b] <- take 3 . randomRs (0, 255) <$> newStdGen
   _ <- forkIO $ display (InWindow "" (96, 96) (8, 8)) (makeColorI r g b 0) Blank
   [r', g', b' :: Int] <- map read . words <$> getLine

@@ -9,7 +9,7 @@ l (y : z) x | (_ : _) <- filter (== 12) (concat x) = q x >> putStrLn "You won!"
   | True = do{q x ; getLine >>= l z . e . h y . concat . f x . head}
 main = print "keys: hjkl">>(l (cycle [3,14,15,9,2,65,3,5]) . e . h 2 . repeat) 0
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-base/log2048 (Lysxia), ghc 9.2.5
+{- base-10-80/log2048 (Lysxia), ghc 9.2.5
 
 runghc hallway-to-hell.hs
 

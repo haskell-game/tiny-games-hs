@@ -2,7 +2,7 @@
 
 A simple rhythm game.
 
-* Category: `gam-10-80-hs-base`
+* Category: `base-10-80`
 * Tested with: GHC 9.0.2 and 9.2.2 on Linux
 * Author: ElderEphemera (Josh Price)
 

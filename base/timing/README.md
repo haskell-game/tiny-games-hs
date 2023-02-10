@@ -3,7 +3,7 @@
 This [Haskell tiny game][] implements a timing game.  How well can you
 estimate a duration of time?
 
-* Category: `gam-10-80-hs-base`
+* Category: `base-10-80`
 * Tested environment: [Stack][] [lts-20.10][] (GHC 9.2.5) on Linux
 * Author: [TravisCardwell][]
 

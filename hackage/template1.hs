@@ -9,7 +9,7 @@ main = do
 
 
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/template1 (mynick)
+{- hackage-10-80/template1 (mynick)
 
 The build command, needed here if not included at the top:
 stack script --compile template1.hs --resolver lts-20.10 --package gloss

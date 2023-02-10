@@ -3,7 +3,7 @@
 This [Haskell tiny game][] implements a color guessing game.  How well do you
 know your colors?  Guess RGB values for the displayed color!
 
-* Category: `gam-10-80-hs-hackage`
+* Category: `hackage-10-80`
 * Tested environment: [Stack][] [lts-20.10][] (GHC 9.2.5) on Linux
 * Author: [TravisCardwell][]
 

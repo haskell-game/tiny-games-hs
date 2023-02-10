@@ -9,5 +9,5 @@ else z:r(n-1)y h;main=turn 10. r 4['0'..'9']=<<newStdGen;turn 0 s=p"You lost :("
 zipWith(==)g s;c=f((flip elem g)<$>s)-b};if b==4 then p"You won!"else do{p(show
 b<>" bulls and "<>show c<>" cows");turn(a-1)s}}
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-hackage/bullsandcows (akadude)
+{- hackage-10-80/bullsandcows (akadude)
 -}

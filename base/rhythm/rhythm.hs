@@ -9,4 +9,4 @@
 p"Keyset(0-2):\n";hSetEcho l$0==1;hSetBuffering l NoBuffering;o 0((10-d)*97897)[
 ]0(r t)$[" w a d s "," j k l ; "," 8 4 6 2 "]!!f};z=getChar;w=' ';r=replicate 9}
 -- ^10 ------------------------------- 80> -------------------------------------
--- gam-10-80-hs-base/rythm (elderephemera), ghc 9.0, 9.2
+-- base-10-80/rythm (elderephemera), ghc 9.0, 9.2

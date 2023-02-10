@@ -6,7 +6,7 @@ rows, and 9 3x3 regions contain each digit exactly once. The puzzles generated
 by this program have a unique solution. Additionally, while solving, repeated
 digits are highlighted red to allow the solver to catch mistakes early.
 
-* Category: `gam-10-80-hs-prelude`
+* Category: `prelude-10-80`
 * Tested with: GHC 9.2.5 on Linux and Windows
 * Author: ElderEphemera (Josh Price)
 

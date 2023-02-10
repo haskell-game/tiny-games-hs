@@ -9,7 +9,7 @@ f=y"HKLMNPRS\naiuaoeoa\nnajjrtzr\nnrzaaraa\naaa  a  ";z b=(!!fromEnum b);main=n$
  >>= \q->[r:q,q]))[[]][0..7]))[g r$i p(i q(*0)8)9l,(l,r)];i j c=((\(l,v:r)->l++c
  v:r).).splitAt.mod j;n r=(\(l,q)->w 8l>>b(a 40'=')>>n q)$g r$a 10$a 8 1++[3];
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-prelude/matchmaking (migmit) -}
+{- prelude-10-80/matchmaking (migmit) -}
 {- running:
  ./matchmaking.hs
 OR, on older systems that don't support `env -S`

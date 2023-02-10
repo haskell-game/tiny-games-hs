@@ -9,7 +9,7 @@ main = do
 
 
 -- ^10 ------------------------------------------------------------------ 80> --
-{- gam-10-80-hs-base/template1 (mynick), ghc 9.2.5
+{- base-10-80/template1 (mynick), ghc 9.2.5
 
 https://hackage.haskell.org/package/base/docs/Text-Printf.html
 

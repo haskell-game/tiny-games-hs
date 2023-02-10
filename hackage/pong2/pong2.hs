@@ -10,7 +10,7 @@ box w h '#'&(2,2)%box(w-2)(h-2)' '&(h,w`div`2-2)%stringPlane(" sc:"++show s++
 " hi:"++show hi++" ")&(y,x)%cell '🎾'&(py,p)%box pw 1 '=';}
 -- ^10 ------------------------------------------------------------------ 80> --
 {-
-gam-10-80-hs-hackage/pong2 (sm). Keys: , left  . right  q quit.
+hackage-10-80/pong2 (sm). Keys: , left  . right  q quit.
 Uses an emoji, may not look right with all fonts/machines.
 
 -- less compressed
