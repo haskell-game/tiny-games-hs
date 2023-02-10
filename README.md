@@ -35,12 +35,11 @@ Here are the general rules for February:
 8. Contest entries will be collected in this repo.
 
 Tips for rule 4 (runnability):
-- Arguments on the shebang line are not widely supported, and `env -S` which permits them is 
-  not available on many GNU/Linux systems (with coreutils before such-and-such).
-  See https://github.com/haskell-game/tiny-games-hs/issues/25 for discussion.
-- Avoid requiring problematic GHC versions, in particular GHC 9.0 which doesn't run on mac
-  (and stackage lts-19). If you specify a GHC version/stackage snapshot, the current release
-  is ideal (GHC 9.2, lts-20).
+- env -S in the shebang line is not supported on older GNU/Linux systems.
+  If you must use it, also show a run command in the comments, which will
+  be used in the play script. (See https://github.com/haskell-game/tiny-games-hs/issues/25.)
+- Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
+  If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
 
 [runghc]: https://downloads.haskell.org/ghc/latest/docs/users_guide/runghc.html
 [stack]:  https://docs.haskellstack.org/en/stable/script_command
@@ -105,7 +104,7 @@ Compete in any or all of these categories:
 
 ## Let's play!
 
-You will need a suitable version of GHC (8.10.7+, 9.2.5+, or 9.4.4+ are good bets), and stack (or cabal).
+You will need a suitable version of GHC (9.2.5+ or 9.4.4+ recommended), and stack (or cabal).
 See <https://www.haskell.org/get-started/>.
 Once Haskell is installed, and if you have bash, you can run `./play` in this repo:
 ```
