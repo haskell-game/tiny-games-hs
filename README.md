@@ -29,7 +29,7 @@ Here are the general rules for this round:
    Entries which aren't straightforward to run are incomplete.
    Achieving programs that "just work" is a core principle and part of the challenge.
    Tips:
-   - env -S in the shebang line does not work on older GNU/Linux systems.
+   - env -S in the shebang line doesn't work on older GNU/Linux systems.
      If you use it, also show a reliable run command in the comments, to be used in
      in the play script. (See https://github.com/haskell-game/tiny-games-hs/issues/25.)
    - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
@@ -41,8 +41,9 @@ Here are the general rules for this round:
 7. A separate README file is optional, but can add value,
    such as animations, or discussion of the game/code/experience.
    Website visitors will see this on clicking your game.
-8. Contest entries will be collected in this repo.
-9. You can submit any number of entries, in the following categories:
+8. You're welcome to include a less-minified version of the code, that people can learn from.
+9. Contest entries will be collected in this repo.
+10. You can submit any number of entries, in the following categories:
 
    **`prelude-10-80`**
    : No imports may be used. ([template1](prelude/template1.hs))
@@ -64,7 +65,7 @@ Here are the general rules for this round:
 
 ## Games
 
-Here are the entries submitted so far:
+Here are the entries received so far:
 
 ### prelude-10-80
 <table>
@@ -89,6 +90,7 @@ Here are the entries submitted so far:
 </tr></table>
 
 ### default-10-80
+None.
 
 ### hackage-10-80
 <table>
