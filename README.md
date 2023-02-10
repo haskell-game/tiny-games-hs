@@ -91,7 +91,7 @@ Here are the entries received so far:
 </tr></table>
 
 ### default-10-80
-None.
+<td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=100 height=100><br>type-and-furious</a><br>(lsmor)</td>
 
 ### hackage-10-80
 <table>
