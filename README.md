@@ -28,6 +28,12 @@ Here are the general rules for this round:
    or it must contain reliable build instructions (eg a ghc command line with all needed package options).
    Entries which aren't straightforward to run are incomplete.
    Achieving programs that "just work" is a core principle and part of the challenge.
+   Tips:
+   - env -S in the shebang line does not work on older GNU/Linux systems.
+     If you use it, also show a reliable run command in the comments, to be used in
+     in the play script. (See https://github.com/haskell-game/tiny-games-hs/issues/25.)
+   - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
+     If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
 5. The game should run on all major platforms, ideally.
 6. The game must be accompanied by a small square screenshot, ideally static and non-gif.
    (Not animated, because Github's player overlay will obscure it. 
@@ -36,24 +42,31 @@ Here are the general rules for this round:
    such as animations, or discussion of the game/code/experience.
    Website visitors will see this on clicking your game.
 8. Contest entries will be collected in this repo.
+9. You can submit any number of entries, in the following categories:
 
-Tips for rule 4 (runnability):
-- env -S in the shebang line does not work on older GNU/Linux systems.
-  If you must use it, also show a reliable run command in the comments, which will
-  be used in the play script. (See https://github.com/haskell-game/tiny-games-hs/issues/25.)
-- Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
-  If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
+   `prelude-10-80`
+   : No imports may be used. ([template1](prelude/template1.hs))
+
+   `base-10-80`
+   : Imports from the base package may be used. ([template1](base/template1.hs))
+
+   `default-10-80`
+   : All packages installed by default with the tested ghc version may be used. ([template1](default/template1.hs))
+     Also a second file named Import.hs may be used to gather and re-export imports, only.
+
+   `hackage-10-80`
+   : As above, but all packages released on Hackage may be used. ([template1](hackage/template1.hs))
 
 [runghc]: https://downloads.haskell.org/ghc/latest/docs/users_guide/runghc.html
 [stack]:  https://docs.haskellstack.org/en/stable/script_command
 [cabal]:  https://cabal.readthedocs.io/en/3.6/cabal-commands.html#cabal-v2-run
 
-Compete in any or all of these categories:
 
-## prelude-10-80
+## Games
 
-- Only the standard prelude may be used (no imports). ([template1](prelude/template1.hs))
+Here are the entries submitted so far:
 
+### prelude-10-80
 <table>
 <tr>
 <td><a href="prelude/guess1"><img src="prelude/guess1/guess1.png" width=100 height=100><br>guess1</a><br>(sm)</td>
@@ -67,10 +80,7 @@ Compete in any or all of these categories:
 </tr>
 </table>
 
-## base-10-80
-
-- Imports from the base package may be used. ([template1](base/template1.hs))
-
+### base-10-80
 <table><tr>
 <td><a href="base/timing"><img src="base/timing/timing.png" width=100 height=100><br>timing</a><br>(TravisCardwell)</td>
 <td><a href="base/shoot"><img src="base/shoot/shoot.png" width=100 height=100><br>shoot</a><br>(migmit)</td>
@@ -78,15 +88,9 @@ Compete in any or all of these categories:
 <td><img src="base/rhythm/rhythm.gif" width=100 height=100><a href="base/rhythm"><br>rhythm</a><br>(elderephemera)</td>
 </tr></table>
 
-## default-10-80
+### default-10-80
 
-- All packages installed by default with the tested ghc version may be used. ([template1](default/template1.hs))
-- A second file named Import.hs may be used, to gather imports and re-exports (only).
-
-## hackage-10-80
-
-- As above, but all packages released on Hackage may be used. ([template1](hackage/template1.hs))
-
+### hackage-10-80
 <table>
 <tr>
 <td><a href="hackage/guess2"><img src="hackage/guess2/guess2.png" width=100 height=100><br>guess2</a><br>(sm)</td>
