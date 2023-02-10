@@ -9,6 +9,7 @@ prelude/guess1/guess1.hs
 prelude/pure-doors/pure-doors.hs
 prelude/fifteen/fifteen.hs
 prelude/chess/chess.hs
+prelude/sudoku/sudoku.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
@@ -27,6 +28,7 @@ hackage/minesweeper/minesweeper.hs
 
 # Games needing special invocation have a runner function with their name:
 fifteen()           { runghc -XPatternSynonyms -XLambdaCase "$1"; }
+sudoku()            { runghc "$1"; }
 log2048()           { runghc "$1"; }
 hallway-to-hell()   { stack runghc --resolver lts-20.10 --package random --package rio "$1"; }
 

@@ -52,12 +52,17 @@ Compete in any or all of these categories:
 
 - Only the standard prelude may be used (no imports). ([template1](prelude/template1.hs))
 
-<table><tr>
+<table>
+<tr>
 <td><a href="prelude/guess1"><img src="prelude/guess1/guess1.png" width=100 height=100><br>guess1</a><br>(sm)</td>
 <td><a href="prelude/pure-doors"><img src="prelude/pure-doors/pure-doors.png" width=100 height=100><br>pure-doors</a><br>(tristanC)</td>
 <td><a href="prelude/fifteen"><img src="prelude/fifteen/fifteen.png" width=100 height=100><br>fifteen</a><br>(bradrn)</td>
 <td><img src="prelude/chess/chess.gif" width=100 height=100><a href="prelude/chess"><br>chess</a><br>(fizruk)</td>
-</tr></table>
+</tr>
+<tr>
+<td><a href="prelude/sudoku"><img src="prelude/sudoku/sudoku.png" width=100 height=100><br>sudoku</a><br>(elderephemera)</td>
+</tr>
+</table>
 
 ## base (gam-10-80-hs-base)
 
