@@ -5,3 +5,5 @@ What you see is a table with the names of all the guys and girls (girls name are
 The game would start again after you finish it, with different possible couples. Rest assured, there is a solution for each puzzle.
 
 Note: the system depends on the `env` program supporting the `-S` switch — which should work in MacOS, any modern Linux, and MacOS.
+
+![](matchmaking.gif)
