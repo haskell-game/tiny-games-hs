@@ -52,11 +52,11 @@ Here are the general rules for this round:
    : Imports from the base package may be used. ([template1](base/template1.hs))
 
    **`default-10-80`**
-   : All packages installed by default with the tested ghc version may be used. ([template1](default/template1.hs))
+   : Packages installed by default with GHC may be used. ([template1](default/template1.hs))
      Also a second file named Import.hs may be used to gather and re-export imports, only.
 
    **`hackage-10-80`**
-   : As above, but all packages released on Hackage may be used. ([template1](hackage/template1.hs))
+   : All packages on Hackage may be used, and an Import.hs file may be used. ([template1](hackage/template1.hs))
 
 [runghc]: https://downloads.haskell.org/ghc/latest/docs/users_guide/runghc.html
 [stack]:  https://docs.haskellstack.org/en/stable/script_command
