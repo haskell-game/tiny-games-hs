@@ -10,7 +10,12 @@ f=y"HKLMNPRS\naiuaoeoa\nnajjrtzr\nnrzaaraa\naaa  a  ";z b=(!!fromEnum b);main=n$
  v:r).).splitAt.mod j;n r=(\(l,q)->w 8l>>b(a 40'=')>>n q)$g r$a 10$a 8 1++[3];
 -- ^10 ------------------------------------------------------------------ 80> --
 {- gam-10-80-hs-prelude/matchmaking (migmit) -}
-{- running: ./matchmaking.hs -}
+{- running:
+ ./matchmaking.hs
+OR, on older systems that don't support `env -S`
+ runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' matchmaking.hs
+(Note that this line also fits into 80 characters limit)
+-}
 {-
 In a small Hungarian village there are several guys: Adám, Béla, Csaba, Dávid,
 Erik, Feri, Géza, Imre, and Jenő — and several girls: Hanna, Kiara, Lujza, Maja,
