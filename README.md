@@ -92,7 +92,6 @@ Here are the entries received so far:
 <tr>
 <td><a href="prelude/sudoku"><img src="prelude/sudoku/sudoku.png" width=100 height=100><br>sudoku</a><br>(elderephemera)</td>
 <td><img src="prelude/matchmaking/matchmaking.gif" width=100 height=100><br><a href="prelude/matchmaking">matchmaking</a><br>(migmit)</td>
-<td><a href="prelude/peyton-says"><img src="prelude/peyton-says/peyton-says.png" width=100 height=100><br>peyton-says</a><br>(gergoerdi)</td>
 </tr>
 </table>
 
@@ -102,7 +101,11 @@ Here are the entries received so far:
 <td><a href="base/shoot"><img src="base/shoot/shoot.png" width=100 height=100><br>shoot</a><br>(migmit)</td>
 <td><img src="base/log2048/log2048.gif" width=100 height=100><a href="base/log2048"><br>log2048</a><br>(Lysxia)</td>
 <td><img src="base/rhythm/rhythm.gif" width=100 height=100><a href="base/rhythm"><br>rhythm</a><br>(elderephemera)</td>
-</tr></table>
+</tr>
+<tr>
+<td><a href="base/peyton-says"><img src="base/peyton-says/peyton-says.png" width=100 height=100><br>peyton-says</a><br>(gergoerdi)</td>
+</tr>
+</table>
 
 ### default-10-80
 <td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=100 height=100><br>type-and-furious</a><br>(lsmor)</td>
