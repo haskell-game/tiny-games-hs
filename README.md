@@ -114,16 +114,21 @@ Once Haskell is installed, and if you have bash, you can run `./play` in this re
 Here are the entries from HTGJ1, Feb 2023 !
 This script can run each game for you, using ghc or stack
 (if you don't have these yet, see https://www.haskell.org/get-started).
-Most games will return here on exit (others will require CTRL-c).
+Usage: play [NUM|NAME]
 
- 1) prelude/guess1/guess1.hs
- 2) prelude/pure-doors/pure-doors.hs
- 3) prelude/fifteen/fifteen.hs
- 4) prelude/chess/chess.hs
- 5) base/timing/timing.hs
+ 1) guess1                [prelude]
+ 2) pure-doors            [prelude]
+ 3) fifteen               [prelude]
+ 4) chess                 [prelude]
 ...
-** Enter a number to select, or press enter to see the list again: 
 ```
+or:
+```
+$ alias p=~/src/tiny-games-hs/play
+$ p chess
+$ p 4
+```
+
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
 If that fails, look for run/build instructions in that file or a nearby readme.
 
