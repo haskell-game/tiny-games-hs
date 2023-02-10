@@ -15,6 +15,8 @@ base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
 base/rhythm/rhythm.hs
+base/peyton-says/peyton-says.hs
+default/type-and-furious/type-and-furious.hs
 hackage/guess2/guess2.hs
 hackage/wordle/wordle.hs
 hackage/ski/ski.hs
@@ -35,6 +37,7 @@ log2048()           { runghc "$1"; }
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
 sudoku()            { runghc "$1"; }
+type-and-furious()  { cd default/type-and-furious || return; ./type-and-furious.hs; }
 
 # Help
 gamecat()  { echo "$1" | cut -d/ -f1; }
