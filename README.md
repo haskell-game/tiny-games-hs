@@ -96,7 +96,8 @@ Here are the entries received so far:
 </table>
 
 ### base-10-80
-<table><tr>
+<table>
+<tr>
 <td><a href="base/timing"><img src="base/timing/timing.png" width=100 height=100><br>timing</a><br>(TravisCardwell)</td>
 <td><a href="base/shoot"><img src="base/shoot/shoot.png" width=100 height=100><br>shoot</a><br>(migmit)</td>
 <td><img src="base/log2048/log2048.gif" width=100 height=100><a href="base/log2048"><br>log2048</a><br>(Lysxia)</td>
@@ -108,7 +109,11 @@ Here are the entries received so far:
 </table>
 
 ### default-10-80
+<table>
+<tr>
 <td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=100 height=100><br>type-and-furious</a><br>(lsmor)</td>
+</tr>
+</table>
 
 ### hackage-10-80
 <table>
