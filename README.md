@@ -52,8 +52,9 @@ Here are the general rules for this round:
    : Imports from the base package may be used. ([template1](base/template1.hs))
 
    **`default-10-80`**
-   : Packages installed by default with GHC may be used. ([template1](default/template1.hs))
+   : Packages installed by default with GHC may be used.
      Also a second file named Import.hs may be used to gather and re-export imports, only.
+    ([template1](default/template1.hs))
 
    **`hackage-10-80`**
    : All packages on Hackage may be used, and an Import.hs file may be used. ([template1](hackage/template1.hs))
