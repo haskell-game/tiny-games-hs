@@ -119,31 +119,12 @@ Here are the entries received so far:
 You will need a suitable version of GHC (9.2.5+ or 9.4.4+ recommended), and stack (or cabal).
 See <https://www.haskell.org/get-started/>.
 Once Haskell is installed, and if you have bash, you can run `./play` in this repo:
-```
-~/src/tiny-games-hs$ ./play
---------------------------------------------------------
-                 ___         __                          
-|__| _  _|  _||   | . _     / _  _  _  _    | _  _    /| 
-|  |(_|_)|((-||   | || )\/  \__)(_||||(-  __)(_||||    | 
 
---------------------------------------------------------
-Here are the entries from HTGJ1, Feb 2023 !
-This script can run each game for you, using ghc or stack
-(if you don't have these yet, see https://www.haskell.org/get-started).
-Usage: play [NUM|NAME|SUBSTR]
+![](play.dark.png)
 
- 1) guess1                [prelude]
- 2) pure-doors            [prelude]
- 3) fifteen               [prelude]
- 4) chess                 [prelude]
-...
-```
 or:
-```
-$ alias p=~/src/tiny-games-hs/play
-$ p chess
-$ p 4
-```
+
+![](play-2.dark.png)
 
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
 If that fails, look for run/build instructions in that file or a nearby readme.
