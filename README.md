@@ -114,7 +114,7 @@ Once Haskell is installed, and if you have bash, you can run `./play` in this re
 Here are the entries from HTGJ1, Feb 2023 !
 This script can run each game for you, using ghc or stack
 (if you don't have these yet, see https://www.haskell.org/get-started).
-Usage: play [NUM|NAME]
+Usage: play [NUM|NAME|SUBSTR]
 
  1) guess1                [prelude]
  2) pure-doors            [prelude]

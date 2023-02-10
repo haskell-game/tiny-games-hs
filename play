@@ -45,9 +45,9 @@ help() {
 
 --------------------------------------------------------
 Here are the entries from HTGJ1, Feb 2023 !
-This script can run each game for you, using ghc or stack
-(if you don't have these yet, see https://www.haskell.org/get-started).
-Usage: play [NUM|NAME]
+This script can run each game for you, using ghc or stack.
+If you don't have these yet, see https://www.haskell.org/get-started .
+Usage: play [NUM|NAME|SUBSTR]
 
 HERE
     for k in "${!games[@]}"; do
@@ -69,9 +69,16 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 if [[ $# == 0 || "$1" == "-h" ||  "$1" == "--help" || "$2" == "-h" ||  "$2" == "--help" ]];
 then help
 else
+    # select a game
     g=${games[$1]}
     if [[ -z $g ]]; then g=${gamesbyname[$1]}; fi
+    if [[ -z $g ]]; then
+	for h in "${games[@]}"; do
+	    if [[ $(gamename "$h") =~ $1 ]]; then g="$h"; break; fi
+	done
+    fi
     if [[ -z $g ]]; then echo "$1 is unrecognised, run '$0' to see the list"; exit 1; fi
+    # run it
     gname=$(gamename "$g")
     if declare -f "$gname" >/dev/null
     then "$gname" "$g"
