@@ -1,4 +1,4 @@
-#!/usr/bin/env -S runghc-9.2.4 -XUnicodeSyntax -XBlockArguments
+#!/usr/bin/env -S runghc -XUnicodeSyntax -XBlockArguments
 
 import Data.Char
 import Data.List
