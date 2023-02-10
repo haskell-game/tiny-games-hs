@@ -79,6 +79,7 @@ Here are the entries received so far:
 <tr>
 <td><a href="prelude/sudoku"><img src="prelude/sudoku/sudoku.png" width=100 height=100><br>sudoku</a><br>(elderephemera)</td>
 <td><img src="prelude/matchmaking/matchmaking.gif" width=100 height=100><br><a href="prelude/matchmaking">matchmaking</a><br>(migmit)</td>
+<td><a href="prelude/peyton-says"><img src="prelude/peyton-says/peyton-says.png" width=100 height=100><br>peyton-says</a><br>(gergoerdi)</td>
 </tr>
 </table>
 
