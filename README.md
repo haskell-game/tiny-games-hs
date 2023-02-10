@@ -44,17 +44,17 @@ Here are the general rules for this round:
 8. Contest entries will be collected in this repo.
 9. You can submit any number of entries, in the following categories:
 
-   `prelude-10-80`
+   **`prelude-10-80`**
    : No imports may be used. ([template1](prelude/template1.hs))
 
-   `base-10-80`
+   **`base-10-80`**
    : Imports from the base package may be used. ([template1](base/template1.hs))
 
-   `default-10-80`
+   **`default-10-80`**
    : All packages installed by default with the tested ghc version may be used. ([template1](default/template1.hs))
      Also a second file named Import.hs may be used to gather and re-export imports, only.
 
-   `hackage-10-80`
+   **`hackage-10-80`**
    : As above, but all packages released on Hackage may be used. ([template1](hackage/template1.hs))
 
 [runghc]: https://downloads.haskell.org/ghc/latest/docs/users_guide/runghc.html
