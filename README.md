@@ -29,7 +29,7 @@ Here are the general rules for this round:
 
 4. Achieving programs that "just work" is a core principle and part of the challenge.
    The script or program must either 
-   - be reliably runnable via shebang line (for maximum points; but shebang lines are counted with the rest)
+   - be reliably runnable via shebang line (shebang lines are counted as code, but will impress the judges)
    - or contain a reliable build/run command line with all needed options, in the comments
      (the `play` script will use this).
    
