@@ -60,6 +60,7 @@ Compete in any or all of these categories:
 </tr>
 <tr>
 <td><a href="prelude/sudoku"><img src="prelude/sudoku/sudoku.png" width=100 height=100><br>sudoku</a><br>(elderephemera)</td>
+<td><img src="prelude/matchmaking/matchmaking.gif" width=100 height=100><br><a href="prelude/matchmaking">matchmaking</a><br>(migmit)</td>
 </tr>
 </table>
 
