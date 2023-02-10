@@ -1,4 +1,4 @@
--- #!/usr/bin/env -S stack script --resolver lts-20 --package gloss
+#!/usr/bin/env -S stack script --compile --resolver lts-20 --package gloss
 import Graphics.Gloss;import Graphics.Gloss.Interface.IO.Interact;main=play
  FullScreen white 60(0,(0,0),(0.2,0.2),[(x,y)|x<-[0,2..20],y<-[0,2..8]])render
  input step;scaleFactor=20;render(p,(x,y),_,bricks)=scale scaleFactor

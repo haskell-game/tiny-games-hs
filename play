@@ -28,10 +28,13 @@ hackage/crappy-flappy/crappy-flappy.hs
 hackage/pong/pong.hs
 hackage/minesweeper/minesweeper.hs
 hackage/pong2/pong2.hs
+hackage/brickbreaker/brickbreaker.hs
 )
 
 # Games needing special invocation, in alphabetical order.
+
 fifteen()           { runghc -XPatternSynonyms -XLambdaCase "$1"; }
+brickbreaker()      { stack script --compile --resolver lts-20 --package gloss "$1"; }
 hallway-to-hell()   { stack runghc --resolver lts-20 --package random --package rio "$1"; }
 log2048()           { runghc "$1"; }
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
