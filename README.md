@@ -11,7 +11,10 @@ Submit your entries now (as many as you like) to this repo
 (send a pull request, or push if you have access),
 or paste in the #haskell-game chat ([Matrix] or [IRC]) and we'll commit for you.
 sm and f-a are your judges, informed by #haskell-game.
-Here are the general rules for February:
+
+## Rules
+
+Here are the general rules for this round:
 
 1. Make a playable game in one haskell file of up to 10 lines of up to 80 characters each.
 2. This can be a [runghc], [stack] or [cabal] script, or a small haskell program, but not a multi-file project.
