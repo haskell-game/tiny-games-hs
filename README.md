@@ -17,32 +17,45 @@ sm and f-a are your judges, informed by #haskell-game.
 Here are the general rules for this round:
 
 1. Make a playable game in one haskell file of up to 10 lines of up to 80 characters each.
+
 2. This can be a [runghc], [stack] or [cabal] script, or a small haskell program, but not a multi-file project.
    Some templates are provided to give ideas.
    Our ideal is a self-contained 10 line program that just works, like BASIC programs.
-3. Unlimited comments and notes are permitted after line 11.
+
+3. Unlimited comments are permitted after line 11.
    The game's "category/name (author)" info should appear here,
-   and brief essential info like player controls (in case someone sees just this file,
-   eg in chat).
-4. The script or program must either be executable and run reliably (eg like a stack script),
-   or it must contain reliable build instructions (eg a ghc command line with all needed package options).
-   Entries which aren't straightforward to run are incomplete.
-   Achieving programs that "just work" is a core principle and part of the challenge.
-   Tips:
-   - env -S in the shebang line doesn't work on older GNU/Linux systems.
-     If you use it, also show a reliable run command in the comments, to be used in
-     in the play script. (See https://github.com/haskell-game/tiny-games-hs/issues/25.)
+   and any essential info like player controls, so the game is usable 
+   to someone seeing just this file, eg in chat.
+
+4. Achieving programs that "just work" is a core principle and part of the challenge.
+   The script or program must either 
+   - be reliably runnable via shebang line (preferred)
+   - or contain a reliable build/run command line with all needed options, in the comments
+     (the `play` script will use this).
+   
+   Entries which aren't straightforward to run are incomplete. Some tips:
+   - env -S in the shebang line doesn't work on older GNU/Linux systems, but we allow it
+     (see https://github.com/haskell-game/tiny-games-hs/issues/25).
    - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
      If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
-5. The game should run on all major platforms, ideally.
-6. The game must be accompanied by a small square screenshot, ideally static and non-gif.
+
+5. The game should be portable, running on all major platforms, ideally.
+
+6. A small square screenshot must be provided, ideally static and non-gif.
    (Not animated, because Github's player overlay will obscure it. 
    Not a gif, because you can't make those clickable on Github it seems.)
-7. A separate README file is optional, but can add value,
-   such as animations, or discussion of the game/code/experience.
-   Website visitors will see this on clicking your game.
-8. You're welcome to include a less-minified version of the code, that people can learn from.
+
+7. A README file is optional but makes browsing your game more pleasant for website visitors.
+   Feel free to include animations, or discussion of the game/code/your experience.
+
+8. A less-minified version of the code, that we can learn from, is optional but welcome.
+
 9. Contest entries will be collected in this repo.
+   You can update them at any time; judges will consider a snapshot of the repo at
+   2023-02-28 11:59:59 UTC.
+   You may want to watch the issue tracker to hear about anything concerning your entry,
+   or general announcements.
+
 10. You can submit any number of entries, in the following categories:
 
    **`prelude-10-80`**
