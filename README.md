@@ -52,8 +52,8 @@ Here are the general rules for this round:
 
 9. Contest entries will be collected in the official repo (haskell-game/tiny-games-hs).
    You can update your entries freely until the contest end, 2023-02-28 11:59:59 UTC,
-   at which time they are frozen for posterity and judging, with no further changes allowed for any reason.
-   (But if you need to share post-contest improvements, you are welcome to publish as new files in the same directory.)
+   at which time they are frozen for posterity and judging (no exceptions).
+   If you need to share post-contest improvements, you are welcome to publish as new files in the same directory.
 
 10. You can submit any number of entries, in the following categories:
 
