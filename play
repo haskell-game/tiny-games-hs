@@ -12,6 +12,7 @@ prelude/chess/chess.hs
 prelude/sudoku/sudoku.hs
 prelude/matchmaking/matchmaking.hs
 prelude/tiny-brot/tiny-brot.hs
+prelude/mini-othello/mini-othello.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
@@ -39,6 +40,7 @@ brickbreaker()      { stack script --compile --resolver lts-20 --package gloss "
 hallway-to-hell()   { stack runghc --resolver lts-20 --package random --package rio "$1"; }
 log2048()           { runghc "$1"; }
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
+mini-othello()      { runghc "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
 sudoku()            { runghc "$1"; }
 
