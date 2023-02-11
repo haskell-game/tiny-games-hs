@@ -1,0 +1,97 @@
+= One Dot
+Ose Pedro <https://github.com/OsePedro>
+:revdate: {docdate}
+:revremark: prelude-10-80
+
+== How to Play
+
+The goal of the game is to flip 3*3 blocks of dots (`o`) and dashes (`-`) until the board contains exactly one dot. You pick a block by typing its central coordinates in the format `<column letter><row number><enter>`.
+E.g. given the following 5*5 board:
+
+```
+-----
+-ooo- 1
+-o-o- 2
+-ooo- 3
+-----
+ abc
+```
+
+you could win the game in one move by flipping the middle block. To do this,
+you'd type `b2` and `<enter>`, giving:
+
+```
+-----
+----- 1
+--o-- 2
+----- 3
+-----
+ abc
+```
+
+Be careful when you type; the game will print `"X"` and terminate if you type invalid input (sorry!).
+Backspace works though, so you can at least change what you've typed before you press `<enter>`.
+
+When the game ends, your score is printed.
+Your score is `j-m`, where `m` is the number of moves you made, and `j` is the number of moves that were used to construct the starting board.
+So positive scores are good and negative scores show room for improvement.
+I've achieved a score of 14 on the 7*7 version that I'm committing.
+See if you can beat me!
+
+You can change the board size by changing the `i` variable (at the start of line 2) to any value in `[2..9]`.
+This controls the size of the board's interior.
+Note that `j=i^2`, so for a 7*7 board, `i=5` and the game can be won in at most `5^2=25` moves.
+
+It is always possible to win with a dot in the middle of the board, but there may be other solutions (I haven't checked though, so I'm not sure).
+If you try an even board size (see below), you can see where the "middle" dot is by loading this file in GHCi and running `putStrLn $ o 0 t`.
+
+
+== Documentation
+
+This is an alphabetical listing of all of the functions and constants that I
+wrote:
+
+* `a :: Int -> String -> String`:
+** **A**pplies `f` to the `Char` at the given index (i.e. it flips that symbol).
+* `b :: Int -> a -> (Int -> a) -> a`:
+** A **B**ranch function. `b z d f` returns `f z` if `z` is in `[1..i]`, otherwise it returns `d`.
+* `c :: [Int]`
+** Pseudorandom linearised **C**oordinates in the board's interior.
+* `d :: [Int] -> [Int]`
+** **D**eduplicates sequences of repeated values in the list.
+Drops the last  repeated sequence.
+* `e :: Int`
+** The width/height of the board's **E**xterior, i.e. `i+2`.
+* `f :: Char -> Char`
+** **F**lips `o` to `-` and vice-versa.
+* `h :: Int -> String -> String`
+** Flips the neighbour**H**ood of the given linearised point.
+* `i :: Int`
+** The width/height of the board's **I**nterior. Must be in `[2..9]`.
+* `j :: Int`
+** The number of times the target board is **J**umbled by randomly flipping neighbourhoods, in order to produce the start board.
+* `k :: String`
+** The **K**eys that you should type to pick a column.
+* `l :: Int -> Int -> Int`
+** `(l x y)` **L**inearises 2D coordinate `(x,y)`.
+I.e. it turns it into an index in `[0..e^2-1]`.
+`x` and `y` must be in `[0..e-1]`.
+* `m :: Int`
+** LCG (linear congruential generator) **M**odulus.
+* `n :: Int -> [Int]`
+** Maps a linearised point to its 3*3 **N**eighbourhood.
+* `o :: Int -> String -> String`
+** Formats the given board for **O**utput.
+The `Int` is the index of the ``String``'s initial row.
+* `p :: Int -> Int`
+** Maps a value in `[0..m-1]` (i.e. an LCG output) to a linearised **P**oint in the board's interior.
+* `r :: Int -> Int`
+** Returns the next number in an LCG pseudo**R**andom sequence.
+* `s :: String`
+** The **S**tart board.
+* `t :: String`
+** The **T**arget board.
+This is not necessarily the only solution, but it is a known solution.
+* `u :: Int -> String -> String -> String`
+** The **U**ser input processing loop.
+`u moveCount gameBoard input` reads the first two characters and `'\n'` character from input, interprets the first two characters as coordinates, flips the neighbourhood of the coordinates and loops until there's one dot left, or until you type invalid input.
