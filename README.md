@@ -24,15 +24,15 @@ Here are the general rules for this round:
 
 3. Unlimited comments are permitted after line 11.
    The game's "category/name (author)" info should appear here,
-   and any essential info like player controls, so the game is usable 
+   and any essential info like player controls, so the game is usable
    to someone seeing just this file, eg in chat.
 
 4. Achieving programs that "just work" is a core principle and part of the challenge.
-   The script or program must either 
+   The script or program must either
    - be reliably runnable via shebang line (shebang lines are counted as code, but will impress the judges)
    - or contain a reliable build/run command line with all needed options, in the comments
      (the `play` script will use this).
-   
+
    Entries which aren't straightforward to run are incomplete. Some tips:
    - env -S in the shebang line doesn't work on older GNU/Linux systems, but we allow it
      (see https://github.com/haskell-game/tiny-games-hs/issues/25).
@@ -42,7 +42,7 @@ Here are the general rules for this round:
 5. The game should be portable, running on all major platforms, ideally.
 
 6. A small square screenshot must be provided, ideally static and non-gif.
-   (Not animated, because Github's player overlay will obscure it. 
+   (Not animated, because Github's player overlay will obscure it.
    Not a gif, because you can't make those clickable on Github it seems.)
 
 7. A README file is optional but makes browsing your game more pleasant for website visitors.
@@ -93,6 +93,9 @@ Here are the entries received so far:
 <td><img src="prelude/matchmaking/matchmaking.gif" width=100 height=100><br><a href="prelude/matchmaking">matchmaking</a><br>(migmit)</td>
 <td><img src="prelude/tiny-brot/tiny-brot.gif" width=100 height=100><br><a href="prelude/tiny-brot/tiny-brot.hs">tiny-brot</a><br>(tristanC)</td>
 <td><img src="prelude/mini-othello/mini-othello.gif" width=100 height=100><br><a href="prelude/mini-othello/mini-othello.hs">mini-othello</a><br>(hellwolf)</td>
+</tr>
+<tr>
+<td><a href="prelude/one-dot"><img src="prelude/one-dot/one-dot.png" width=100 height=100><br>one-dot</a><br>(OsePedro)</td>
 </tr>
 </table>
 
