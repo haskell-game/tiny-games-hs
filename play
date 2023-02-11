@@ -11,6 +11,7 @@ prelude/fifteen/fifteen.hs
 prelude/chess/chess.hs
 prelude/sudoku/sudoku.hs
 prelude/matchmaking/matchmaking.hs
+prelude/tiny-brot/tiny-brot.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
