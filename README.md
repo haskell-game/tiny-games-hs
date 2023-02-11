@@ -139,6 +139,9 @@ Here are the entries received so far:
 <td><a href="hackage/pong2"><img src="hackage/pong2/pong2.png" width=100 height=100><br>pong2</a><br>(sm)</td>
 <td><a href="hackage/brickbreaker"><img src="hackage/brickbreaker/brickbreaker.png" width=100 height=100><br>brickbreaker</a><br>(fgaz)</td>
 </tr>
+<tr>
+<td><img src="hackage/lazy-march/lazy-march.gif" width=100 height=100><br><a href="hackage/lazy-march/lazy-march.hs">lazy-march</a><br>(tristanc)</td>
+</tr>
 </table>
 
 ## Let's play!
