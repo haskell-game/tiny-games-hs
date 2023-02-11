@@ -40,7 +40,6 @@ log2048()           { runghc "$1"; }
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
 sudoku()            { runghc "$1"; }
-type-and-furious()  { cd default/type-and-furious || return; ./type-and-furious.hs; }
 
 # Help
 gamecat()  { echo "$1" | cut -d/ -f1; }
