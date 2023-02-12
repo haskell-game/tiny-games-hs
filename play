@@ -13,6 +13,7 @@ prelude/sudoku/sudoku.hs
 prelude/matchmaking/matchmaking.hs
 prelude/tiny-brot/tiny-brot.hs
 prelude/mini-othello/mini-othello.hs
+prelude/one-dot/one-dot.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
@@ -51,9 +52,9 @@ gamename() { basename "$1" .hs; }
 help() {
     cat <<HERE
 --------------------------------------------------------
-                 ___         __                          
-|__| _  _|  _||   | . _     / _  _  _  _    | _  _    /| 
-|  |(_|_)|((-||   | || )\/  \__)(_||||(-  __)(_||||    | 
+                 ___         __
+|__| _  _|  _||   | . _     / _  _  _  _    | _  _    /|
+|  |(_|_)|((-||   | || )\/  \__)(_||||(-  __)(_||||    |
 
 --------------------------------------------------------
 Here are the entries from HTGJ1, Feb 2023 !
