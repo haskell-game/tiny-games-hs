@@ -11,5 +11,6 @@ go (x,_)="\ESCctiny-brot\n" <> concatMap (d (zoom x)) p
 -- ^10 ----------------------------------------- 55> --
 {- prelude-10-80/tiny-brot (tristanC)
 
-tiny-brot draws the mandelbrot set, press enter to zoom
+Copyright 2023, Tristan de Cacqueray
+SPDX-License-Identifier: CC-BY-4.0
 -}

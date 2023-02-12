@@ -39,7 +39,7 @@ Here are the general rules for this round:
    - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
      If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
    - stack scripts can seem to hang at first startup while downloading snapshot info.
-     For prelude/base/default categories, --resolver=ghc-9.2.5 might solve this 
+     For prelude/base/default categories, --resolver=ghc-9.2.5 might solve this
      (see https://github.com/haskell-game/tiny-games-hs/issues/38).
    - stack scripts can use --verbosity=error to silence the "Selected resolver" output.
 
@@ -95,7 +95,7 @@ Here are the entries received so far:
 <tr>
 <td><a href="prelude/sudoku"><img src="prelude/sudoku/sudoku.png" width=100 height=100><br>sudoku</a><br>(elderephemera)</td>
 <td><img src="prelude/matchmaking/matchmaking.gif" width=100 height=100><br><a href="prelude/matchmaking">matchmaking</a><br>(migmit)</td>
-<td><img src="prelude/tiny-brot/tiny-brot.gif" width=100 height=100><br><a href="prelude/tiny-brot/tiny-brot.hs">tiny-brot</a><br>(tristanC)</td>
+<td><img src="prelude/tiny-brot/tiny-brot.gif" width=100 height=100><br><a href="prelude/tiny-brot">tiny-brot</a><br>(tristanC)</td>
 <td><img src="prelude/mini-othello/mini-othello-1.gif" width=100 height=100><br><a href="prelude/mini-othello/mini-othello.hs">mini-othello</a><br>(hellwolf)</td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Here are the entries received so far:
 <td><a href="hackage/brickbreaker"><img src="hackage/brickbreaker/brickbreaker.png" width=100 height=100><br>brickbreaker</a><br>(fgaz)</td>
 </tr>
 <tr>
-<td><img src="hackage/lazy-march/lazy-march.gif" width=100 height=100><br><a href="hackage/lazy-march/lazy-march.hs">lazy-march</a><br>(tristanc)</td>
+<td><img src="hackage/lazy-march/lazy-march.gif" width=100 height=100><br><a href="hackage/lazy-march">lazy-march</a><br>(tristanc)</td>
 </tr>
 </table>
 
