@@ -12,6 +12,9 @@ snd.p a)$[(i,j)|i<-k,j<-k]};z 1(g 1 35.g 1 28.g 2 27.g 2 36$replicate 64 0,1)}
 {- gam-10-80-hs-prelude/mini-othello (hellwolf), ghc 9.4.2
 https://hackage.haskell.org/package/base/docs/Prelude.html
 
+Copyright 2023, Miao/ZhiCheng (hellwolf)
+SPDX-License-Identifier: CC-BY-3.0
+
 = Description
 
 This is a minimum Othello implementation with greedy "AI" opponent using GHC 9.X
