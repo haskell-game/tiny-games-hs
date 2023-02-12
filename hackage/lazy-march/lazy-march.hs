@@ -11,18 +11,6 @@ m t n (ix,iy,(x,y,z))=let a=x*cos(t)-z*sin t;c=x*sin(t)+z*cos t;d=scene(a,y,c)in
 -- ^10 ------------------------------------------------------------------ 80> --
 {- hackage-10-80/lazy-march (tristanC)
 
-This demo implements a ray-marcher to render a λ sign. Learn more at:
-  https://iquilezles.org/articles/raymarchingdf/
-
-Alternative prelude-10-80 version:
-
-p=[(x/80*2-1,(y/20*2-1)*0.2,-10)|y<-[0..20],x<-[0..80]];s=sin;c=cos;
-l3(x,y,z)=sqrt(x*x+y*y+z*z); m3(x,y,z)=(max x 0, max y 0, max z 0);
-sdBox h w (x,y,z)=l3(m3(abs x-w,abs y-h,abs z-0.03));o (x,y,z)=(x+0.05,y-0.4,z)
-scene p = min (sdBox 0.8 0.05 (r 1 p)) (sdBox 0.4 0.04 (o (r (-1) p)))
-r t (x,y,z)=(x*cos t-y*sin t,x*sin t+y*cos t,z);m _ 10 _ = " ";m _ 0(1,_,_)="\n"
-m t n (x,y,z) = let a = x*cos(t)-z*sin t;c=x*sin(t)+z*cos t;d=scene(a,y,c)in
-  if d <= 0.01 then "#" else m t (n+1) (x,y,z+d)
-go (t,_) = "\ESCclazy-march\n" <> concatMap (m (t/2) 0) p
-main = interact (foldMap go . zip [00..] . mappend "g")
+Copyright 2023, Tristan de Cacqueray
+SPDX-License-Identifier: CC-BY-4.0
 -}
