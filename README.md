@@ -39,7 +39,9 @@ Here are the general rules for this round:
    - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
      If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
    - stack scripts can seem to hang at first startup while downloading snapshot info.
-   - stack scripts can use --verbosity error to silence the "Selected resolver" output.
+     For prelude/base/default categories, --resolver=ghc-9.2.5 might solve this 
+     (see https://github.com/haskell-game/tiny-games-hs/issues/38).
+   - stack scripts can use --verbosity=error to silence the "Selected resolver" output.
 
 5. The game should be portable, running on all major platforms, ideally.
 
