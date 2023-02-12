@@ -42,7 +42,7 @@ Here are the general rules for this round:
      For prelude/base/default categories, using --resolver=ghc-9.2.5 avoids this
      (see https://github.com/haskell-game/tiny-games-hs/issues/38).
    - stack scripts can use --verbosity=error to silence the "Selected resolver" output.
-   - if using packages which require compilation (gloss), use `stack script --compile`
+   - if using packages which require compilation (gloss), use stack script --compile
    - cabal scripts are welcome but don't have --compile and require more lines (or, use env -S)
 
 5. The game should be portable, running on all major platforms, ideally.
