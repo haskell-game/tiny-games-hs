@@ -1,13 +1,13 @@
-main=do{let{m=map;f=filter;k=[0..7];r=[-1..1];t=y.splitAt 8;l(x,y)=8*y+x;o 1=2;o
-_=1;g w i b=take i b++w:drop(i+1)b;j x=x>=0&&x<=7;c=(length.).f.(==);s=m show k;
-u=(putStrLn.).foldl(++);v k(a@(b,w),c)p@(x,y)q@(m,n)s=let{i=j x&&j y;t=l p;e=b!!
-t;f=v k((g w t b,w),c+1)(x+m,y+n)q;h|s==0=if e==0 then f 1 else k|s==1=if i&&e==
-o w then f 2 else k|s==2=if not i||e==0 then k else if e==w then(a,c+1)else f 2}
-in h;q a d=let((b,w),c)=p a d in if c==0 then a else(g w(l d)b,o w);p a c=foldr(
-\d k->v k k c d 0)(a,0)[(i,j)|i<-r,j<-r];y([],_)_=pure();y(a,b)k=u(k!!0)(m show
-a)>>t b(drop 1 k);z h a@(b,w)=print(w,m(`c`b)[0..2])>>u" "s>>t b s>>if w==h then
-getLine>>=z h.q a.read else z h(e a);e a=q a.snd.head.f((>0).snd.fst).m((,)=<<p
-a)$[(i,j)|i<-k,j<-k]};z 1(g 1 35.g 1 28.g 2 27.g 2 36$replicate 64 0,1)}
+main=do{let{i a b c=if a then b else c;m=map;f=filter;k=[0..7];r=[-1..1];j x=x>=
+0&&x<=7;l(x,y)=8*y+x;o 1=2;o _=1;c=(length.).f.(==);g w i b=take i b++w:drop(i+1
+)b;s=m show k;u=(putStrLn.).foldl(++);v k(a@(b,w),c)p@(x,y)q@(m,n)s=let{r=j x&&j
+y;t=l p;e=b!!t;f=v k((g w t b,w),c+1)(x+m,y+n)q;h|s==0=i(e==0)(f 1)k|s==1=i(r&&e
+==o w)(f 2)k|s==2=i(not r||e==0)k(i(e==w)(a,c+1)(f 2))}in h;p a c=foldr(\d k->v
+k k c d 0)(a,0)[(i,j)|i<-r,j<-r];n 0="_";n 1="X";n 2="O";y([],_)_=pure();y(a,b)k
+=u(k!!0)(m n a)>>t b(drop 1 k);q a d=let((b,w),c)=p a d in i(c==0)a(g w(l d)b,o
+w);z h a@(b,w)=print(n w,m(`c`b)[0..2])>>u" "s>>t b s>>i(w==h)(getLine>>=z h.q a
+.read)(z h(e a));t=y.splitAt 8;e a=q a.snd.head.f((>0).snd.fst).m((,)=<<p a)$[(i
+,j)|i<-k,j<-k]};z 1(g 1 35.g 1 28.g 2 27.g 2 36$replicate 64 0,1)}
 -- ^10 ------------------------------------------------------------------ 80> --
 {- gam-10-80-hs-prelude/mini-othello (hellwolf), ghc 9.4.2
 https://hackage.haskell.org/package/base/docs/Prelude.html
@@ -42,33 +42,34 @@ color when the last playable empty square is filled.
    out of lines...
 3) There is no error handling in general, any unexpected input may crash the
    program or result in unexpected state.
+4) The program is tested with runghc-9.4.2.
 
 == Initial Screen
 
 @
-(1,[60,2,2])
+("X",[60,2,2])
  01234567
-000000000
-100000000
-200000000
-300021000
-400012000
-500000000
-600000000
-700000000
+0________
+1________
+2________
+3___OX___
+4___XO___
+5________
+6________
+7________
 @
 
-1) The first line @(1,[60,2,2])@ is "game status line":
-  * Whose turn? The game always starts from the black side, where 1 means black
-    side, 2 means white side.
+1) The first line @("W",[60,2,2])@ is "game status line":
+  * Whose turn? The game always starts from the black side, where 'X' means
+    black side's turn, 'O' means white side's turn.
   * How many empty spots left? It starts with 60.
   * How many black pieces on the board? 2.
   * How many white pieces on the board? 2.
 2) The second line is for values of the x-axis.
 3) The rest is the printout of the board:
   * The first column is for values of the "y-axis".
-  * The rest are the cells with pieces: 1 means black side, 2 means white side,
-    and 0 means empty cells.
+  * The rest are the cells with pieces: "X" means a black piece, "O" means a
+    white piece, and "_" means empty cells.
 
 == Make A Move
 
@@ -80,31 +81,31 @@ next turn:
 
 @
 (3,2)
-(2,[59,4,1])
+("O",[59,4,1])
  01234567
-000000000
-100000000
-200010000
-300011000
-400012000
-500000000
-600000000
-700000000
+0________
+1________
+2___X____
+3___XX___
+4___XO___
+5________
+6________
+7________
 @
 
 AI should make a move next, and then it should be back to you:
 
 @
-(1,[58,3,3])
+("X",[58,3,3])
  01234567
-000000000
-100000000
-200210000
-300021000
-400012000
-500000000
-600000000
-700000000
+0________
+1________
+2__OX____
+3___OX___
+4___XO___
+5________
+6________
+7________
 @
 
 == Game Ending
@@ -118,17 +119,16 @@ You should keep making moves until you cannot.
 An example ending:
 
 @
-(7,7)
-(2,[1,53,10])
+("O",[1,53,10])
  01234567
-011211111
-111121111
-211111111
-311112111
-412211211
-512211122
-611111110
-711111111
+0XXOXXXXX
+1XXXOXXXX
+2XXXXXXXX
+3XXXXOXXX
+4XOOXXOXX
+5XOOXXXOO
+6XXXXXXX0
+7XXXXXXXX
 @
 
 = Technical Notes

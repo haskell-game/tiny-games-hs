@@ -38,6 +38,8 @@ Here are the general rules for this round:
      (see https://github.com/haskell-game/tiny-games-hs/issues/25).
    - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
      If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
+   - stack scripts can seem to hang at first startup while downloading snapshot info.
+   - stack scripts can use --verbosity error to silence the "Selected resolver" output.
 
 5. The game should be portable, running on all major platforms, ideally.
 
@@ -138,6 +140,9 @@ Here are the entries received so far:
 <td><a href="hackage/minesweeper"><img src="hackage/minesweeper/minesweeper.png" width=100 height=100><br>minesweeper</a><br>(Greg8128)</td>
 <td><a href="hackage/pong2"><img src="hackage/pong2/pong2.png" width=100 height=100><br>pong2</a><br>(sm)</td>
 <td><a href="hackage/brickbreaker"><img src="hackage/brickbreaker/brickbreaker.png" width=100 height=100><br>brickbreaker</a><br>(fgaz)</td>
+</tr>
+<tr>
+<td><img src="hackage/lazy-march/lazy-march.gif" width=100 height=100><br><a href="hackage/lazy-march/lazy-march.hs">lazy-march</a><br>(tristanc)</td>
 </tr>
 </table>
 

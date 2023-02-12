@@ -32,6 +32,7 @@ hackage/pong/pong.hs
 hackage/minesweeper/minesweeper.hs
 hackage/pong2/pong2.hs
 hackage/brickbreaker/brickbreaker.hs
+hackage/lazy-march/lazy-march.hs
 )
 
 # Games needing special invocation, in alphabetical order.
