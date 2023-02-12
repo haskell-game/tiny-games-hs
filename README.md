@@ -34,14 +34,16 @@ Here are the general rules for this round:
      (the `play` script will use this).
 
    Entries which aren't straightforward to run are incomplete. Some tips:
-   - env -S in the shebang line doesn't work on older GNU/Linux systems, but we allow it
-     (see https://github.com/haskell-game/tiny-games-hs/issues/25).
    - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
      If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
+   - env -S in the shebang line doesn't work on older GNU/Linux systems, but we allow it
+     (see https://github.com/haskell-game/tiny-games-hs/issues/25).
    - stack scripts can seem to hang at first startup while downloading snapshot info.
-     For prelude/base/default categories, --resolver=ghc-9.2.5 might solve this
+     For prelude/base/default categories, using --resolver=ghc-9.2.5 avoids this
      (see https://github.com/haskell-game/tiny-games-hs/issues/38).
    - stack scripts can use --verbosity=error to silence the "Selected resolver" output.
+   - if using packages which require compilation (gloss), use `stack script --compile`
+   - cabal scripts are welcome but don't have --compile and require more lines (or, use env -S)
 
 5. The game should be portable, running on all major platforms, ideally.
 
