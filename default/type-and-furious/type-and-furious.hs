@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-20
+-- stack script --resolver=ghc-9.2.5
 import Imports;printSec sec=do{when(sec>=(-0.01))$do{printf
 "\ESC[2K\ESC[A\ESC[2K%.2f secs\n"sec;threadDelay 20000;printSec(sec-0.02);}}
 check=length.takeWhile(==True).zipWith(==)['a'..'z'];main=do{s<-getArgs;
