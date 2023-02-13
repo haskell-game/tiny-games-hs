@@ -1,5 +1,27 @@
 #!/usr/bin/env stack
 -- stack script --resolver lts-20 --package "random text Decimal hledger-lib" --verbosity info
+{- 
+balances.dev.hs, readable/dev version of balances.hs.
+Code is fairly terse for easy minification.
+Legend:
+bs   balance report items
+a    account name
+b    account balance, possibly multicurrency
+g    guess
+d    absolute integer difference of guess
+e    absolute percentage error of guess
+f    e with fewer decimal places
+s    score from 0 to 100
+p    putStrLn
+gu   guess repl/game loop
+er   calculate error in one currency. Returns rounded difference and percentage difference.
+av   calculate average
+
+Reference
+README
+http://hackage.haskell.org/package/hledger-lib/docs/Hledger.html
+http://hledger.org/scripting.html#hledger-lib-scripts
+-}
 
 {-# LANGUAGE PackageImports #-}
 --               package       module         symbols imported
@@ -44,24 +66,3 @@ er g b = let d=abs$round g-round b in (d,fromIntegral d*100/b+0.001)
 -- Calculate an average, safely.
 -- av :: (Fractional a, Foldable t) => t a -> a
 av as = sum as / if null as then 1 else fromIntegral (length as)
-
-{- 
-Legend
-bs   balance report items
-a    account name
-b    account balance, possibly multicurrency
-g    guess
-d    absolute integer difference of guess
-e    absolute percentage error of guess
-f    e with fewer decimal places
-s    score from 0 to 100
-p    putStrLn
-gu   guess repl
-er   calculate error in one currency. Returns rounded difference and percentage difference.
-av   calculate average
-
-Reference
-http://hackage.haskell.org/package/hledger-lib/docs/Hledger.html
-http://hledger.org/scripting.html#hledger-lib-scripts
-
--}

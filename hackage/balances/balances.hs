@@ -20,4 +20,6 @@ $ ./balances.hs
 otherwise finance data in a hledger-readable format, from somewhere else:
 
 $ LEDGER_FILE=~/src/hledger/examples/sample.journal ./balances.hs
+
+Unminified version: balances.dev.hs.
 -}
