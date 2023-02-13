@@ -24,11 +24,11 @@ http://hledger.org/scripting.html#hledger-lib-scripts
 -}
 
 {-# LANGUAGE PackageImports #-}
---               package       module         symbols imported
-import           "random"      System.Random  (randomRIO)
-import qualified "text"        Data.Text as T (pack,unpack)
-import           "Decimal"     Data.Decimal   (roundTo)
-import           "hledger-lib" Hledger
+--     package       module         symbols imported
+import "random"      System.Random  (randomRIO)
+import "text"        Data.Text      (pack,unpack)
+import "Decimal"     Data.Decimal   (roundTo)
+import "hledger-lib" Hledger
   (defaultJournal,defreportspec,_rsQuery,Query(..),AccountType(..),balanceReport,
    mixedAmountStripPrices,aquantity,amounts,showMixedAmountOneLine)
 
@@ -41,12 +41,14 @@ main = defaultJournal >>= gu . fst . balanceReport defreportspec{_rsQuery=
 
 -- Given some account balances: loop showing a random account name,
 -- prompting for and scoring a guess of its balance, until a successful guess.
+-- A guess is a positive integer, attempting to match the integral part
+-- of the balance's most numerous commodity. Score ranges from 0 to 100.
 -- gu :: [BalanceReportItem] -> IO ()
 gu [] = putStrLn "no balances found"
 gu bs = do
   i<-randomRIO(0,length bs-1)
   let (a,_,_,b0) = bs !! i
-  putStrLn $ "\nWhat is the (main commodity) balance of " ++ T.unpack a ++ " ?\nEnter a positive integer: "
+  putStr $ "\n"++unpack a++" balance ? "
   g <- getLine
   let
     b = mixedAmountStripPrices b0

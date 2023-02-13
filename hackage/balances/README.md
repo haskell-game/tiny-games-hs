@@ -2,16 +2,36 @@
 
 ![](balances.png)
 
-Tests/drills your financial situational awareness, asking for the balance
-in random asset/liability accounts until you get one right.
-Uses your default hledger journal if you have one:
+## Play
+
+This "game" tests/drills your financial situational awareness,
+if you keep accounts in hledger (or can obtain a hledger-compatible
+copy of some entity's accounts). It picks a random asset or liability account
+and asks you to enter its balance (the integral part, as a positive integer).
+If your answer is not correct, it asks again, until you get one right.
+
+It uses your default hledger journal if you have one:
 ```
-$ ./balances.hs
+$ ./play balances  # or: hackage/balances/balances.hs
 ```
-otherwise finance data in a hledger-readable format, from somewhere else:
+
+or you can specify a file in one of hledger's data formats, using LEDGER_FILE:
 ```
-$ LEDGER_FILE=~/src/hledger/examples/sample.journal ./balances.hs
+$ curl -O https://raw.githubusercontent.com/simonmichael/hledger/master/examples/sample.journal
+$ LEDGER_FILE=sample.journal ./play balances
+
+assets:cash balance ? 1
+Off by ~1, score: 50.0
+
+assets:bank:saving balance ? 1
+Correct! It is $1.
 ```
+
+For each guess, enter a single positive integer, trying to match the integral
+part of the balances. When an account has a multi-currency balance, only
+the most numerous commodity is considered.
+
+## About
 
 A first draft, needs refinement. 
 balances.dev.hs is the readable/dev version, balances.hs the minified version.
