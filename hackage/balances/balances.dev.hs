@@ -1,13 +1,27 @@
 #!/usr/bin/env stack
--- stack script --resolver lts-20 --package hledger-lib --package random --package text --package Decimal
-import Hledger
-import System.Random
-import qualified Data.Text as T
-import Data.Decimal
--- q=And[Type[Asset,Liability],Sym$toRegex'$T.pack"^.$",Acct$toRegex'$T.pack"paypal"]
-q=Acct$toRegex'$T.pack"Vanguard:Cash"
--- q=Type[Asset,Liability]
-main=defaultJournal>>=gu.fst.balanceReport defreportspec{_rsQuery=q}
+-- stack script --resolver lts-20 --package "random text Decimal hledger-lib" --verbosity info
+
+-- balances.hs, readable/dev version. Code is terse, see also legend below and README.
+
+{-# LANGUAGE PackageImports #-}
+--               package       module         symbols imported
+import           "random"      System.Random  (randomRIO)
+import qualified "text"        Data.Text as T (pack,unpack)
+import           "Decimal"     Data.Decimal   (roundTo)
+import           "hledger-lib" Hledger
+  (defaultJournal,defreportspec,_rsQuery,Query(..),AccountType(..),balanceReport,
+   mixedAmountStripPrices,aquantity,amounts,showMixedAmountOneLine)
+
+-- Read the default hledger journal ($LEDGER_FILE or ~/.hledger.journal)
+-- and calculate the balances of asset and liability accounts.
+main = defaultJournal >>= gu . fst . balanceReport defreportspec{_rsQuery=
+  Type[Asset,Liability]}
+-- And[Type[Asset,Liability],Sym$toRegex'$T.pack"^.$",Acct$toRegex'$T.pack"paypal"] }
+-- Acct$toRegex'$T.pack"Vanguard:Cash" }
+
+-- Given some account balances: loop showing a random account name,
+-- prompting for and scoring a guess of its balance, until a successful guess.
+-- gu :: [BalanceReportItem] -> IO ()
 gu [] = putStrLn "no balances found"
 gu bs = do
   i<-randomRIO(0,length bs-1)
@@ -22,32 +36,25 @@ gu bs = do
     s = 100-min 100 p'
   if d/=0
   then putStrLn("Off by ~"++show d++", score: "++show s) >> gu bs
-  else putStrLn $ "Correct! The balance is "++showMixedAmountOneLine b++"."
+  else putStrLn$"Correct! The balance is "++showMixedAmountOneLine b++"."
 
+-- Given a guess and an actual balance (both single-currency),
+-- calculate their rounded difference and percentage difference.
 -- er :: (RealFrac a, RealFrac b) => a -> b -> (Int, b)
 er g b = let d=abs$round g-round b in (d,fromIntegral d*100/b+0.001)
+
+-- Calculate an average, safely.
 -- av :: (Fractional a, Foldable t) => t a -> a
 av as = sum as / if null as then 1 else fromIntegral (length as)
 
 {- 
-hackage-10-80/balances (unminified version)
-
-Tests/drills your financial situational awareness, asking for the balance
-in random asset/liability accounts until you get one right.
-Uses your default hledger journal if you have one:
-
-$ ./balances.hs
-  
-otherwise finance data in a hledger-readable format, from somewhere else:
-
-$ LEDGER_FILE=~/src/hledger/examples/sample.journal ./balances.hs
-
 Legend
 bs   balance report items
 a    account name
 b    account balance, possibly multicurrency
 g    guess
-e    error of guess, as a positive percentage of actual balance
+d    absolute integer difference of guess
+e    absolute percentage error of guess
 f    e with fewer decimal places
 s    score from 0 to 100
 p    putStrLn
@@ -55,6 +62,6 @@ gu   guess repl
 er   calculate error in one currency. Returns rounded difference and percentage difference.
 av   calculate average
 
+Reference
 http://hackage.haskell.org/package/hledger-lib/docs/Hledger.html
-
 -}
