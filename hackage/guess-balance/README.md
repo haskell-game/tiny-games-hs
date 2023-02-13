@@ -1,5 +1,7 @@
 # guess-balance
 
+![](guess-balance.png)
+
 Tests/drills your financial situational awareness, asking for the balance
 in random asset/liability accounts until you get one right.
 Uses your default hledger journal if you have one:
