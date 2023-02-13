@@ -102,6 +102,7 @@ Here are the entries received so far!
 </tr>
 <tr>
 <td><a href="prelude/one-dot"><img src="prelude/one-dot/one-dot.png" width=100 height=100><br>one-dot</a><br>(OsePedro)</td>
+<td><a href="prelude/expressit"><img src="prelude/expressit/expressit.png" width=100 height=100><br>expressit</a><br>(Greg8128)</td>
 </tr>
 </table>
 
