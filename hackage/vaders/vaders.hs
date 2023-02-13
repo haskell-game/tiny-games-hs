@@ -10,4 +10,10 @@ import Imports;g=translate;o=True;d f=foldMap(\(x,y)->g x y f);q=circle;main=
  w-t,m1)|o=(0.35,(int2Float(s`mod`60)-30,30):m1);q|any(n(a,y0))y=0|o=z+length c}
 -- ^10 ------------------------------------------------------------------ 80> --
 {- hackage-10-80/vaders (gergoerdi)
+  Inspired by https://www.youtube.com/watch?v=Z-esqeC9Jws
+
+  Controls: `a` and `d` to change movement to left/right respectively,
+  `.` to shoot.
+
+  Should work just fine on a full HD screen.
 -}
