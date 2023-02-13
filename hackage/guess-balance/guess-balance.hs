@@ -10,7 +10,7 @@ read g)q;f=roundTo 1e;s=100-min 100f};if d/=0then p("Off by ~"++show d++
  sum as/if null as then 1else fromIntegral(length as)
 -- ^10 ------------------------------------------------------------------ 80> --
 {- 
-hackage-10-80/guess-balance
+hackage-10-80/guess-balance (sm)
 Tests/drills your financial situational awareness, asking for the balance
 in random asset/liability accounts until you get one right.
 Uses your default hledger journal if you have one:
