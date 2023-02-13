@@ -45,7 +45,7 @@ log2048()           { runghc "$1"; }
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
 mini-othello()      { runghc "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
-shmupemup()         { cd "$(dirname "$1")" || exit 1; stack runghc --package parsec "./$(basename "$1")"; }
+shmupemup()         { cd "$(dirname "$1")" || exit 1; stack runghc --package parsec "$(basename "$1")"; }
 sudoku()            { runghc "$1"; }
 
 # Help
