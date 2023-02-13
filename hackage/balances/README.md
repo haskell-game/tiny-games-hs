@@ -13,16 +13,18 @@ otherwise finance data in a hledger-readable format, from somewhere else:
 $ LEDGER_FILE=~/src/hledger/examples/sample.journal ./balances.hs
 ```
 
-A first draft, needs refinement to be more effective / more fun.
+A first draft, needs refinement.
 
 ## Implementation
 
+balances.dev.hs is the readable/dev version, cc'd here.
+Code is terse for easy minification; see the legend below.
+
 <!-- do not edit here; copy from balances.dev.hs -->
+<!-- can check this with ln README.md README.lhs; stack exec -- ghcid -c 'ghci -pgmL markdown-unlit README.lhs' but better to just copy -->
 ```haskell
 #!/usr/bin/env stack
 -- stack script --resolver lts-20 --package "random text Decimal hledger-lib" --verbosity info
-
--- balances.hs, readable/dev version. Code is terse, see also legend below and README.
 
 {-# LANGUAGE PackageImports #-}
 --               package       module         symbols imported
@@ -85,5 +87,7 @@ av   calculate average
 
 Reference
 http://hackage.haskell.org/package/hledger-lib/docs/Hledger.html
+http://hledger.org/scripting.html#hledger-lib-scripts
+
 -}
 ```

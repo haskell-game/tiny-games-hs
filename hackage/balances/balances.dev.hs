@@ -1,8 +1,6 @@
 #!/usr/bin/env stack
 -- stack script --resolver lts-20 --package "random text Decimal hledger-lib" --verbosity info
 
--- balances.hs, readable/dev version. Code is terse, see also legend below and README.
-
 {-# LANGUAGE PackageImports #-}
 --               package       module         symbols imported
 import           "random"      System.Random  (randomRIO)
@@ -64,4 +62,6 @@ av   calculate average
 
 Reference
 http://hackage.haskell.org/package/hledger-lib/docs/Hledger.html
+http://hledger.org/scripting.html#hledger-lib-scripts
+
 -}
