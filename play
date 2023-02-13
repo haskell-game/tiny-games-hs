@@ -35,7 +35,7 @@ hackage/minesweeper/minesweeper.hs
 hackage/pong2/pong2.hs
 hackage/brickbreaker/brickbreaker.hs
 hackage/lazy-march/lazy-march.hs
-hackage/guess-balance/guess-balance.hs
+hackage/balances/balances.hs
 hackage/vaders/vaders.hs
 )
 
