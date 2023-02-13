@@ -71,7 +71,7 @@ Here are the general rules for this round:
 
    **`default-10-80`**
    : Packages installed by default with GHC may be used.
-     Also a second file named Import.hs may be used to gather and re-export imports, only.
+     Also a second file named Import.hs may be used, to gather and re-export imports (only).
     ([template1](default/template1.hs))
 
    **`hackage-10-80`**
@@ -84,7 +84,7 @@ Here are the general rules for this round:
 
 ## Games
 
-Here are the entries received so far:
+Here are the entries received so far!
 
 ### prelude-10-80
 <table>
@@ -122,6 +122,7 @@ Here are the entries received so far:
 <table>
 <tr>
 <td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=100 height=100><br>type-and-furious</a><br>(lsmor)</td>
+<td><a href="default/shmupemup"><img src="default/shmupemup/shmupemup.png" width=100 height=100><br>shmupemup</a><br>(elderephemera)</td>
 </tr>
 </table>
 
