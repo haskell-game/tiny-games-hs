@@ -21,6 +21,7 @@ base/rhythm/rhythm.hs
 base/peyton-says/peyton-says.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
+default/tsp/tsp.hs
 hackage/guess2/guess2.hs
 hackage/wordle/wordle.hs
 hackage/ski/ski.hs
@@ -49,6 +50,7 @@ mini-othello()      { runghc "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
 shmupemup()         { cd "$(dirname "$1")" || exit 1; stack runghc --package parsec "$(basename "$1")"; }
 sudoku()            { runghc "$1"; }
+tsp()               { runghc "$1"; }
 
 # Help
 gamecat()  { echo "$1" | cut -d/ -f1; }

@@ -123,6 +123,7 @@ Here are the entries received so far!
 <tr>
 <td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=100 height=100><br>type-and-furious</a><br>(lsmor)</td>
 <td><a href="default/shmupemup"><img src="default/shmupemup/shmupemup.png" width=100 height=100><br>shmupemup</a><br>(elderephemera)</td>
+<td><img src="default/tsp/tsp.gif" width=100 height=100><br><a href="default/tsp">tsp</a><br>(tristanC)</td>
 </tr>
 </table>
 
