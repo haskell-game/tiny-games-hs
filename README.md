@@ -148,6 +148,7 @@ Here are the entries received so far!
 </tr>
 <tr>
 <td><img src="hackage/lazy-march/lazy-march.gif" width=100 height=100><br><a href="hackage/lazy-march">lazy-march</a><br>(tristanc)</td>
+<td><a href="hackage/guess-balance"><img src="hackage/guess-balance/guess-balance.png" width=100 height=100><br>guess-balance</a><br>(sm)</td>
 </tr>
 </table>
 
