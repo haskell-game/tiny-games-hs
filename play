@@ -35,6 +35,7 @@ hackage/pong2/pong2.hs
 hackage/brickbreaker/brickbreaker.hs
 hackage/lazy-march/lazy-march.hs
 hackage/guess-balance/guess-balance.hs
+hackage/vaders/vaders.hs
 )
 
 # Games needing special invocation, in alphabetical order.
