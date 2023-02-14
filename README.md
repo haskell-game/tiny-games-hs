@@ -142,7 +142,7 @@ Here are the entries received so far!
 <tr>
 <td><img src="hackage/hallway-to-hell/hallway-to-hell.gif" width=140 height=140><br><a href="hackage/hallway-to-hell">hallway-to-hell</a><br>(juliendehos)</td>
 <td><a href="hackage/1234-hero"><img src="hackage/1234-hero/1234-hero.png" width=140 height=140><br>1234-hero</a><br>(gelisam)</td>
-<td><img src="hackage/crappy-flappy/crappy-flappy.gif" width=140 height=140><br><a href="hackage/crappy-flappy">crappy-flappy</a><br>(gergoerdi)</td>
+<td><a href="hackage/crappy-flappy"><img src="hackage/crappy-flappy/crappy-flappy.png" width=140 height=140><br>crappy-flappy</a><br>(gergoerdi)</td>
 <td><a href="hackage/pong"><img src="hackage/pong/pong.png" width=140 height=140><br>pong</a><br>(gergoerdi)</td>
 <td><a href="hackage/minesweeper"><img src="hackage/minesweeper/minesweeper.png" width=140 height=140><br>minesweeper</a><br>(Greg8128)</td>
 </tr>
