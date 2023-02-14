@@ -61,9 +61,9 @@ Here are the contest rules for this round (HTG1):
 
 5. The game should be portable, running on all major platforms, ideally.
 
-6. A small square screenshot must be provided, ideally static and non-gif.
-   (Not animated, because Github's player overlay will obscure it.
-   Not a gif, because you can't make those clickable on Github it seems.)
+6. A square thumbnail (screenshot) must be provided for the repo README -
+   either a static png (which will be hyperlinked)
+   or an animated gif (which should not be, so as not to break Github's player overlay).
 
 7. A README file is optional but makes browsing your game more pleasant for website visitors.
    Feel free to include animations, or discussion of the game/code/your experience.
