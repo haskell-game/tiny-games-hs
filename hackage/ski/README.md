@@ -2,6 +2,8 @@
 
 ![](ski.png)
 
+![](ski.gif)
+
 ## Play
 
 Get ready to ski! `,` and `.` move left and right.\

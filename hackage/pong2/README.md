@@ -1,5 +1,9 @@
 # pong2
 
+![](pong2.png)
+
+![](pong2.gif)
+
 Bounce the ball to achieve a high score.
 
 Keys: `,` to move left, `.` to move right, `q` to quit.
