@@ -6,10 +6,14 @@ Your mission: make a playable game in 10 lines of 80 characters of Haskell.
 The prize.. glory! 
 Also fun, learning, and advancing Haskell's suitability for game dev and programming in the small.
 
+<div align=center>
+
 [Rules](#rules)
 | [Games](#games)
 | [Let's play!](#lets-play)
 | [Development](#development)
+
+</div>
 
 [Matrix]: https://matrix.to/#/#haskell-game:matrix.org
 [IRC]:    https://web.libera.chat/#haskell-game
