@@ -6,6 +6,11 @@ Your mission: make a playable game in 10 lines of 80 characters of Haskell.
 The prize.. glory! 
 Also fun, learning, and advancing Haskell's suitability for game dev and programming in the small.
 
+[Rules](#rules)
+| [Games](#games)
+| [Let's play!](#lets-play)
+| [Development](#development)
+
 [Matrix]: https://matrix.to/#/#haskell-game:matrix.org
 [IRC]:    https://web.libera.chat/#haskell-game
 
@@ -162,7 +167,9 @@ or:
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
 If that fails, look for run/build instructions in that file or a nearby readme.
 
-## Runnability tips
+## Development
+
+### Runnability tips
 
 - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
    If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
@@ -177,7 +184,7 @@ If that fails, look for run/build instructions in that file or a nearby readme.
 - cabal scripts are also welcome; they don't have --compile and require more lines (unless you use env -S)
 - On mac, Terminal and iTerm 3.4 render emojis slowly; iTerm 3.5 beta works better.
 
-## Development Tools
+### Tools
 
 Here are some minifiers you can try; either or both may be able to turn your game into
 a brick of inscrutable code no more than 80 characters wide. Both require that you first
