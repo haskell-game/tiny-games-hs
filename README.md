@@ -1,6 +1,7 @@
 # Haskell Tiny Game Jam
 
-Inspired by the [BASIC 10Liner contest](https://www.homeputerium.de) (english rules are at the bottom of that page):
+Inspired by the ongoing [BASIC 10Liner contest](https://www.homeputerium.de)
+(see their english rules at the bottom of that page, and latest entries [here](https://bunsen.itch.io)):
 the first Haskell tiny games contest runs through February 2023!
 Your mission: make a playable game in 10 lines of 80 characters of Haskell.
 The prize.. glory! 
