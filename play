@@ -99,7 +99,7 @@ selectGame() {
     fi
     # no match
     if [[ -z $g ]]; then echo "$1 is unrecognised, run '$0' to see the list"; exit 1; fi
-    echo $g
+    echo "$g"
 }
 
 # Main
@@ -108,11 +108,11 @@ if [[ $# == 0 || "$1" == "-h" ||  "$1" == "--help" ]];then
     help
 elif [[ "$2" == "-h" ||  "$2" == "--help" ]];then
     g=$(selectGame "$1")
-    gh=$(echo $(dirname "$g")/README*)
-    echo $gh
+    gh=$(echo "$(dirname "$g")"/README*)
+    echo "$gh"
     if [[ -f "$gh" ]];then
-        cat $g <(printf '%0.1s' "="{1..80};echo) $gh | less;
-    else less $g;fi
+        cat "$g" <(printf '%0.1s' "="{1..80};echo) "$gh" | less;
+    else less "$g";fi
 else
     g=$(selectGame "$1")
     gname=$(gamename "$g")
