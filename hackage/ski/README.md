@@ -10,8 +10,8 @@ Avoid the 🌲 trees! 🌲 How long can you last ?
 Best played in a white background terminal.
 
 Uses emojis, may not look right or run well with all fonts/terminal apps.
-Mac users: it is unplayably slow in Terminal or older versions of iTerm -
-use latest iTerm (>= 3.4.16), or eg VS Code's terminal, instead.
+Mac users: it is unplayably slow in Terminal or iTerm 3.4 -
+use iTerm 3.5 beta or newer, or eg VS Code's terminal, instead.
 
 ## About
 
