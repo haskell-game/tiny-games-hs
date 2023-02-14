@@ -15,7 +15,8 @@ A terminal shmup game. Tap the WASD keys to move and Space to fire. Shoot down
 as many enemy space ships as you can before one hits you!
 
 On Linux and MacOS (untested, but it should work) you can run the game with
-`runghc shmupemup.hs`.  On Windows, because of GHC issue #2189, the game must be
+`runghc shmupemup.hs` or if that doesn't work, with `stack runghc --package
+parsec shmupemup.hs`. On Windows, because of GHC issue #2189, the game must be
 compiled with the native io manager which you can do with the command `ghc
 -with-rtsopts --io-manager=native shmupemup.hs`. You will also have to enable
 VT100 support if you don't want the screen to be repeated which you can do by

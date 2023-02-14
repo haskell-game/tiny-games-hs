@@ -14,7 +14,8 @@ ships as you can before one hits you!
 ## Running
 
 On Linux and MacOS (untested, but it should work) you can run the game with
-`runghc shmupemup.hs`.
+`runghc shmupemup.hs` or if that doesn't work, with `stack runghc --package
+parsec shmupemup.hs`.
 
 On Windows, because of GHC issue #2189, the game must be compiled with the
 native io manager which you can do with the command `ghc -with-rtsopts
