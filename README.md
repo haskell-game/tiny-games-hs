@@ -93,16 +93,16 @@ Here are the entries received so far!
 <td><a href="prelude/pure-doors"><img src="prelude/pure-doors/pure-doors.png" width=100 height=100><br>pure-doors</a><br>(tristanC)</td>
 <td><a href="prelude/fifteen"><img src="prelude/fifteen/fifteen.png" width=100 height=100><br>fifteen</a><br>(bradrn)</td>
 <td><img src="prelude/chess/chess.gif" width=100 height=100><a href="prelude/chess"><br>chess</a><br>(fizruk)</td>
+<td><a href="prelude/sudoku"><img src="prelude/sudoku/sudoku.png" width=100 height=100><br>sudoku</a><br>(elderephemera)</td>
 </tr>
 <tr>
-<td><a href="prelude/sudoku"><img src="prelude/sudoku/sudoku.png" width=100 height=100><br>sudoku</a><br>(elderephemera)</td>
 <td><img src="prelude/matchmaking/matchmaking.gif" width=100 height=100><br><a href="prelude/matchmaking">matchmaking</a><br>(migmit)</td>
 <td><img src="prelude/tiny-brot/tiny-brot.gif" width=100 height=100><br><a href="prelude/tiny-brot">tiny-brot</a><br>(tristanC)</td>
 <td><img src="prelude/mini-othello/mini-othello-1.gif" width=100 height=100><br><a href="prelude/mini-othello/mini-othello.hs">mini-othello</a><br>(hellwolf)</td>
-</tr>
-<tr>
 <td><a href="prelude/one-dot"><img src="prelude/one-dot/one-dot.png" width=100 height=100><br>one-dot</a><br>(OsePedro)</td>
 <td><a href="prelude/expressit"><img src="prelude/expressit/expressit.png" width=100 height=100><br>expressit</a><br>(Greg8128)</td>
+</tr>
+<tr>
 </tr>
 </table>
 
@@ -113,9 +113,9 @@ Here are the entries received so far!
 <td><a href="base/shoot"><img src="base/shoot/shoot.png" width=100 height=100><br>shoot</a><br>(migmit)</td>
 <td><img src="base/log2048/log2048.gif" width=100 height=100><a href="base/log2048"><br>log2048</a><br>(Lysxia)</td>
 <td><img src="base/rhythm/rhythm.gif" width=100 height=100><a href="base/rhythm"><br>rhythm</a><br>(elderephemera)</td>
+<td><a href="base/peyton-says"><img src="base/peyton-says/peyton-says.png" width=100 height=100><br>peyton-says</a><br>(gergoerdi)</td>
 </tr>
 <tr>
-<td><a href="base/peyton-says"><img src="base/peyton-says/peyton-says.png" width=100 height=100><br>peyton-says</a><br>(gergoerdi)</td>
 </tr>
 </table>
 
@@ -135,23 +135,23 @@ Here are the entries received so far!
 <td><a href="hackage/wordle"><img src="hackage/wordle/wordle.png" width=100 height=100><br>wordle</a><br>(halogenandtoast)</td>
 <td><a href="hackage/ski"><img src="hackage/ski/ski.png" width=100 height=100><br>ski</a><br>(sm)</td>
 <td><a href="hackage/guesscolor"><img src="hackage/guesscolor/guesscolor.png" width=100 height=100><br>guesscolor</a><br>(TravisCardwell)</td>
+<td><a href="hackage/bulls-n-cows"><img src="hackage/bulls-n-cows/bulls-n-cows.png" width=100 height=100><br>bulls-n-cows</a><br>(akadude)</td>
 </tr>
 <tr>
-<td><a href="hackage/bulls-n-cows"><img src="hackage/bulls-n-cows/bulls-n-cows.png" width=100 height=100><br>bulls-n-cows</a><br>(akadude)</td>
 <td><img src="hackage/hallway-to-hell/hallway-to-hell.gif" width=100 height=100><br><a href="hackage/hallway-to-hell">hallway-to-hell</a><br>(juliendehos)</td>
 <td><a href="hackage/1234-hero"><img src="hackage/1234-hero/1234-hero.png" width=100 height=100><br>1234-hero</a><br>(gelisam)</td>
 <td><img src="hackage/crappy-flappy/crappy-flappy.gif" width=100 height=100><br><a href="hackage/crappy-flappy">crappy-flappy</a><br>(gergoerdi)</td>
-</tr>
-<tr>
 <td><a href="hackage/pong"><img src="hackage/pong/pong.png" width=100 height=100><br>pong</a><br>(gergoerdi)</td>
 <td><a href="hackage/minesweeper"><img src="hackage/minesweeper/minesweeper.png" width=100 height=100><br>minesweeper</a><br>(Greg8128)</td>
-<td><a href="hackage/pong2"><img src="hackage/pong2/pong2.png" width=100 height=100><br>pong2</a><br>(sm)</td>
-<td><a href="hackage/brickbreaker"><img src="hackage/brickbreaker/brickbreaker.png" width=100 height=100><br>brickbreaker</a><br>(fgaz)</td>
 </tr>
 <tr>
+<td><a href="hackage/pong2"><img src="hackage/pong2/pong2.png" width=100 height=100><br>pong2</a><br>(sm)</td>
+<td><a href="hackage/brickbreaker"><img src="hackage/brickbreaker/brickbreaker.png" width=100 height=100><br>brickbreaker</a><br>(fgaz)</td>
 <td><img src="hackage/lazy-march/lazy-march.gif" width=100 height=100><br><a href="hackage/lazy-march">lazy-march</a><br>(tristanc)</td>
 <td><a href="hackage/balances"><img src="hackage/balances/balances.png" width=100 height=100><br>balances</a><br>(sm)</td>
 <td><a href="hackage/vaders"><img src="hackage/vaders/vaders.png" width=100 height=100><br>vaders</a><br>(gergoerdi)</td>
+</tr>
+<tr>
 </tr>
 </table>
 
