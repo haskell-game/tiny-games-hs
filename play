@@ -38,6 +38,7 @@ hackage/brickbreaker/brickbreaker.hs
 hackage/lazy-march/lazy-march.hs
 hackage/balances/balances.hs
 hackage/vaders/vaders.hs
+hackage/tetris/tetris.hs
 )
 
 # Games needing special invocation, in alphabetical order.

@@ -154,6 +154,7 @@ Here are the entries received so far!
 <td><a href="hackage/vaders"><img src="hackage/vaders/vaders.png" width=100 height=100><br>vaders</a><br>(gergoerdi)</td>
 </tr>
 <tr>
+<td><a href="hackage/tetris"><img src="hackage/tetris/tetris.png" width=100 height=100><br>tetris</a><br>(gergoerdi)</td>
 </tr>
 </table>
 
