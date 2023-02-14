@@ -176,6 +176,11 @@ If that fails, look for run/build instructions in that file or a nearby readme.
 
 ## Development Tools
 
-### Minifier
+### Minifiers
 
-Since  haskell-game/tiny-games-hs#14, we have a [minifier](minify.hs) that can turn your game into a brick of inscrutable code no more than 80 characters wide, provided that you add curled braces and semicolons over all your program, so that it becomes white space insensitive. @kindaro is the owner of the minifier, ping him with your reviews and suggestions.
+Here are some minifiers you can try; either or both may be able to turn your game into
+a brick of inscrutable code no more than 80 characters wide. Both require that you first
+add curled braces and semicolons throughout your code to make it white space insensitive. 
+
+- [minify.hs](minify.hs) (from haskell-game/tiny-games-hs#14; contact @kindaro with issues/feedback)
+- [hackage/brickbreaker/minify.hs](hackage/brickbreaker/minify.hs) (from haskell-game/tiny-games-hs#63; contact @fgaz)
