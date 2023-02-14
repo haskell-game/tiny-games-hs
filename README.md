@@ -169,7 +169,7 @@ or:
 ![](play-2.dark.png)
 
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
-If that fails, look for run/build instructions in that file or a nearby readme.
+If that fails, look for running clues in that file or a nearby readme or the play script.
 
 ## Development
 
@@ -183,10 +183,11 @@ If that fails, look for run/build instructions in that file or a nearby readme.
    For prelude/base/default categories, using --resolver=ghc-9.2.5 avoids this
    (see https://github.com/haskell-game/tiny-games-hs/issues/38).
 - stack scripts can use --verbosity=error to silence the "Selected resolver" output.
+  (Or --verbosity=info to show dependency building progress.)
 - If using packages which require compilation (gloss), use stack script --compile.
    (And be aware a newer compiled binary can cause your source to be ignored.)
 - cabal scripts are also welcome; they don't have --compile and require more lines (unless you use env -S)
-- On mac, Terminal and iTerm 3.4 render emojis slowly; iTerm 3.5 beta works better.
+- On mac, Terminal and iTerm 3.4 render emojis very slowly; iTerm 3.5 beta or VS Code terminal work better.
 
 ### Tools
 
