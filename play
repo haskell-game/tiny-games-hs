@@ -20,6 +20,7 @@ base/shoot/shoot.hs
 base/log2048/log2048.hs
 base/rhythm/rhythm.hs
 base/peyton-says/peyton-says.hs
+base/acey-deucey/acey-deucey.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs

@@ -118,6 +118,7 @@ Here are the entries received so far!
 <td><a href="base/peyton-says"><img src="base/peyton-says/peyton-says.png" width=100 height=100><br>peyton-says</a><br>(gergoerdi)</td>
 </tr>
 <tr>
+<td><a href="base/acey-deucey"><img src="base/acey-deucey/acey-deucey.png" width=100 height=100><br>acey-deucey</a><br>(trevarj)</td>
 </tr>
 </table>
 
