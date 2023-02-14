@@ -7,7 +7,7 @@ import Imports;main=playGame(Game 6(p!!0,r 20 0)l d(\_->False));z=zipWith;p=[[[
  _ s(KeyPress k)|k=='k',let y=o s,c y=y|k=='j',let y=m(`div`2)s,c y=y|k=='l',let
  y=m(*2)s,c y=y;l _ s _|let y=f s,c y=y|True=g s;d _ s=stringPlane$u(w$a s);m x
  (p,f)=(h(h x)p,f);f(p,f)=(h(0:)p,f);h=map;c(p,f)=all(==0)$z(.&.)(p!!0)$w f;t=z
- (.|.);g s=(cycle p!!sum k,h(\_->0)e++k)where (k,e)=partition(<2046)(a s)
+ (.|.);g s=(p!!(sum k`mod`7),h(\_->0)e++k)where(k,e)=partition(<2046)(a s)
 -- ^10 ------------------------------------------------------------------ 80> --
 {- hackage-10-80/tetris (gergoerdi)
 

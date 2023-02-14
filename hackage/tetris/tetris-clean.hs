@@ -92,5 +92,5 @@ can (p,f) = all (==0) $ zipWith (.&.) (p!!0) $ withWell f
 
 glue s = (newPiece, h (\ _ -> 0) e ++ k)
   where
-    newPiece = cycle pieces!!sum k
+    newPiece = pieces!!(sum k`mod`7)
     (k,e) = partition(<2046) (add s)
