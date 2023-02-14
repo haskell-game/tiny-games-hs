@@ -81,28 +81,42 @@ HERE
     echo
 }
 
+# Select Game
 declare -A gamesbyname
 for g in "${games[@]}"; do
     [[ -z $g ]] && continue
     gamesbyname["$(gamename "$g")"]=$g
 done
+selectGame() {
+    g=${games[$1]}
+    # select by hs file, or select by game name
+    if [[ -z $g ]]; then g=${gamesbyname[$1]}; fi
+    # select by fuzzy search
+    if [[ -z $g ]]; then
+	  for h in "${games[@]}"; do
+	      if [[ $(gamename "$h") =~ $1 ]]; then g="$h"; break; fi
+	  done
+    fi
+    # no match
+    if [[ -z $g ]]; then echo "$1 is unrecognised, run '$0' to see the list"; exit 1; fi
+    echo $g
+}
 
 # Main
 cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
-if [[ $# == 0 || "$1" == "-h" ||  "$1" == "--help" || "$2" == "-h" ||  "$2" == "--help" ]];
-then help
+if [[ $# == 0 || "$1" == "-h" ||  "$1" == "--help" ]];then
+    help
+elif [[ "$2" == "-h" ||  "$2" == "--help" ]];then
+    g=$(selectGame "$1")
+    gh=$(echo $(dirname "$g")/README*)
+    echo $gh
+    if [[ -f "$gh" ]];then
+        cat $g <(printf '%0.1s' "="{1..80};echo) $gh | less;
+    else less $g;fi
 else
-    # select a game
-    g=${games[$1]}
-    if [[ -z $g ]]; then g=${gamesbyname[$1]}; fi
-    if [[ -z $g ]]; then
-	for h in "${games[@]}"; do
-	    if [[ $(gamename "$h") =~ $1 ]]; then g="$h"; break; fi
-	done
-    fi
-    if [[ -z $g ]]; then echo "$1 is unrecognised, run '$0' to see the list"; exit 1; fi
-    # run it
+    g=$(selectGame "$1")
     gname=$(gamename "$g")
+    # run it through a launcher, or directly with shebang
     if declare -f "$gname" >/dev/null
     then "$gname" "$g"
     else $g
