@@ -7,7 +7,7 @@
 This "game" tests/drills your financial situational awareness,
 if you keep accounts in hledger (or can obtain a hledger-compatible
 copy of some entity's accounts). It picks a random asset or liability account
-and asks you to enter its balance (the integral part, as a positive integer).
+and asks you to enter its approximate balance.
 If your answer is not correct, it asks again, until you get one right.
 
 It uses your default hledger journal if you have one:
