@@ -202,3 +202,14 @@ add curled braces and semicolons throughout your code to make it white space ins
 
 - [minify.hs](minify.hs) (from haskell-game/tiny-games-hs#14; contact @kindaro with issues/feedback)
 - [hackage/brickbreaker/minify.hs](hackage/brickbreaker/minify.hs) (from haskell-game/tiny-games-hs#63; contact @fgaz)
+
+One way to make animations, for your README:
+
+```
+# Install Noto Emoji font, required by agg to show emojis
+$ asciinema rec game.cast
+$ agg -v --cols 80 --rows 25 --font-family 'Essential PragmataPro' --font-size 16 game.cast game.gif
+```
+agg doesn't show colour emojis [yet](https://github.com/asciinema/agg/issues/2).
+The Noto Emoji glyphs are monochrome and less pretty, but will give the idea.
+The older asciicast2gif does show colour emojis, but doesn't convert ansi-terminal-game output well.
