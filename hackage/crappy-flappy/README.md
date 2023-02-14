@@ -10,5 +10,5 @@
 
 Press a key to flap upwards. Try to get to the right edge of the screen.
 
-![](crappy-flappy.gif)
+![](crappy-flappy.png)
 
