@@ -172,6 +172,9 @@ or:
 If you don't have bash, cd into each game's directory and try running the game's .hs file.
 If that fails, look for running clues in that file or a nearby readme or the play script.
 
+Additionally, you can also run `./play {game_name} --help` to view its source code and README
+if available.
+
 ## Development
 
 ### Runnability tips
