@@ -19,10 +19,10 @@ use iTerm 3.5 beta or newer, or eg VS Code's terminal, instead.
 
 This is a classic - one of the simplest ways to build a fast action game
 that could always be expected to run reasonably well,
-since one thing every machine can do well is scroll text upwards...
+since one thing every machine can do well is scroll text upwards... right ?
 
 Relying on print (putStrLn) means the player is always at the bottom of the
 screen, with no forward visibility. But this could be quite realistic. :)
 
-For a more elaborate version of this, with replayable levels, persistent high scores
+For a more elaborate version, with replayable levels, persistent high scores
 and sound effects, try [caverunner](https://github.com/simonmichael/games/tree/main/caverunner).
