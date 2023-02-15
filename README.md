@@ -194,7 +194,7 @@ if available.
 - cabal scripts are also welcome; they don't have --compile and require more lines (unless you use env -S)
 - On mac, Terminal and iTerm 3.4 render emojis very slowly; iTerm 3.5 beta or VS Code terminal work better.
 
-### Tools
+### Minifying
 
 Here are some minifiers you can try; either or both may be able to turn your game into
 a brick of inscrutable code no more than 80 characters wide. Both require that you first
@@ -203,7 +203,9 @@ add curled braces and semicolons throughout your code to make it white space ins
 - [minify.hs](minify.hs) (from haskell-game/tiny-games-hs#14; contact @kindaro with issues/feedback)
 - [hackage/brickbreaker/minify.hs](hackage/brickbreaker/minify.hs) (from haskell-game/tiny-games-hs#63; contact @fgaz)
 
-Here's one way to make animations, for your README:
+### Animated GIFs
+
+Here's one way to make animated GIFs for your README:
 
 ```
 # Install Noto Emoji font, required by agg to show emojis
