@@ -30,7 +30,7 @@ or this repo's [issue tracker](issues) for help/feedback/announcements.
 Here are the contest rules for this round (HTG1):
 
 1. You can submit any number of entries to the official repo, haskell-game/tiny-games-hs.
-   Each should be a playable game in one haskell file
+   Each should be a playable game or amusement in one haskell file
    of up to 10 lines of up to 80 characters each, in one of the following categories:
    - `prelude-10-80`, allowing no imports
    - `base-10-80`, allowing imports from the base package
