@@ -15,6 +15,7 @@ prelude/tiny-brot/tiny-brot.hs
 prelude/mini-othello/mini-othello.hs
 prelude/one-dot/one-dot.hs
 prelude/expressit/expressit.hs
+prelude/life/life.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
@@ -48,6 +49,7 @@ hackage/tetris/tetris.hs
 fifteen()           { runghc -XPatternSynonyms -XLambdaCase "$1"; }
 brickbreaker()      { stack script --compile --resolver lts-20 --package gloss "$1"; }
 hallway-to-hell()   { stack runghc --resolver lts-20 --package random --package rio "$1"; }
+life()              { runghc "$1"; }
 log2048()           { runghc "$1"; }
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
 mini-othello()      { runghc "$1"; }

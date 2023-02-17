@@ -101,6 +101,7 @@ Here are the entries received so far!
 <td><a href="prelude/expressit"><img src="prelude/expressit/expressit.png" width=140 height=140><br>expressit</a><br>(Greg8128)</td>
 </tr>
 <tr>
+<td><a href="prelude/life"><img src="prelude/life/life.png" width=140 height=140><br>life</a><br>(Rens van Hienen)</td>
 </tr>
 </table>
 
