@@ -9,7 +9,7 @@ sct b(x,y)=(((b!!y)!!x)==dc && c==3)||(((b!!y)!!x)==lc&&c/=2 && c/=3)where{c=cln
 run b=do pb b;putStr "Action ((r)eset 'Int', (n)ext state, (t)oggle cell 'Int \
 \Int'): ";i<-getLine;run(u b i)
 -- ^10 ------------------------------------------------------------------ 80> --
-{- prelude-10-80/cgol (Rens van Hienen)
+{- prelude-10-80/life (Rens van Hienen)
 
 This is an implementation of Conway's game of life. Made for the Haskell tiny
 game jame of February 2023.
