@@ -223,5 +223,6 @@ The Noto Emoji glyphs are monochrome and less pretty, but will give the idea.
 Shrinking the gif, eg with gifsicle, is recommended for repo longevity and page load times.
 It helps gif2apng a lot also.
 
-APNGs are preferable if you can manage it. They will not be obscured by Github's gif player button,
-they can be hyperlinks, and they can have smaller file size.
+[APNGs](https://github.com/haskell-game/tiny-games-hs/issues/70) are preferable if you can manage it:
+they will not be obscured by Github's gif player button, they can be hyperlinks, and they can have smaller file size.
+https://sourceforge.net/projects/gif2apng works well, it can be built from its source tarball.
