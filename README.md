@@ -58,7 +58,7 @@ Here are the contest rules for this round (HTG1):
    or contain a reliable build/run command line with all needed options, in the comments
    (the `play` script will use this).
    Games which aren't straightforward to run and enjoy are incomplete.
-   See also the [runnability tips](#runnability-tips) below.
+   See also the [runnability](#runnability) tips below.
 
 5. The game should be portable, running on all major platforms, ideally.
 
@@ -172,15 +172,13 @@ or:
 
 ![](play-2.dark.png)
 
-If you don't have bash, cd into each game's directory and try running the game's .hs file.
-If that fails, look for running clues in that file or a nearby readme or the play script.
-
-Additionally, you can also run `./play {game_name} --help` to view its source code and README
-if available.
+If you don't have bash, cd into each `*/GAME` directory and try running `GAME.hs`.
+If that fails, look for running clues in that file, a readme, or the `play` script.
+You can also run `./play GAME -h` to view a game's source code and readme.
 
 ## Development
 
-### Runnability tips
+### Runnability
 
 - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
    If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
