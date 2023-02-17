@@ -7,9 +7,9 @@ sc=rm 10$p"";main=hSetEcho stdin False>>hSetBuffering stdin NoBuffering>>p"Ski!"
 w+1;(r,mr)=if r0>rl then(rl,0)else(r0,m);};j<-hReady stdin;i<-(if j then getChar
 else return '-');let{lt=h$l-1;rt=h$s-r-1;ls=x-lt*2;rs=s-rt*2-x-1;k=if min ls rs
 <1 then"*"else"V"} in do {p(take s$rp lt t++rp ls ' '++k++rp rs ' '++rp rt t);if
-k/="*"then lp(o+1)(case i of ','->x-1;'.'->x+1;_->x).(c+)=<<ra(-ml,mr)else q o}}
+k/="*"then lp(o+1)(case i of 'a'->x-1;'d'->x+1;_->x).(c+)=<<ra(-ml,mr)else q o}}
 -- ^10 ------------------------------------------------------------------ 80> --
-{- hackage-10-80/ski (sm). Avoid trees. Player controls: , . 
+{- hackage-10-80/ski (sm). Avoid trees. Player controls: a d 
 
 Uses emojis, may not look right with all fonts/machines.
 NB: the tree emojis render very slowly in some terminals (iTerm, Terminal).
