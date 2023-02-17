@@ -2,7 +2,7 @@
 
 ![](ski.png)
 
-![](ski.gif)
+![](ski.anim.png)
 
 ## Play
 

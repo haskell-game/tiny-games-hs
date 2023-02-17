@@ -136,7 +136,7 @@ Here are the entries received so far!
 <tr>
 <td><a href="hackage/guess2"><img src="hackage/guess2/guess2.png" width=140 height=140><br>guess2</a><br>(sm)</td>
 <td><a href="hackage/wordle"><img src="hackage/wordle/wordle.png" width=140 height=140><br>wordle</a><br>(halogenandtoast)</td>
-<td><a href="hackage/ski"><img src="hackage/ski/ski.png" width=140 height=140><br>ski</a><br>(sm)</td>
+<td><a href="hackage/ski"><img src="hackage/ski/ski.anim.png" width=140 height=140><br>ski</a><br>(sm)</td>
 <td><a href="hackage/guesscolor"><img src="hackage/guesscolor/guesscolor.png" width=140 height=140><br>guesscolor</a><br>(TravisCardwell)</td>
 <td><a href="hackage/bulls-n-cows"><img src="hackage/bulls-n-cows/bulls-n-cows.png" width=140 height=140><br>bulls-n-cows</a><br>(akadude)</td>
 </tr>
