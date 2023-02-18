@@ -5,9 +5,9 @@ You must type characters until you find out what word is it
 
 # How it works
 
-Picks a random word
-Using recursion checks the given character
-In case it is not completed yet keeps asking another character
+1. Picks a random word
+2. Using recursion checks the given character
+3. In case it is not completed yet keeps asking another character
 
 ## Non-minified version
 
