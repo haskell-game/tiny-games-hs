@@ -70,7 +70,7 @@ tsp()               { runghc "$1"; }
 # Help
 printTitle() {
     printf '%0.1s' "="{1..80};echo
-    echo "= " $1
+    echo "= " "$1"
     printf '%0.1s' "="{1..80};echo
 }
 gamecat()  { echo "$1" | cut -d/ -f1; }
@@ -125,7 +125,7 @@ if [[ $# == 0 || "$1" == "-h" ||  "$1" == "--help" ]];then
 elif [[ "$2" == "-h" ||  "$2" == "--help" ]];then
     g=$(selectGame "$1")
     gi=$(echo "$(dirname "$g")"/Import*.hs)
-    echo $gi
+    echo "$gi"
     gh=$(echo "$(dirname "$g")"/README*)
     {
         if [[ -f "$gi" ]];then
