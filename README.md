@@ -222,11 +222,21 @@ It works with most games but may cost a little performance.
 ### Minifying
 
 Here are some minifiers you can try; either or both may be able to turn your game into
-a brick of inscrutable code no more than 80 characters wide. Both require that you first
-add curled braces and semicolons throughout your code to make it white space insensitive.
+a brick of inscrutable code no more than 80 characters wide.
+
+- [hackage/brickbreaker/minify.hs](hackage/brickbreaker/minify.hs) (from haskell-game/tiny-games-hs#63; contact @fgaz)
+
+  This minifier requires that you first add curled braces and semicolons throughout your code to make it white space insensitive.
 
 - [minify.hs](minify.hs) (from haskell-game/tiny-games-hs#14; contact @kindaro with issues/feedback)
-- [hackage/brickbreaker/minify.hs](hackage/brickbreaker/minify.hs) (from haskell-game/tiny-games-hs#63; contact @fgaz)
+
+  #### Features
+
+  * Will automatically add curly braces for you so long as you put the line
+    `module Main where` into your source file. _(This line will then be
+    automatically removed, so you lose no space.)_
+  * Will automatically replace variables and constructors surrounded with curly
+    braces `{example}` with single letters, for extra minification.
 
 ### Animations
 
