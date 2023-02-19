@@ -29,6 +29,7 @@ base/flower-seeds/flower-seeds.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs
+default/lambda-ray/lambda-ray.hs
 default/lol/lol.hs
 hackage/guess2/guess2.hs
 hackage/wordle/wordle.hs
@@ -61,6 +62,7 @@ pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-gam
 shmupemup()         { cd "$(dirname "$1")" || exit 1; stack runghc --package parsec "$(basename "$1")"; }
 sudoku()            { runghc "$1"; }
 tsp()               { runghc "$1"; }
+lambda-ray()        { stack script --resolver lts-20 --optimize "$1"; }
 lol()               { runghc "$1" "${args[@]}"; }
 
 # Help
