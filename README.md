@@ -129,6 +129,7 @@ Here are the entries received so far!
 <td><a href="default/shmupemup"><img src="default/shmupemup/shmupemup.png" width=140 height=140><br>shmupemup</a><br>(elderephemera)</td>
 <td><img src="default/tsp/tsp.gif" width=140 height=140><br><a href="default/tsp">tsp</a><br>(tristanC)</td>
 <td><img src="default/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="default/lambda-ray">lambda-ray</a><br>(tristanC)</td>
+<td><img src="default/lol/lol.gif" width=140 height=140><br><a href="default/lol">lol</a><br>(hellwolf)</td>
 </tr>
 </table>
 
