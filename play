@@ -48,6 +48,7 @@ hackage/balances/balances.hs
 hackage/vaders/vaders.hs
 hackage/tetris/tetris.hs
 hackage/short-guess/short-guess.hs
+hackage/7up7down/7up7down.hs
 )
 
 # Games needing special invocation, in alphabetical order.
