@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # A front end to run games easily.
 
+# store args globally for the lol
+args=("$@")
+
 # All games in category then submission order, as in README.
 # (leave 0th element empty)
 games=(
@@ -26,6 +29,7 @@ base/flower-seeds/flower-seeds.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs
+default/lol/lol.hs
 hackage/guess2/guess2.hs
 hackage/wordle/wordle.hs
 hackage/ski/ski.hs
@@ -57,8 +61,14 @@ pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-gam
 shmupemup()         { cd "$(dirname "$1")" || exit 1; stack runghc --package parsec "$(basename "$1")"; }
 sudoku()            { runghc "$1"; }
 tsp()               { runghc "$1"; }
+lol()               { runghc "$1" "${args[@]}"; }
 
 # Help
+printTitle() {
+    printf '%0.1s' "="{1..80};echo
+    echo "= " $1
+    printf '%0.1s' "="{1..80};echo
+}
 gamecat()  { echo "$1" | cut -d/ -f1; }
 gamename() { basename "$1" .hs; }
 help() {
@@ -110,11 +120,21 @@ if [[ $# == 0 || "$1" == "-h" ||  "$1" == "--help" ]];then
     help
 elif [[ "$2" == "-h" ||  "$2" == "--help" ]];then
     g=$(selectGame "$1")
+    gi=$(echo "$(dirname "$g")"/Import*.hs)
+    echo $gi
     gh=$(echo "$(dirname "$g")"/README*)
-    echo "$gh"
-    if [[ -f "$gh" ]];then
-        cat "$g" <(printf '%0.1s' "="{1..80};echo) "$gh" | less;
-    else less "$g";fi
+    {
+        if [[ -f "$gi" ]];then
+            printTitle "$gi"
+            cat "$gi"
+        fi
+        printTitle "$g"
+        cat "$g"
+        if [[ -f "$gh" ]];then
+            printTitle "$gh"
+            cat "$gh"
+        fi
+    } | ${PAGPER:-less};
 else
     g=$(selectGame "$1")
     gname=$(gamename "$g")
