@@ -47,7 +47,7 @@ hackage/lazy-march/lazy-march.hs
 hackage/balances/balances.hs
 hackage/vaders/vaders.hs
 hackage/tetris/tetris.hs
-hackage/short-guess.hs
+hackage/short-guess/short-guess.hs
 )
 
 # Games needing special invocation, in alphabetical order.
