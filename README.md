@@ -192,8 +192,8 @@ You can also run `./play GAME -h` to view a game's source code and readme.
    (see https://github.com/haskell-game/tiny-games-hs/issues/38).
 - stack scripts can use --verbosity=error to silence the "Selected resolver" output.
   (Or --verbosity=info to show dependency building progress.)
-- If using packages which require compilation (gloss), use stack script --compile.
-   (And be aware a newer compiled binary can cause your source to be ignored.)
+- If using packages which require compilation (gloss) or more speed, use stack script --compile or stack script --optimize.
+  (Downsides: creates .o and .hi files; a compiled binary with newer timestamp than source can cause confusion.)
 - cabal scripts are also welcome; they don't have --compile and require more lines (unless you use env -S)
 - On mac, Terminal and iTerm 3.4 render emojis very slowly; iTerm 3.5 beta or VS Code terminal work better.
 
