@@ -9,4 +9,4 @@ import System.Random (randomRIO);w = ["cute","game","play","dream"];n wr f = do
 main=putStrLn "Guess the word!" >> randomRIO (0,length w - 1::Int) >>= \r -> do
   return (w !! r) >>= \wr -> n wr [];
 -- ^10 ------------------------------------------------------------------ 80> --
-{- default-10-80/short-guess (RimuhRimu). random -}
+{- hackage-10-80/short-guess (RimuhRimu). random -}
