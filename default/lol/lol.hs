@@ -5,9 +5,10 @@ import System.Environment;import GHC.IO.Handle;y=True;infixr 1?;(True?x)_=x;(_?_
 g,e)|p<-[1/9,1/3],g<-s[38,48],e<-s[0,1,3,4,24,5]];l(p,g,e)=[m[g<>";2;"<>j";"(s.
 map(r p i)$[0..2]),e]|i<-[0..]];f 1_[]=[];f 1_(c:s)|c/='\27'=[[c]]++f 1[]s|y=f
 2[c]s;f 2t(c:s)|isLetter$c=[t++[c]]++f 1[]s|y=f 2(t++[c])s;p h s=hIsClosed h>>=
-flip unless(do{c<-f 1[]<$>hGetContents h;mapM putStr(zipWith($)s c);p h(drop(n c
+flip unless(do{c<-f 1[]<$>hGetContents h;putStr$j""(zipWith($)s c);p h(drop(n c
 )s);});main=do{(_:a)<-getArgs;(_,Just h,_,_)<-createProcess(proc"./play"(
 dropWhile(=="lol")a)){std_out=CreatePipe};p h$l$o!!(max(n a-1))0}}
+-- ^10 ------------------------------------------------------------------ 80> --
 {-default-10-80/lol (hellwolf), ghc 9.4.2
 
 = LOL - the meta tiny game
