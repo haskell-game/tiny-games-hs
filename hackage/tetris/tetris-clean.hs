@@ -65,7 +65,7 @@ pieces=
        ]
       ]
 
-render = unlines . map (\row -> foldMap (\i -> if (row `shiftL` 3) `testBit` i then "██" else "  ") [0..14])
+render = unlines . map (\row -> foldMap (\i -> if (row `shiftL` 3) `testBit` i then "▇▉" else "  ") [0..14])
 add (p,f) = testCollision ((p!!0) ++ repeat 0) f
 
 withWell = testCollision $ replicate 19 0b1_00000_00000_1 ++ [0b1_11111_11111_1]
