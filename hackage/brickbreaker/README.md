@@ -11,3 +11,5 @@ Tip: the bottom of the ball has magical destructive properties, try to get it
 above the bricks to destroy many at once.
 
 Adjust the `r` variable if the game is too big or too small for your screen
+
+![Animation of the game](./brickbreaker.png)

@@ -1,4 +1,4 @@
-#!/usr/bin/env runghc -XLambdaCase
+#!/usr/bin/env -S runghc -XLambdaCase
 import System.IO;main=hSetBuffering stdin NoBuffering>>a(r,repeat 0,repeat 20,0)
 a s=mapM putStrLn (h s)>>g>>= \case{'\^['->g>>g>>=z s 20. \case{'C' -> (1 +);'D'
  ->(\n->i(n>19)(n-1)n)};d->z s(2*length(takeWhile(/=d)w)+1)id}; q=map; n=iterate

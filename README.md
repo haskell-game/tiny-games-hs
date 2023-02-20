@@ -1,8 +1,9 @@
 # Haskell Tiny Game Jam
 
 Inspired by the ongoing [BASIC 10Liner contest](https://www.homeputerium.de)
-(see their english rules at the bottom of that page, and latest entries [here](https://bunsen.itch.io)):
-the first Haskell tiny games contest runs through February 2023!
+(see their english rules at the bottom of that page, and [latest entries](https://bunsen.itch.io))..
+
+The first Haskell tiny games contest runs through February 2023!
 Your mission: make a playable game in 10 lines of 80 characters of Haskell.
 The prize.. glory! 
 Also fun, learning, and advancing Haskell's suitability for game dev and programming in the small.
@@ -29,7 +30,7 @@ or this repo's [issue tracker](issues) for help/feedback/announcements.
 Here are the contest rules for this round (HTG1):
 
 1. You can submit any number of entries to the official repo, haskell-game/tiny-games-hs.
-   Each should be a playable game in one haskell file
+   Each should be a playable game or amusement in one haskell file
    of up to 10 lines of up to 80 characters each, in one of the following categories:
    - `prelude-10-80`, allowing no imports
    - `base-10-80`, allowing imports from the base package
@@ -57,7 +58,7 @@ Here are the contest rules for this round (HTG1):
    or contain a reliable build/run command line with all needed options, in the comments
    (the `play` script will use this).
    Games which aren't straightforward to run and enjoy are incomplete.
-   See also the [runnability tips](#runnability-tips) below.
+   See also the [runnability](#runnability) tips below.
 
 5. The game should be portable, running on all major platforms, ideally.
 
@@ -100,6 +101,7 @@ Here are the entries received so far!
 <td><a href="prelude/expressit"><img src="prelude/expressit/expressit.png" width=140 height=140><br>expressit</a><br>(Greg8128)</td>
 </tr>
 <tr>
+<td><a href="prelude/life"><img src="prelude/life/life.png" width=140 height=140><br>life</a><br>(Rens van Hienen)</td>
 </tr>
 </table>
 
@@ -126,6 +128,8 @@ Here are the entries received so far!
 <td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=140 height=140><br>type-and-furious</a><br>(lsmor)</td>
 <td><a href="default/shmupemup"><img src="default/shmupemup/shmupemup.png" width=140 height=140><br>shmupemup</a><br>(elderephemera)</td>
 <td><img src="default/tsp/tsp.gif" width=140 height=140><br><a href="default/tsp">tsp</a><br>(tristanC)</td>
+<td><img src="default/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="default/lambda-ray">lambda-ray</a><br>(tristanC)</td>
+<td><img src="default/lol/lol.gif" width=140 height=140><br><a href="default/lol">lol</a><br>(hellwolf)</td>
 </tr>
 </table>
 
@@ -155,6 +159,8 @@ Here are the entries received so far!
 </tr>
 <tr>
 <td><a href="hackage/tetris"><img src="hackage/tetris/tetris.png" width=140 height=140><br>tetris</a><br>(gergoerdi)</td>
+<td><a href="hackage/short-guess"><img src="hackage/short-guess/short-guess.png" width=140 height=140><br>short-guess</a><br>(RimuhRimu)</td>
+<td><a href="hackage/7up7down"><img src="hackage/7up7down/7up7down.png" width=140 height=140><br>7up7down</a><br>(RimuhRimu)</td>
 </tr>
 </table>
 
@@ -170,15 +176,13 @@ or:
 
 ![](play-2.dark.png)
 
-If you don't have bash, cd into each game's directory and try running the game's .hs file.
-If that fails, look for running clues in that file or a nearby readme or the play script.
-
-Additionally, you can also run `./play {game_name} --help` to view its source code and README
-if available.
+If you don't have bash, cd into each `*/GAME` directory and try running `GAME.hs`.
+If that fails, look for running clues in that file, a readme, or the `play` script.
+You can also run `./play GAME -h` to view a game's source code and readme.
 
 ## Development
 
-### Runnability tips
+### Runnability
 
 - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
    If you specify a GHC version/stackage snapshot, the current release is ideal (GHC 9.2, lts-20).
@@ -189,8 +193,8 @@ if available.
    (see https://github.com/haskell-game/tiny-games-hs/issues/38).
 - stack scripts can use --verbosity=error to silence the "Selected resolver" output.
   (Or --verbosity=info to show dependency building progress.)
-- If using packages which require compilation (gloss), use stack script --compile.
-   (And be aware a newer compiled binary can cause your source to be ignored.)
+- If using packages which require compilation (gloss) or more speed, use stack script --compile or stack script --optimize.
+  (Downsides: creates .o and .hi files; a compiled binary with newer timestamp than source can cause confusion.)
 - cabal scripts are also welcome; they don't have --compile and require more lines (unless you use env -S)
 - On mac, Terminal and iTerm 3.4 render emojis very slowly; iTerm 3.5 beta or VS Code terminal work better.
 
@@ -203,18 +207,25 @@ add curled braces and semicolons throughout your code to make it white space ins
 - [minify.hs](minify.hs) (from haskell-game/tiny-games-hs#14; contact @kindaro with issues/feedback)
 - [hackage/brickbreaker/minify.hs](hackage/brickbreaker/minify.hs) (from haskell-game/tiny-games-hs#63; contact @fgaz)
 
-### Animated GIFs
+### Animations
 
-Here's one way to make animated GIFs for your README:
+Here's one way to make animated GIFs or APNGs for your README (see also [ski/Makefile](hackage/ski/Makefile)):
 
 ```
 # Install Noto Emoji font, required by agg to show emojis
 $ asciinema rec game.cast
-$ agg -v --cols 80 --rows 25 --font-family 'Essential PragmataPro' --font-size 16 game.cast game.big.gif
-$ gifsicle -V --lossy=50 -k8 -O2 -Okeep-empty game.big.gif -o game.gif
+$ agg -v --cols 80 --rows 25 --font-family 'Essential PragmataPro' --font-size 16 game.cast game.lg.gif
+$ gifsicle -V --lossy=50 -k8 -O2 -Okeep-empty game.gif -o game.gif
+$ gif2apng game.gif game.png
 ```
+
 agg doesn't show colour emojis [yet](https://github.com/asciinema/agg/issues/2).
 The Noto Emoji glyphs are monochrome and less pretty, but will give the idea.
-The older asciicast2gif does show colour emojis, but doesn't convert ansi-terminal-game output well.
-Shrinking the gif with gifsicle is good for repo longevity and page load times.
-You can see a Makefile with these commands in hackage/ski.
+(asciicast2gif which predates agg does show colour emojis, but doesn't convert ansi-terminal-game output well.)
+
+Shrinking the gif, eg with gifsicle, is recommended for repo longevity and page load times.
+It helps gif2apng a lot also.
+
+[APNGs](https://github.com/haskell-game/tiny-games-hs/issues/70) are preferable if you can manage it:
+they will not be obscured by Github's gif player button, they can be hyperlinks, and they can have smaller file size.
+https://sourceforge.net/projects/gif2apng works well, it can be built from its source tarball.

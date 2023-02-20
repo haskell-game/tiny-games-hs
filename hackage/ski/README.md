@@ -2,11 +2,11 @@
 
 ![](ski.png)
 
-![](ski.gif)
+![](ski.anim.png)
 
 ## Play
 
-Get ready to ski! `,` and `.` move left and right.\
+Get ready to ski! `a` and `d` move left and right.\
 Avoid the 🌲 trees! 🌲 How long can you last ?
 
 Best played in a white background terminal.
