@@ -1,12 +1,9 @@
 #!/usr/bin/env -S stack script --resolver=lts-20.10 --package ansi-terminal-game
 import Imports
 
-main = playGame $ Game 8 (pieces!!0,r 20 0) logic draw (\_->False)
+main = playGame $ Game 8 (pieces!!0, replicate 20 0) logic draw (\_->False)
 
-z = zipWith
-h = map
-r = replicate
-t = z(.|.)
+testCollision = zipWith (.|.)
 
 pieces=
   [ [[0b00011_11000]
@@ -68,17 +65,17 @@ pieces=
        ]
       ]
 
-render = unlines . map (\r -> map (bool ' ' '#' . testBit r)[0..11])
-add (p,f) = t ((p!!0) ++ repeat 0) f
+render = unlines . map (\row -> foldMap (\i -> if (row `shiftL` 3) `testBit` i then "██" else "  ") [0..14])
+add (p,f) = testCollision ((p!!0) ++ repeat 0) f
 
-withWell = t (replicate 19 2049 ++ [4095])
+withWell = testCollision $ replicate 19 0b1_00000_00000_1 ++ [0b1_11111_11111_1]
 
-rot (p,f) = (take 4 . tail . cycle $ p, f)
+rot (p,f) = (tail . cycle $ p, f)
 
 logic _ s (KeyPress k)
-  |k== 'k', let s' = rot s,           can s' = s'
-  |k== 'j', let s' = move (`div`2) s, can s' = s'
-  |k== 'l', let s' = move (*2) s,     can s' = s'
+  | k == 'k', let s' = rot s,           can s' = s'
+  | k == 'j', let s' = move (`div`2) s, can s' = s'
+  | k == 'l', let s' = move (*2) s,     can s' = s'
 logic _ s _
   |let s' = fall s, can s' = s'
   |otherwise = glue s
@@ -87,10 +84,9 @@ draw _ s = stringPlane $ render (withWell $ add s)
 move x (p,f) = (map (map x) p, f)
 fall (p,f) = (map (0:) p, f)
 
-can (p,f) = all (==0) $ zipWith (.&.) (p!!0) $ withWell f
+can (p,f) = all (== 0) $ zipWith (.&.) (head p) (withWell f)
 
-
-glue s = (newPiece, h (\ _ -> 0) e ++ k)
+glue s = (newPiece, map (\ _ -> 0) e ++ k)
   where
     newPiece = pieces!!(sum k`mod`7)
     (k,e) = partition(<2046) (add s)
