@@ -1,0 +1,4 @@
+*.o
+*.hi
+/default/lambda-ray/lambda-ray
+/default/lol/lol
