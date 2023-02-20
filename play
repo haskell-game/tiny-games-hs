@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # A front end to run games easily.
 
+set -e
+
 # store args globally for the lol
 args=("$@")
 
@@ -105,7 +107,7 @@ for g in "${games[@]}"; do
     gamesbyname["$(gamename "$g")"]=$g
 done
 selectGame() {
-    g=${games[$1]}
+    local g=${games[$1]}
     # select by hs file, or select by game name
     if [[ -z $g ]]; then g=${gamesbyname[$1]}; fi
     # select by fuzzy search
