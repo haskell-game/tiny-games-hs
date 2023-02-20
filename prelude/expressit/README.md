@@ -29,7 +29,7 @@ commands:
 
 a few tips:
 f and t behave predictably for prime numbers.
-Plan ahead! The way you solve each target determines the next n you get.
+Plan ahead! The way you solve each target determines the next value of n you get.
 Try to figure out a few idioms. For example, see if you can figure out
     an expression that returns 2 no matter what n is.
 You probably don't need the i function
@@ -39,10 +39,29 @@ a few examples:
 target = 1
 n = 1
 1
-= 0
+= -1
 score: 0
 ```
 Digits are not a recognized command. Therefore, they are ignored.
+Since nothing was put on the stack, you get an error code (-1)
+
+```
+target = 1
+n = 1
++
+= -1
+score: 0
+```
+Using a command with insufficient arguments on the stack causes an error. 
+
+```
+target = 1
+n = 1
+nn
+= -1
+score: 0
+```
+Having too much on the stack at the end is also an error.
 
 ```
 target = 3
