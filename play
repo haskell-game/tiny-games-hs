@@ -107,10 +107,14 @@ for g in "${games[@]}"; do
     gamesbyname["$(gamename "$g")"]=$g
 done
 selectGame() {
-    local g=${games[$1]}
-    # select by hs file, or select by game name
+    local g
+    # select by num
+    if [[ "$1" =~ ^[0-9]+$ ]];then
+        g=${games[$1]}
+    fi
+    # select by game name
     if [[ -z $g ]]; then g=${gamesbyname[$1]}; fi
-    # select by fuzzy search
+    # select by game name matching
     if [[ -z $g ]]; then
 	  for h in "${games[@]}"; do
 	      if [[ $(gamename "$h") =~ $1 ]]; then g="$h"; break; fi
