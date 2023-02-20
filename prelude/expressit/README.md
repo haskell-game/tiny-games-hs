@@ -2,8 +2,8 @@
 just run it! You may need to run `chmod +x` first to enable execution.
 
 # Goal
-Make an expression for the given target using your RPN calculator. 
-Try to continue for as long as you can.
+Try to make it to the highest round. 
+At each round, you are given a 'target' value, and an 'n' value. Your 
 
 each round, you'll be given a prompt of the form
 ```
@@ -48,29 +48,29 @@ Here, we just push n to the stack. Since n = 1, this is all we need. Easy!
 target = 1
 n = 1
 1
-= -1
+stack empty
 score: 0
 ```
 Digits are not a recognized command. Therefore, they are ignored.
-Since nothing was put on the stack, you get an error code (-1)
+Since nothing was ever put on the stack, it's empty.
 
 ```
 target = 1
 n = 1
 +
-= -1
+stack empty
 score: 0
 ```
-Using a command with insufficient arguments on the stack causes an error. 
+There should always be enough numbers on the stack for an operation.
 
 ```
-target = 1
-n = 1
+target = 3
+n = 3
 nn
-= -1
-score: 0
+stack overfull
+score: 2
 ```
-Having too much on the stack at the end is also an error.
+There should not be more than one numebr left on the stack. 
 
 ```
 target = 3
