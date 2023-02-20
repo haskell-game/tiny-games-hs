@@ -3,17 +3,19 @@ just run it! You may need to run `chmod +x` first to enable execution.
 
 # Goal
 Try to make it to the highest round. 
-At each round, you are given a 'target' value, and an 'n' value. Your 
+At each round, you are given a 'target' value, and an 'n' value.
+You must form a valid expression that creates the target using the given n.
 
-each round, you'll be given a prompt of the form
-```
-target = x
-n = y
-```
-this means that your expression should give the value `x`, and that the variable n has value `y`.
+
 
 # Using the calculator
-the calculator evaluates a string of up to 12 commands.
+The calculator is stack-based. `n` adds the current n to the stack. 
+Other commands take operands from the stack and put back the result.
+For example, evaluating `nn+n/` for `n = 3` causes thhe stack to evolve like so: 
+`[] -> [3] -> `[3,3] -> [6] -> [3, 6] -> [2]`. Note the order that `/` works in.
+The stack should always have enough elements for the current operation and only one element in the end.
+Furthermore, you're limited to 12 commands per round.
+
 commands:
 * `n` -> push n to the stack
 * `+` : add
@@ -70,7 +72,7 @@ nn
 stack overfull
 score: 2
 ```
-There should not be more than one numebr left on the stack. 
+At the end, the stack is [3,3]. There should not be more than one number left on the stack. 
 
 ```
 target = 3
