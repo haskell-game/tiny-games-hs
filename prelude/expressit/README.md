@@ -35,6 +35,15 @@ Try to figure out a few idioms. For example, see if you can figure out
 You probably don't need the i function
 
 a few examples:
+
+```
+target = 1
+n = 1
+n
+= 1
+```
+Here, we just push n to the stack. Since n = 1, this is all we need. Easy!
+
 ```
 target = 1
 n = 1
