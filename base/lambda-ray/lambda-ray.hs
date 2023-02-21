@@ -9,7 +9,7 @@ go n=puts("\ESCc"++(map (u(n/6))p))>>threadDelay 100000>>go(n+1);h p@(x,y,z)=let
  a=x*c(t)-z*s t;b=x*s t+z*c t;nz=h(a,y,b+q)-h(a,y,b-q);ny=h(a,y+q,b)-h(a,y-q,b)
  d=h(a,y,b);g|nz<0='o'|ny<0='>'|o='.';r|d<0.01=g|o=m t(n+1)(x,y,z+d);q=0.001in r
 -- ^10 ------------------------------------------------------------------ 80> --
-{- default-10-80/lambda-ray (tristanC)
+{- base-10-80/lambda-ray (tristanC)
 
 Copyright 2023, Tristan de Cacqueray
 SPDX-License-Identifier: CC-BY-4.0
