@@ -118,6 +118,7 @@ Here are the entries received so far!
 <tr>
 <td><a href="base/acey-deucey"><img src="base/acey-deucey/acey-deucey.png" width=140 height=140><br>acey-deucey</a><br>(trevarj)</td>
 <td><a href="base/flower-seeds"><img src="base/flower-seeds/flower-seeds.png" width=140 height=140><br>flower-seeds</a><br>(tristanC)</td>
+<td><img src="base/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="base/lambda-ray">lambda-ray</a><br>(tristanC)</td>
 </tr>
 </table>
 
@@ -128,7 +129,6 @@ Here are the entries received so far!
 <td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=140 height=140><br>type-and-furious</a><br>(lsmor)</td>
 <td><a href="default/shmupemup"><img src="default/shmupemup/shmupemup.png" width=140 height=140><br>shmupemup</a><br>(elderephemera)</td>
 <td><img src="default/tsp/tsp.gif" width=140 height=140><br><a href="default/tsp">tsp</a><br>(tristanC)</td>
-<td><img src="default/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="default/lambda-ray">lambda-ray</a><br>(tristanC)</td>
 <td><img src="default/lol/lol.gif" width=140 height=140><br><a href="default/lol">lol</a><br>(hellwolf)</td>
 </tr>
 </table>

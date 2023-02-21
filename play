@@ -28,10 +28,10 @@ base/rhythm/rhythm.hs
 base/peyton-says/peyton-says.hs
 base/acey-deucey/acey-deucey.hs
 base/flower-seeds/flower-seeds.hs
+base/lambda-ray/lambda-ray.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs
-default/lambda-ray/lambda-ray.hs
 default/lol/lol.hs
 hackage/guess2/guess2.hs
 hackage/wordle/wordle.hs
