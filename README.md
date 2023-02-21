@@ -35,8 +35,8 @@ Here are the contest rules for this round (HTG1):
    - `prelude-10-80`, allowing no imports
    - `base-10-80`, allowing imports from the base package
    - `default-10-80`, allowing imports from GHC's default packages, 
-     plus an optional Import.hs file to gather and re-export imports (only)
-   - `hackage-10-80`, allowing imports from all of Hackage, and an Import.hs file.
+     plus an optional file named `Import.hs` to gather and re-export imports (only)
+   - `hackage-10-80`, allowing imports from all of Hackage, and an `Import.hs` file.
 
 2. The entry can be a script ([runghc], [stack], [cabal], ...)
    or a small program requiring compilation, but not a multi-file project.
