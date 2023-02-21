@@ -53,7 +53,7 @@ uvs =
 -- | The render loop
 go :: Float -> IO ()
 go n = do
-    puts $ "\ESCc" <> (map (pixelColor (n / 6)) uvs)
+    puts $ "\^[c\n" <> (map (pixelColor (n / pi / 2)) uvs)
     threadDelay 100000
     go (n + 1)
 
