@@ -1,15 +1,18 @@
-{import Imports;y=True;infixr 1?;(True?x)_=x;(_?_)y=y;j=intercalate;n=length;e s
-="\27["++s++"m";s=map show;m s c=n c==1?j""(map e.filter(/="0")$s)<>c<>e"0"$c;r
-p i j=floor$sin(p*i+j*pi*2/3)*127+128;v x=(x-35)`div`40;c True p=";2;"<>j";"(s p
-);c _[r,g,b]=";5;"<>(show$16+v r*36+v g*6+v b);o=cycle[(p,g,e)|p<-[1/9,1/3],g<-s
-[38,48],e<-s[0,1,4,5]];l(p,g,e)t=[m[g<>(c t$map(r p i)[0..2]),e]|i<-[0..]];f 1_[
-]=[];f 1_(c:s)|c/='\27'=[[c]]++f 1[]s|y=f 2[c]s;f 2t(c:s)|isLetter$c=[t++[c]]++f
-1[]s|y=f 2(t++[c])s;p h s=hIsClosed h>>=flip unless(do{c<-f 1[]<$>hGetContents h
-;putStr$j""(zipWith($)s c);p h(drop(n c)s);});main=do{(_:a)<-getArgs;t<-(/="")
-<$>getEnvDefault"COLORTERM""";(_,Just h,_,_)<-createProcess(proc"./play"(
-dropWhile(=="lol")a)){std_out=CreatePipe};p h$l(o!!(max(n a-1)0))t}}
+{import Import;y=1>0;j=intercalate;e s="\27["%s%"m";s=map show;n=length;(%)=(++)
+;m s c=b(j""(map e.filter(/="0")$s)%c%e"0")c(n c>1);b=bool;c True p=";2;"%j";"(s
+p);c _[r,g,b]=";5;"%show(16+v r*36+v g*6+v b);v x=div(x-35)40;l(p,g,e)t=[m[g%(c
+t$map(\j->floor$sin(p*i/9+j*pi*2/3)*127+128)[0..2]),e]|i<-[0..]];f 1_[]=[];f 1_(
+c:s)|c/='\27'=[[c]]%f 1[]s|y=f 2[c]s;f 2t[]=[t];f 2t(c:s)|isLetter$c=[t%[c]]%f 1
+[]s|y=f 2(t%[c])s;p i h s=do{k<-unpack<$>hGetChunk h;let{q=hPutStr o.pack;c=f 1[
+](i%k);(a,l)=splitAt(n c-1)c;o=stdout};b(q i)(q(j""(zipWith($)s a))>>hFlush o>>p
+(last l)h(drop(n c)s))(k>"")};main=do{t<-(/="")<$>getEnvDefault"COLORTERM""";a<-
+getArgs;(_,Just h,_,_)<-createProcess(proc"./play"(dropWhile(=="lol")a)){std_out
+=CreatePipe};p[]h$l(((,,)<$>[1..]<*>s[38,48]<*>s[0,4,5])!!max(n a-2)0)t};}
 -- ^10 ------------------------------------------------------------------ 80> --
 {-default-10-80/lol (hellwolf), ghc 9.4.2
+
+cycle((,,)<$>[1..3]<*>s[38,48]<*>s[0,4,5])
+cycle[(p,g,e)|p<-[1..3],g<-s[38,48],e<-s[0,4,5]]
 
 = LOL - the meta tiny game
 
