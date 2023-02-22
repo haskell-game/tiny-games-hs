@@ -1,5 +1,8 @@
 *.o
 *.hi
+/base/lambda-ray/lambda-ray
 /default/lambda-ray/lambda-ray
 /default/lol/lol
 /hackage/7up7down/7up7down
+/hackage/brickbreaker/brickbreaker
+/hackage/guesscolor/guesscolor

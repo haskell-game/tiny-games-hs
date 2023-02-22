@@ -11,9 +11,6 @@ getArgs;(_,Just h,_,_)<-createProcess(proc"./play"(dropWhile(=="lol")a)){std_out
 -- ^10 ------------------------------------------------------------------ 80> --
 {-default-10-80/lol (hellwolf), ghc 9.4.2
 
-cycle((,,)<$>[1..3]<*>s[38,48]<*>s[0,4,5])
-cycle[(p,g,e)|p<-[1..3],g<-s[38,48],e<-s[0,4,5]]
-
 = LOL - the meta tiny game
 
 Play tiny games with lols by simply inserting as many lols as you'd like to
