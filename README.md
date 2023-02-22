@@ -161,6 +161,7 @@ Here are the entries received so far!
 <td><a href="hackage/tetris"><img src="hackage/tetris/tetris.png" width=140 height=140><br>tetris</a><br>(gergoerdi)</td>
 <td><a href="hackage/short-guess"><img src="hackage/short-guess/short-guess.png" width=140 height=140><br>short-guess</a><br>(RimuhRimu)</td>
 <td><a href="hackage/7up7down"><img src="hackage/7up7down/7up7down.png" width=140 height=140><br>7up7down</a><br>(akshaymankar)</td>
+<td><a href="hackage/hexEscape"><img src="hackage/hexEscape/hexEscape.png" width=140 height=140><br>hexEscape</a><br>(nevrome)</td>
 </tr>
 </table>
 
