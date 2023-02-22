@@ -1,4 +1,4 @@
-% Tetris
+# Tetris
 
 ![Screenshot](tetris.png)
 
