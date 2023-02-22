@@ -61,7 +61,7 @@ hallway-to-hell()   { stack runghc --resolver lts-20 --package random --package 
 lambda-ray()        { stack script --resolver lts-20 --optimize "$1"; }
 life()              { runghc "$1"; }
 log2048()           { runghc "$1"; }
-lol()               { stack script --resolver lts-20 --optimize --package process -- "$1" "${args[@]}"; }
+lol()               { stack script --resolver lts-20 --optimize --package process --package text -- "$1" "${args[@]}"; }
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
 mini-othello()      { runghc "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
