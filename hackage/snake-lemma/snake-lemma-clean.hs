@@ -10,9 +10,9 @@ type State =
     )
 
 state0 :: State
-state0 = ([(12, x) | x <- [10..14]], (0,-1), (16,21), 99, 0)
+state0 = ([(12, x) | x <- [10..16]], (0,-1), (16,21), 99, 0)
 
-main = playGame $ Game 15 state0 logic draw end
+main = playGame $ Game 12 state0 logic draw end
 
 end ((p@(y, x):snake), _, _, _, _) = y < 2 || y > 23 || x < 1 || x > 39 || p `elem` snake
 
@@ -40,7 +40,7 @@ draw _ (snake, _, food, _, score) = mergePlanes (box 80 24 '▒') $
   [((2*) <$> p, word "██") | p <- snake]
 
 glyph :: Int -> String
-glyph score = take 2 . drop score . cycle $ "∀∃⊨⊥⊢⊤∨∧⇒λ→ΣΠη"
+glyph score = take 2 . drop score . cycle $ "∀∃⊥⊢⊤⊨∨∧⇒λ→ΣΠη"
 
 consistent s@(snake, dir, food, rng, score)
   | food `elem` snake = consistent (snake, dir, food', rng', score)
