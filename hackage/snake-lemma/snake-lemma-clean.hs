@@ -40,7 +40,7 @@ draw _ (snake, _, food, _, score) = mergePlanes (box 80 24 '▒') $
   [((2*) <$> p, word "██") | p <- snake]
 
 glyph :: Int -> String
-glyph score = take 2 . drop score . cycle $ "∀∃⊨⊥⊢⊤∨∧"
+glyph score = take 2 . drop score . cycle $ "∀∃⊨⊥⊢⊤∨∧⇒λ→ΣΠη"
 
 consistent s@(snake, dir, food, rng, score)
   | food `elem` snake = consistent (snake, dir, food', rng', score)
