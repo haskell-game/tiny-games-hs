@@ -7,7 +7,7 @@ m(0,_)'k'=(1,0);m(_,0)'l'=(0,1);m d _=d;g _(s,_,f,_,z)=mergePlanes(box 80 24 '�
  $((2,2),blankPlane 78 22):((2*)<$>f,word$u z):[((2*)<$>s,word w)|(w,s)<-zip("⌀⌀"
  :repeat "▒▒")s];b(_,_,_,_,z)=printf"You proved %d theorems!\n"z;o=True;c q@(s,d,
  f,r,z)|f`elem`s=c(s,d,(2+y`rem`20,2+x),r',z)|o=q where{r'=r`div`2`xor`bool 0
- 0xe08(odd r);(y,x)=r`divMod`38};u z=take 2.drop z.cycle$"∀∃⊥⊢⊤⊨∨∧⇒λ→ΣΠη"
+ 0xe08(odd r);(y,x)=r`divMod`38};u z=take 2.drop (3*z).cycle$"∀∃⊥⊢⊤⊨∨∧⇒λ→ΣΠη"
 -- ^10 ------------------------------------------------------------------ 80> --
 {- hackage-10-80/snake-lemma (gergoerdi)
 
