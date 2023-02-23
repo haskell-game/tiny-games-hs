@@ -184,6 +184,11 @@ You can also run `./play GAME -h` to view a game's source code and readme.
 
 ## Development
 
+### Experience reports
+
+- <https://tristancacqueray.github.io/blog/tiny-game-engine>
+- <https://www.cole-k.com/2023/02/21/tiny-games-hs/>
+
 ### Runnability
 
 - Avoid requiring problematic GHC versions. In particular GHC <9.2 doesn't work well on mac.
