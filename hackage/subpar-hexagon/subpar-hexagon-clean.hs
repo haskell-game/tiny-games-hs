@@ -10,17 +10,17 @@ type State =
     )
 
 s0 :: State
-s0 = (0, 0, 20, False:replicate 5 True, 1)
+s0 = (0, 0, 20, cycle (False:replicate 5 True), 1)
 
 main = play FullScreen white 60 s0 paint react step
 
 hex :: [Bool] -> Picture
 hex sides = foldMap (\(p1, p2) -> line [p1, p2]) [p | (p, b) <- zip ps sides, b]
   where
-    ps = zip (cycle hexPoints) (tail hexPoints ++ [head hexPoints])
+    ps = zip hexPoints (tail hexPoints)
 
 hexPoints :: [Point]
-hexPoints = [(-1, 0), (-0.5, 0.87), (0.5, 0.87), (1, 0), (0.5,-0.87), (-0.5,-0.87)]
+hexPoints = cyle [(-1, 0), (-0.5, 0.87), (0.5, 0.87), (1, 0), (0.5,-0.87), (-0.5,-0.87)]
 
 paint :: State -> Picture
 paint (p, r, enemySize, enemyPattern, rng) = rotate r $ scale s s $
