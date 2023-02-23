@@ -9,7 +9,7 @@ let{mO=neighbours w p};c.show$zip[1..](map(\x->head$directionTo w p x)$mO);
 i<-read<$>getLine;c$"You have "++show nh++"hp";g(w,e)(mO!!(i-1),False,nh)};
 mC r (a,b) c|(n-r)==b&&(if r<=n then(c-1-n)else(c-1)-n+(r-n))==a="⬢ "|True="⬡ "
 -- ^10 ------------------------------------------------------------------ 80> --
-{- hackage-10-80/hexEscape (nevrome).
+{- hackage-10-80/hexescape (nevrome).
 
 Copyright 2023, Clemens Schmid
 SPDX-License-Identifier: CC-BY-4.0
