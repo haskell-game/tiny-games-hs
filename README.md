@@ -102,6 +102,7 @@ Here are the entries received so far!
 </tr>
 <tr>
 <td><a href="prelude/life"><img src="prelude/life/life.png" width=140 height=140><br>life</a><br>(Rens van Hienen)</td>
+<td><img src="prelude/call-by-push-block/call-by-push-block.gif" width=140 height=140><br><a href="prelude/call-by-push-block">call-by-push-block</a><br>(Rens van Hienen)</td>
 </tr>
 </table>
 

@@ -21,6 +21,7 @@ prelude/mini-othello/mini-othello.hs
 prelude/one-dot/one-dot.hs
 prelude/expressit/expressit.hs
 prelude/life/life.hs
+prelude/call-by-push-block/call-by-push-block.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
@@ -57,6 +58,7 @@ hackage/snake-lemma/snake-lemma.hs
 
 # Games needing special invocation, in alphabetical order.
 
+call-by-push-block() { runghc "$1"; }
 fifteen()           { runghc -XPatternSynonyms -XLambdaCase "$1"; }
 brickbreaker()      { stack script --compile --resolver lts-20 --package gloss "$1"; }
 hallway-to-hell()   { stack runghc --resolver lts-20 --package random --package rio "$1"; }
