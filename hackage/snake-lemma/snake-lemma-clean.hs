@@ -27,10 +27,10 @@ logic _ (snake@((y, x):_), d@(dy, dx), food, rng, score) e
     d' | KeyPress k <- e = move d k
        | otherwise = d
 
-move d 'i' = (-1, 0)
-move d 'j' = (0, -1)
-move d 'k' = (1, 0)
-move d 'l' = (0, 1)
+move (0, _) 'i' = (-1, 0)
+move (_, 0) 'j' = (0, -1)
+move (0, _) 'k' = (1, 0)
+move (_, 0) 'l' = (0, 1)
 move d _ = d
 
 draw :: GEnv -> State -> Plane
