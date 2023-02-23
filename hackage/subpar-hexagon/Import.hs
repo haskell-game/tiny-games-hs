@@ -11,7 +11,7 @@ module Import
 import Graphics.Gloss.Interface.Pure.Game
 import Data.Bits (xor)
 import Control.Applicative
-import Control.Monad(guard, mzero)
 import Data.List(partition)
+import Control.Monad(join)
 import Data.Bool
 import GHC.Float (int2Float)
