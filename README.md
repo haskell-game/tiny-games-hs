@@ -165,6 +165,7 @@ Here are the entries received so far!
 <td><a href="hackage/short-guess"><img src="hackage/short-guess/short-guess.png" width=140 height=140><br>short-guess</a><br>(RimuhRimu)</td>
 <td><a href="hackage/hexescape"><img src="hackage/hexescape/hexescape.png" width=140 height=140><br>hexescape</a><br>(nevrome)</td>
 <td><a href="hackage/snake-lemma"><img src="hackage/snake-lemma/snake-lemma.png" width=140 height=140><br>snake-lemma</a><br>(gergoerdi)</td>
+<td><a href="hackage/subpar-hexagon"><img src="hackage/subpar-hexagon/subpar-hexagon.png" width=140 height=140><br>subpar-hexagon</a><br>(gergoerdi)</td>
 </tr>
 </table>
 

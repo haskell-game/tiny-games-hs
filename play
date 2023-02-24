@@ -55,6 +55,7 @@ hackage/tetris/tetris.hs
 hackage/short-guess/short-guess.hs
 hackage/hexescape/hexescape.hs
 hackage/snake-lemma/snake-lemma.hs
+hackage/subpar-hexagon/subpar-hexagon.hs
 )
 
 # Games needing special invocation, in alphabetical order.
