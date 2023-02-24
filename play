@@ -30,6 +30,7 @@ base/peyton-says/peyton-says.hs
 base/acey-deucey/acey-deucey.hs
 base/flower-seeds/flower-seeds.hs
 base/lambda-ray/lambda-ray.hs
+base/7up7down/7up7down.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs
@@ -51,7 +52,6 @@ hackage/balances/balances.hs
 hackage/vaders/vaders.hs
 hackage/tetris/tetris.hs
 hackage/short-guess/short-guess.hs
-hackage/7up7down/7up7down.hs
 hackage/hexescape/hexescape.hs
 hackage/snake-lemma/snake-lemma.hs
 )
