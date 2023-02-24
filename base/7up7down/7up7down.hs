@@ -1,5 +1,4 @@
-#!/usr/bin/env stack
--- stack --resolver lts-20 script --package random --compile
+#!/usr/bin/env runhaskell
 import GHC.Clock;import Data.Bifoldable;import System.IO;r=fromEnum.(+1).(`mod`6
  ).(`div`1000)<$>getMonotonicTimeNSec; d n=putStr$toEnum<$>[9855+n,32];main=g 10
 g b=if(b<=0)then putStrLn"c ya l8r l0$3r"else putStr("balance=₹"++(show b)++"|b\
@@ -7,9 +6,9 @@ g b=if(b<=0)then putStrLn"c ya l8r l0$3r"else putStr("balance=₹"++(show b)++"|
  >>= \(x,y)->bimapM_((d x>>d y>>).putStrLn)g$if(x+y>7&&i=="7up")||(x+y<7&&i=="7\
 \down")||(x+y==7&&i=="7")then("You win!",b+1+fromEnum(i=="7"))else("You lose!",b
  -1) else putStrLn"Bye!"
--- ^09 ------------------------------------------------------------------ 80> --
+-- ^08 ------------------------------------------------------------------ 80> --
 --
--- Category: hackage-10-80
+-- Category: base-10-80
 -- Tested with: GHC 9.2.6
 -- Author: @akshaymankar
 --

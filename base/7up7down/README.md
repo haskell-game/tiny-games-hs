@@ -3,32 +3,28 @@
 A terminal based guessing game. The player has to guess the result of rolling
 two dice as 7up, 7down or 7.
 
-* Category: `hackage-10-80`
+* Category: `base-10-80`
 * Tested with: GHC 9.2.6
 * Author: @akshaymankar
 
 ## Runnnig
 
-Only tested on linux: Execute `7up7down.hs` while `stack` available in
+Only tested on linux: Execute `7up7down.hs` while `runhaskell` available in
 `$PATH`. It _should_ just work on other Operating Systems 🤞
 
 ## Notes
 
-This game requires a random number generator, since Haskell2010 the `random`
-package is not part of default packages, so this game needs to in the
-`hackage-10-80` category. The game only uses 8 lines (without using
-`Imports.hs`), so an improvement idea is to implement dice rolling by reading
-`/dev/urandom` and be part of `base-10-80` category, but this will definitely
-not work on Windows, so perhaps it is not worth it.
+Thanks to @gergoerdi this game can work without depending on the `random`
+package: https://github.com/haskell-game/tiny-games-hs/issues/79
 
 Another idea for improvement could be to make the game validate player input so
 the player doesn't automatically lose by making typos.
 
-When using `stack script` with `--compile`, the buffering mode is set to
-`LineBuffering`, this causes the input prompt to not get flushed and it seems
-like the game is just stuck. Smallest way to get around it was to use `hFlush
-stdout`. Curiously this doesn't happen without the `--compile` flag, but that
-causes the game to take too long to start.
+The buffering mode is set to `LineBuffering` when using compiled code, this
+causes the input prompt to not get flushed and it seems like the game is just
+stuck. Smallest way to get around it was to use `hFlush stdout`. Curiously this
+doesn't happen when runing the code directly with `runhaskell`. Since there was
+enough space left before the 10th line, this is part of the game.
 
 Writing something like `if i=="7"then b+2else b+1` is valid haskell even if
 there is no space between `2` and `else`. However, it is even shorter to write
@@ -44,9 +40,7 @@ of course go against having it "just work", so it was left out.
 This is just output of pasting the minified code into https://ormolu-live.tweag.io/
 
 ```haskell
-#!/usr/bin/env stack
--- stack --resolver lts-20 script --package random --compile
-
+#!/usr/bin/env runhaskell
 import Data.Bifoldable
 import GHC.Clock
 import System.IO
@@ -95,9 +89,9 @@ g b =
                             - 1
                         )
             else putStrLn "Bye!"
--- ^ 09 ------------------------------------------------------------------ 80> --
+-- ^ 08 ------------------------------------------------------------------ 80> --
 --
---  Category: hackage-10-80
+--  Category: base-10-80
 --  Tested with: GHC 9.2.6
 --  Author: @akshaymankar
 --
