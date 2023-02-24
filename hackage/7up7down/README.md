@@ -48,13 +48,18 @@ This is just output of pasting the minified code into https://ormolu-live.tweag.
 -- stack --resolver lts-20 script --package random --compile
 
 import Data.Bifoldable
+import GHC.Clock
 import System.IO
-import System.Random
 
-d n =
-  putStr $
-    toEnum
-      <$> [9855 + n, 32]
+r =
+  fromEnum
+    . (+ 1)
+    . ( `mod` 6
+      )
+    . (`div` 1000)
+    <$> getMonotonicTimeNSec
+
+d n = putStr $ toEnum <$> [9855 + n, 32]
 
 main = g 10
 
@@ -63,31 +68,34 @@ g b =
     then putStrLn "c ya l8r l0$3r"
     else
       putStr
-        ( "balance=₹" ++ (show b) ++ "|bet=₹1|7/7up/7down/q: "
+        ( "balance=₹"
+            ++ (show b)
+            ++ "|b\
+               \et=₹1|7/7up/7down/q: "
         )
         >> hFlush stdout
         >> getLine
         >>= \i ->
           if i /= "q"
             then
-              (,) <$> randomRIO (1, 6) <*> randomRIO (1, 6) >>= \(x, y) ->
-                bimapM_
-                  ( ( d x
-                        >> d
-                          y
-                        >>
-                    )
-                      . putStrLn
-                  )
-                  g
-                  $ if (x + y > 7 && i == "7up") || (x + y < 7 && i == "7down") || (x + y == 7 && i == "7")
-                    then
-                      ( "You win!",
-                        b + 1 + fromEnum (i == "7")
-                      )
-                    else ("You lose!", (b - 1))
+              (,) <$> r <*> r
+                >>= \(x, y) ->
+                  bimapM_ ((d x >> d y >>) . putStrLn) g $
+                    if (x + y > 7 && i == "7up")
+                      || ( x + y < 7
+                             && i
+                               == "7\
+                                  \down"
+                         )
+                      || (x + y == 7 && i == "7")
+                      then ("You win!", b + 1 + fromEnum (i == "7"))
+                      else
+                        ( "You lose!",
+                          b
+                            - 1
+                        )
             else putStrLn "Bye!"
--- ^ 08 ------------------------------------------------------------------ 80> --
+-- ^ 09 ------------------------------------------------------------------ 80> --
 --
 --  Category: hackage-10-80
 --  Tested with: GHC 9.2.6
