@@ -9,3 +9,8 @@ import Import;main=play FullScreen white 60(0,0,20,cycle(False:replicate 5 True)
  ,z)|s>1= (p,r+d*90,s*0.2**d,q,x,z)|True=(p,r+d*90,20,drop x q,x`div`2`xor`bool
  0 96(odd x),bool(z+1)0(q!!p));j=join;ss=j scale
 -- ^10 ------------------------------------------------------------------ 80> --
+{- hackage-10-80/subpar-hexagon (gergoerdi)
+
+Use `a` and `d` to move clockwise/counterclockwise, avoiding the red shapes as
+they close in on you.
+-}
