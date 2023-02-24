@@ -103,6 +103,7 @@ Here are the entries received so far!
 <tr>
 <td><a href="prelude/life"><img src="prelude/life/life.png" width=140 height=140><br>life</a><br>(Rens van Hienen)</td>
 <td><img src="prelude/call-by-push-block/call-by-push-block.gif" width=140 height=140><br><a href="prelude/call-by-push-block">call-by-push-block</a><br>(cole-k)</td>
+<td><a href="prelude/companion"><img src="prelude/companion/companion.png" width=140 height=140><br>companion</a><br>(Greg B)</td>
 </tr>
 </table>
 

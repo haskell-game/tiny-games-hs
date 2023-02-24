@@ -22,6 +22,7 @@ prelude/one-dot/one-dot.hs
 prelude/expressit/expressit.hs
 prelude/life/life.hs
 prelude/call-by-push-block/call-by-push-block.hs
+prelude/companion/companion.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
