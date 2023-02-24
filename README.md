@@ -1,7 +1,7 @@
 # Haskell Tiny Game Jam
 
 Inspired by the ongoing [BASIC 10Liner contest](https://www.homeputerium.de)
-(see their english rules at the bottom of that page, and [latest entries](https://bunsen.itch.io))..
+(see their english rules at the bottom of that page, and [their 2023 entries](https://gkanold.wixsite.com/homeputerium/games-list-2023))..
 
 The first Haskell tiny games contest runs through February 2023!
 Your mission: make a playable game in 10 lines of 80 characters of Haskell.
@@ -35,8 +35,8 @@ Here are the contest rules for this round (HTG1):
    - `prelude-10-80`, allowing no imports
    - `base-10-80`, allowing imports from the base package
    - `default-10-80`, allowing imports from GHC's default packages, 
-     plus an optional Import.hs file to gather and re-export imports (only)
-   - `hackage-10-80`, allowing imports from all of Hackage, and an Import.hs file.
+     plus an optional file named `Import.hs` to gather and re-export imports (only)
+   - `hackage-10-80`, allowing imports from all of Hackage, and an `Import.hs` file.
 
 2. The entry can be a script ([runghc], [stack], [cabal], ...)
    or a small program requiring compilation, but not a multi-file project.
@@ -102,6 +102,7 @@ Here are the entries received so far!
 </tr>
 <tr>
 <td><a href="prelude/life"><img src="prelude/life/life.png" width=140 height=140><br>life</a><br>(Rens van Hienen)</td>
+<td><img src="prelude/call-by-push-block/call-by-push-block.gif" width=140 height=140><br><a href="prelude/call-by-push-block">call-by-push-block</a><br>(cole-k)</td>
 </tr>
 </table>
 
@@ -118,6 +119,7 @@ Here are the entries received so far!
 <tr>
 <td><a href="base/acey-deucey"><img src="base/acey-deucey/acey-deucey.png" width=140 height=140><br>acey-deucey</a><br>(trevarj)</td>
 <td><a href="base/flower-seeds"><img src="base/flower-seeds/flower-seeds.png" width=140 height=140><br>flower-seeds</a><br>(tristanC)</td>
+<td><img src="base/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="base/lambda-ray">lambda-ray</a><br>(tristanC)</td>
 </tr>
 </table>
 
@@ -128,7 +130,6 @@ Here are the entries received so far!
 <td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=140 height=140><br>type-and-furious</a><br>(lsmor)</td>
 <td><a href="default/shmupemup"><img src="default/shmupemup/shmupemup.png" width=140 height=140><br>shmupemup</a><br>(elderephemera)</td>
 <td><img src="default/tsp/tsp.gif" width=140 height=140><br><a href="default/tsp">tsp</a><br>(tristanC)</td>
-<td><img src="default/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="default/lambda-ray">lambda-ray</a><br>(tristanC)</td>
 <td><img src="default/lol/lol.gif" width=140 height=140><br><a href="default/lol">lol</a><br>(hellwolf)</td>
 </tr>
 </table>
@@ -160,7 +161,9 @@ Here are the entries received so far!
 <tr>
 <td><a href="hackage/tetris"><img src="hackage/tetris/tetris.png" width=140 height=140><br>tetris</a><br>(gergoerdi)</td>
 <td><a href="hackage/short-guess"><img src="hackage/short-guess/short-guess.png" width=140 height=140><br>short-guess</a><br>(RimuhRimu)</td>
-<td><a href="hackage/7up7down"><img src="hackage/7up7down/7up7down.png" width=140 height=140><br>7up7down</a><br>(RimuhRimu)</td>
+<td><a href="hackage/7up7down"><img src="hackage/7up7down/7up7down.png" width=140 height=140><br>7up7down</a><br>(akshaymankar)</td>
+<td><a href="hackage/hexescape"><img src="hackage/hexescape/hexescape.png" width=140 height=140><br>hexescape</a><br>(nevrome)</td>
+<td><a href="hackage/snake-lemma"><img src="hackage/snake-lemma/snake-lemma.png" width=140 height=140><br>snake-lemma</a><br>(gergoerdi)</td>
 </tr>
 </table>
 
@@ -181,6 +184,11 @@ If that fails, look for running clues in that file, a readme, or the `play` scri
 You can also run `./play GAME -h` to view a game's source code and readme.
 
 ## Development
+
+### Experience reports
+
+- <https://tristancacqueray.github.io/blog/tiny-game-engine>
+- <https://www.cole-k.com/2023/02/21/tiny-games-hs/>
 
 ### Runnability
 

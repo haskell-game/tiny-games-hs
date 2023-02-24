@@ -134,7 +134,7 @@ e (t,p,v,h,_) i =
 -- | This is the end.
 z :: Time -> Velocity -> IO ()
 z t v | v > (-50) = print t
-      | o         = q ""
+      | o         = q "Lost\n"
 
 -- | The game loop.
 go :: World -> IO ()

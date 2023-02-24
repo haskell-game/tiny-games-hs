@@ -14,4 +14,6 @@ default-10-80/type-and-furious (lsmor)
 
 use flags -e -m -h -x to switch the difficulty level
 see README.md 
+
+Uses only base, but is in the default category to allow the separate import file.
 -}

@@ -21,6 +21,7 @@ prelude/mini-othello/mini-othello.hs
 prelude/one-dot/one-dot.hs
 prelude/expressit/expressit.hs
 prelude/life/life.hs
+prelude/call-by-push-block/call-by-push-block.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
@@ -28,10 +29,10 @@ base/rhythm/rhythm.hs
 base/peyton-says/peyton-says.hs
 base/acey-deucey/acey-deucey.hs
 base/flower-seeds/flower-seeds.hs
+base/lambda-ray/lambda-ray.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs
-default/lambda-ray/lambda-ray.hs
 default/lol/lol.hs
 hackage/guess2/guess2.hs
 hackage/wordle/wordle.hs
@@ -51,17 +52,20 @@ hackage/vaders/vaders.hs
 hackage/tetris/tetris.hs
 hackage/short-guess/short-guess.hs
 hackage/7up7down/7up7down.hs
+hackage/hexescape/hexescape.hs
+hackage/snake-lemma/snake-lemma.hs
 )
 
 # Games needing special invocation, in alphabetical order.
 
+call-by-push-block() { runghc "$1"; }
 fifteen()           { runghc -XPatternSynonyms -XLambdaCase "$1"; }
 brickbreaker()      { stack script --compile --resolver lts-20 --package gloss "$1"; }
 hallway-to-hell()   { stack runghc --resolver lts-20 --package random --package rio "$1"; }
 lambda-ray()        { stack script --resolver lts-20 --optimize "$1"; }
 life()              { runghc "$1"; }
 log2048()           { runghc "$1"; }
-lol()               { runghc "$1" "${args[@]}"; }
+lol()               { stack script --resolver lts-20 --optimize --package process --package text -- "$1" "${args[@]}"; }
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
 mini-othello()      { runghc "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
@@ -107,10 +111,14 @@ for g in "${games[@]}"; do
     gamesbyname["$(gamename "$g")"]=$g
 done
 selectGame() {
-    local g=${games[$1]}
-    # select by hs file, or select by game name
+    local g
+    # select by num
+    if [[ "$1" =~ ^[0-9]+$ ]];then
+        g=${games[$1]}
+    fi
+    # select by game name
     if [[ -z $g ]]; then g=${gamesbyname[$1]}; fi
-    # select by fuzzy search
+    # select by game name matching
     if [[ -z $g ]]; then
 	  for h in "${games[@]}"; do
 	      if [[ $(gamename "$h") =~ $1 ]]; then g="$h"; break; fi
