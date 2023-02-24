@@ -30,7 +30,7 @@ paint (p, r, enemySize, enemyPattern, rng, score) =
       scale s s $
         hex (repeat True) <>
         rotate 30 (uncurry translate (hexPoints!!p) $ circle 0.1) <>
-        scale enemySize enemySize (hex enemyPattern)
+        color red (scale enemySize enemySize (hex enemyPattern))
   where
     s = 20 + 4 * sin (0.17 * r)
 
