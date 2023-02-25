@@ -7,7 +7,7 @@ A vastly inferior version of the classic
 
 Use `runghc space-invaders.hs` to run the game. Tested with GHC 9.2.5.
 
-![](game.png)
+![](space-invaders.png)
 
 Press <kbd>a</kbd> to move left, <kbd>d</kbd> to move right, and
 <kbd>Space</kbd> to shoot. You win if you destroy all the aliens. You lose if
