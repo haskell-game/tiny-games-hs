@@ -33,7 +33,7 @@ pieces=
      ]
     ]
   , l
-  , mirror l
+  , reverse $ mirror l
   , z
   , mirror z
   ]
