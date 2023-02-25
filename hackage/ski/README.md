@@ -4,7 +4,7 @@
 
 ![](ski.anim.png)
 
-![](ski-lol10-fs8.png)
+![](play-lol10-ski-fs8.png)
 
 ## Play
 
