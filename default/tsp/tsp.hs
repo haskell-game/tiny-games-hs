@@ -11,6 +11,10 @@ go s=r s>>threadDelay 100000>>(hGetNonBlocking stdin 42>>=e s);e(t,p,v,h,_)i=let
 -- ^10 ------------------------------------------------------------------ 80> --
 {- default-10-80/tsp (tristanC)
 
+Play: $ runhaskell ./tsp.hs
+Goal: Deliver curry to the Tiny Space Station (~|~)
+Keys: f/r to thrust forward/backward
+
 Copyright 2023, Tristan de Cacqueray
 SPDX-License-Identifier: CC-BY-4.0
 -}

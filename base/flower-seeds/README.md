@@ -53,41 +53,41 @@ type Flower =
   )
 
 -- | The initial params.
-i :: Flower
-i = (29.6, 3, 400)
+initialParams :: Flower
+initialParams = (29.6, 3, 400)
 
 -- | Generate the seed params.
-g :: Flower -> [(Float, Float)]
-g (a, d, n) = take n $ iterate (\(b, e) -> (b + pi * a/90, e + d/30)) (0,0)
+genSeeds :: Flower -> [(Float, Float)]
+genSeeds (a, d, n) = take n $ iterate (\(b, e) -> (b + pi * a/90, e + d/30)) (0,0)
 
 -- | Get a seed coordinate.
-c :: (Float, Float) -> (Int, Int)
-c (a, d) = (round (60 + d*cos a), round (0.5*(50 + d*sin a)))
+seedCoord :: (Float, Float) -> (Int, Int)
+seedCoord (a, d) = (round (60 + d*cos a), round (0.5*(50 + d*sin a)))
 
 -- | Plant a seed.
-p :: (Int, Int) -> IO ()
-p (x, y) = do
+plantSeed :: (Int, Int) -> IO ()
+plantSeed (x, y) = do
   threadDelay 1000
   putStrLn ("\^[[" ++ show y ++ ";" ++ show x ++ "f❤")
 
 -- | Render the flower.
-r :: Flower -> IO [()]
-r w = do
-  putStrLn ("\^[cflower-seeds " <> show w)
-  traverse p (map c (g w))
+renderFlower :: Flower -> IO [()]
+renderFlower flower = do
+  putStrLn ("\^[cflower-seeds " <> show flower)
+  traverse (plantSeed . seedCoord) (genSeeds flower)
 
 -- | Evaluate the user input.
-e :: Flower -> Char -> IO ()
-e (a, d, n) i =
+evalInput :: Flower -> Char -> IO ()
+evalInput (a, d, n) i =
   let b | i == 'j' = (-1)
         | i == 'l' = 1
-        | o        = 0
+        | otherwise= 0
       e | i == 'k' = (-1)
         | i == 'i' = 1
-        | o        = 0
+        | otherwise= 0
       m | i == 'c' = (-1)
         | i == 'v' = 1
-        | o        = 0
+        | otherwise= 0
   in go
       ( -- angle
         a + b/20
@@ -99,10 +99,10 @@ e (a, d, n) i =
 
 -- | The game loop.
 go :: Flower -> IO ()
-go w = do
-  r w
+go flower = do
+  renderFlower flower
   input <- getChar
-  e w input
+  evalInput flower input
 
 -- | Setup the terminal, parse the arguments and start the game.
 main :: IO ()
@@ -110,10 +110,6 @@ main = do
   hSetBuffering stdin NoBuffering
   args <- getArgs
   case args of
-    [] -> go i
+    [] -> go initialParams
     (x:_) -> go (read x)
-
--- | 'o' is used for minifying function guards to do tight if-then-else.
-o :: Bool
-o = True
 ```
