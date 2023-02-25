@@ -32,6 +32,7 @@ base/acey-deucey/acey-deucey.hs
 base/flower-seeds/flower-seeds.hs
 base/lambda-ray/lambda-ray.hs
 base/7up7down/7up7down.hs
+base/snake/snake.hs
 default/type-and-furious/type-and-furious.hs
 default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs
