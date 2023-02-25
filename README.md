@@ -1,5 +1,7 @@
 # Haskell Tiny Game Jam
 
+![](hackage/ski/ski-lol10-fs8.png)
+
 Inspired by the ongoing [BASIC 10Liner contest](https://www.homeputerium.de)
 (see their english rules at the bottom of that page, and [their 2023 entries](https://gkanold.wixsite.com/homeputerium/games-list-2023))..
 
@@ -188,7 +190,7 @@ You can also run `./play GAME -h` to view a game's source code and readme.
 
 The [lol](default/lol/) entry is a meta "game" that colourises other games.
 It works with most games but may cost a little performance.
-Each extra "lol" argument modifies the effect. (Hint: try ten!)
+(Hint: each extra "lol" argument modifies the effect.)
 
 ![](play-lol.dark.png)
 
