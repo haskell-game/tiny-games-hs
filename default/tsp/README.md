@@ -62,92 +62,88 @@ type World =
   )
 
 -- | The initial world, with a 3 seconds countdown encoded as a negative value.
-i :: World
-i = (-30, 0, 0, 0, ' ')
+world :: World
+world = (-30, 0, 0, 0, ' ')
 
 -- | Render the countdown.
-c :: Time -> String
-c t | t<0 = show (t`div`10)
-    | o   = ""
+countDown :: Time -> String
+countDown time | time < 0  = show (time `div` 10)
+               | otherwise = ""
 
 -- | 'q' prints the string in a single write syscall, to avoid cursor flickering.
 q :: String -> IO ()
 q = hPut stdout . pack
 
--- | 'o' is used for minifying function guard to do tight if-then-else.
-o :: Bool
-o = True
-
 -- | Render the ship.
-s :: Velocity -> String
-s v | v>=0 = ">"
-    | o    = "<"
+ship :: Velocity -> String
+ship velocity | velocity >= 0 = ">"
+              | otherwise     = "<"
 
 -- | Render the world.
-p :: Int -> World -> String
-p 0 (_,p,v,_,_) = "VEL " ++ show v ++ " | ALT " ++ show p
-p 1 _           = "--," ++ [' ' | _ <- [0..69]] ++ "~|~"
-p 2 (t,p,v,_,f) = [' ' | _ <- [0..floor(p/40)]] ++ f:s v ++ c t
+renderWorld :: Int -> World -> String
+renderWorld 0 (_,pos,vel,_,_) = "VEL " ++ show vel ++ " | ALT " ++ show pos
+renderWorld 1 _               = "--," ++ [' ' | _ <- [0..69]] ++ "~|~"
+renderWorld 2 (t,p,v,_,plume) = [' ' | _ <- [0..floor(p/40)]] ++ plume : ship v ++ countDown t
 
 -- | Print the world.
-r :: World -> IO ()
-r s = q $ "\ESCc=<< TSP >>=   | " ++ unlines (map (flip p s) [0..2])
+printWorld :: World -> IO ()
+printWorld world = q $ "\ESCc=<< TSP >>=   | " ++ unlines (map (flip renderWorld world) [0..2])
 
 -- | Process the input and compute the next world.
-e :: World -> ByteString -> IO ()
-e (t,p,v,h,_) i =
+eval :: World -> ByteString -> IO ()
+eval (time, position, velocity, height, _plume) input =
   let
     -- 'j' look for a given byte in the input buffer
-    j = (/= [] ) . flip elemIndices i
+    has = (/=[] ) . flip elemIndices input
     -- has f been pressed?
-    f = j 102
+    f = has 102
     -- has r been pressed?
-    r = j 114
+    r = has 114
     -- set the engine plume
-    g | f = '*'
-      | r = '['
-      | o = ' '
+    plume | f = '*'
+          | r = '['
+          | otherwise = ' '
     -- the engine thrust
     n | f = 5
       | r = (-5)
-      | o = 0
+      | otherwise = 0
     -- adjust the position (gravity is 1)
-    q = max 0 (p + v - 1)
+    newPosition = max 0 (position + velocity - 1)
     -- check if countdown is running
-    c | t < 0 = 0
-      | o     = 1
-  in if (q == 0 && h > 2900)
+    cd | time < 0  = 0
+       | otherwise = 1
+  in if (newPosition == 0 && height > 2900)
       then -- the ship is on the ground, back from the TSS
-           z t v
+           gameOver time velocity
       else go (
         -- increase time
-        t + 1,
+        time + 1,
         -- new position
-        c * q,
+        cd * newPosition,
         -- new velocity
-        c * (v + n - 1),
+        cd * (velocity + n - 1),
         -- record max height
-        max h p,
+        max height position,
         -- the plume
-        g)
+        plume)
 
 -- | This is the end.
-z :: Time -> Velocity -> IO ()
-z t v | v > (-50) = print t
-      | o         = q "Lost\n"
+gameOver :: Time -> Velocity -> IO ()
+gameOver t v | v > (-50) = print t
+             | otherwise = q "Lost\n"
 
 -- | The game loop.
 go :: World -> IO ()
-go s = do
-  r s
+go world = do
+  printWorld world
   threadDelay 100000
   input <- hGetNonBlocking stdin 42
-  e s input
+  eval world input
 
 -- | Setup the terminal and starts the game loop.
 main :: IO ()
 main = do
   hSetBuffering stdin NoBuffering
   hSetEcho stdin False
-  go i
+  go world
 ```

@@ -11,6 +11,8 @@ go n=puts("\^[c\n"++map(u(n/6.3))p)>>threadDelay 100000>>go(n+1);h p@(x,y,z)=let
 -- ^10 ------------------------------------------------------------------ 80> --
 {- base-10-80/lambda-ray (tristanC)
 
+- Play: $ ghc -O2 lambda-ray.hs && ./lambda-ray
+
 Copyright 2023, Tristan de Cacqueray
 SPDX-License-Identifier: CC-BY-4.0
 -}

@@ -1,14 +1,18 @@
-#!/usr/bin/env                                                   runhaskell
-import System.IO;import Control.Concurrent;import System.Environment;o=True
-r w=putStrLn("\^[cflower-seeds "++show w)>>traverse p(map c(g w));a[]=go i
-a(b:_)=go(read b);c(a,d)=(z$60+d*cos a,z$0.5*(50+d*sin a));z=round;j=(-1)
-i=(29.6,3,400);g(a,d,n)=take n$iterate(\(b,e)->(b+pi*a/90,e+d/30))(0,0)
-p (x,y)=threadDelay 1000>>putStrLn("\^[["++show y++";"++show x++"f❤")
-main = hSetBuffering stdin NoBuffering >> (getArgs >>= a); e(a,d,n)i=let
- b|i=='j'=j|i=='l'=1|o=0;e|i=='k'=j|i=='i'=1|o=0;m|i=='c'=(-1)|i=='v'=1|o=0
- in go (a+b/20,max 0.1(d+e/10),max 1(n+m*17));go w=r w >> (getChar >>= e w)
--- ^9 -------------------------------------------------------------- 75> --
+#!/usr/bin/env runghc
+import System.IO;import GHC.Conc;import System.Environment;i=round;g=True
+main=hSetBuffering stdin NoBuffering>>getArgs>>=j;f j=d j>>getChar>>=e j
+a(j,k,l)=take l$iterate(\(m,n)->(m+pi*j/90,n+k/30))(0,0);j[]=f(29.6,3,k)
+j(a:_)=f(read a);b(j,k)=(i(60+k*cos j),i(0.5*(50+k*sin j)));h=putStrLn
+c(j,k)=threadDelay 1000>>h("\^[["++show k++";"++show j++"f❤");k=400
+d j=h("\^[cflower-seeds "<>show j)>>traverse(c.b)(a j);e(j,k,l)m=let
+ n|m=='j'=(-1)|m=='l'=1|g=0;o|m=='k'=(-1)|m=='i'=1|g=0
+ p|m=='c'=(-1)|m=='v'=1|g=0in f(j+n/20,max 0.1(k+o/10),max 1(l+p*17))
+
+-- ^10 ------------------------------------------------------------------ 80> --
 {- base-10-80/flower-seeds (tristanC)
+
+- Play: $ ./flower-seeds.hs
+- Keys: i/j/k/l/c/v to change the flower
 
 Copyright 2023, Tristan de Cacqueray
 SPDX-License-Identifier: CC-BY-4.0

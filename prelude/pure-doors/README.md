@@ -39,6 +39,7 @@ Here is the less-minified version with type annotations:
 
 -- | Door positions are generated using a 'zipWith' fib sequence.
 type Position = Int
+
 nums :: [Position]
 nums = 1 : 2 : zipWith (+) nums (tail nums)
 
@@ -46,6 +47,7 @@ nums = 1 : 2 : zipWith (+) nums (tail nums)
 type DoorDistance = Int
 type Door = (DoorDistance, Position)
 type World = [Door]
+
 world :: World
 world = map (\n -> (5, mod n 8)) nums
 
@@ -54,24 +56,31 @@ draw :: Char -> String -> Position -> String
 draw sep mid pos = "|" <> replicate pos sep <> mid <> replicate (7 - pos) sep <> "|\n"
 
 -- | An empty line.
-t :: String
-t = draw ' ' " " 7
+emptyLine :: String
+emptyLine = draw ' ' " " 7
 
 -- | Draw the world and check for crash.
-s :: Int -> Door -> Position -> World -> (World -> String) -> String
--- last line contains a door, check the player position.
-s 5 (0,d) p x c = if d /= p then "Crash!" <> c [] else s 5 (head x) p (tail x) c
--- last line is clear, draw the player and continue by reducing the door distance.
-s 5 (l,d) p x c = draw ' ' "^" p <> "[jkl]> " <> c ((l - 1, d) : x)
--- otherwise, draw the current line and recurse.
-s n e@(l,d) p x c = (if (n==5-l) then draw '-' " " d else t) <> s (n+1) e p x c
+step :: Int -> Door -> Position -> World -> (World -> String) -> String
+step 5 (0, door) pos world cont
+    | -- last line contains a door, check the player position.
+      door /= pos = "Crash!" <> cont []
+    | -- the player passed a door, continue by adding the next door
+      otherwise = step 5 (head world) pos (tail world) cont
+step 5 (distance, door) pos world cont =
+      -- draw the player and continue by reducing the current door distance
+      draw ' ' "^" pos <> "[jkl]> " <> cont ((distance - 1, door) : world)
+step n doorDistance@(distance, door) pos rest cont =
+    (if (n == 5 - distance) then draw '-' " " door else emptyLine)
+        <> step (n + 1) doorDistance pos rest cont
+
+type Score = Int
 
 -- | The main loop processing the user input.
-type Score = Int
 go :: Score -> World -> Position -> String -> String
-go x m p i = "\ESCcpure-doors\n" <> s 0 (head m) p (tail m) (\m -> case (m,i) of
- (_:_, c:'\n':xs) | c > 'h' && c < 'n' -> go (x+1) m (p + fromEnum c - 107) xs
- _ -> (if x>5 then " GG, your score is: " <> show (div x 5) else "") <> "\n")
+go score world pos input =
+    "\ESCcpure-doors\n" <> step 0 (head world) pos (tail world) (\m -> case (m, input) of
+    (_:_, c:'\n':xs) | c > 'h' && c < 'n' -> go (score + 1) m (pos + fromEnum c - 107) xs
+    _ -> (if score > 5 then " GG, your score is: " <> show (div score 5) else "") <> "\n")
 
 -- | Start the game.
 main :: IO ()
