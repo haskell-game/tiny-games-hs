@@ -4,6 +4,8 @@
 
 ![](ski.anim.png)
 
+![](ski-lol10-fs8.png)
+
 ## Play
 
 Get ready to ski! `a` and `d` move left and right.\
