@@ -186,6 +186,12 @@ If you don't have bash, cd into each `*/GAME` directory and try running `GAME.hs
 If that fails, look for running clues in that file, a readme, or the `play` script.
 You can also run `./play GAME -h` to view a game's source code and readme.
 
+The [lol](default/lol/) entry is a meta "game" that colourises other games.
+It works with most games but may cost a little performance.
+Each extra "lol" argument modifies the effect. (Hint: try ten!)
+
+![](play-lol.dark.png)
+
 ## Development
 
 ### Experience reports
