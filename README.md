@@ -124,6 +124,7 @@ Here are the entries received so far!
 <td><a href="base/flower-seeds"><img src="base/flower-seeds/flower-seeds.png" width=140 height=140><br>flower-seeds</a><br>(tristanC)</td>
 <td><img src="base/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="base/lambda-ray">lambda-ray</a><br>(tristanC)</td>
 <td><a href="base/7up7down"><img src="base/7up7down/7up7down.png" width=140 height=140><br>7up7down</a><br>(akshaymankar)</td>
+<td><a href="base/snake"><img src="base/snake/snake.png" width=140 height=140><br>snake</a><br>(akshaymankar)</td>
 </tr>
 </table>
 
