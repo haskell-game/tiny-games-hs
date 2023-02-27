@@ -250,3 +250,20 @@ It helps gif2apng a lot also.
 [APNGs](https://github.com/haskell-game/tiny-games-hs/issues/70) are preferable if you can manage it:
 they will not be obscured by Github's gif player button, they can be hyperlinks, and they can have smaller file size.
 https://sourceforge.net/projects/gif2apng works well, it can be built from its source tarball.
+
+### Freeglut
+
+You may encounter the following error when playing some of the games:
+
+```
+xxx: user error (unknown GLUT entry glutInit)
+```
+
+That usually means that you should install "freeglut" library using your system package manager.
+
+Special tips for NixOS users:
+
+```
+$ nix-shell -p freeglut # Or add to your global packages list
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`nix eval --impure --raw --expr 'let pkgs = import <nixpkgs>{}; in pkgs.freeglut'`/lib;
+```
