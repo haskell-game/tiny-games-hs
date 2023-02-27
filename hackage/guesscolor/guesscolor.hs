@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --compile --resolver=lts-20.10 --package gloss --package random
+-- stack script --compile --resolver=lts-20 --package gloss --package random
 import Import
 main = do -- hackage-10-80/guesscolor (TravisCardwell)
   [r, g, b] <- take 3 . randomRs (0, 255) <$> newStdGen

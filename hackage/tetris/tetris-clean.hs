@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --resolver=lts-20.10 --package ansi-terminal-game
+#!/usr/bin/env -S stack script --resolver=lts-20 --package ansi-terminal-game
 import Imports
 
 main = playGame $ Game 8 (pieces!!0, replicate 20 0) logic draw (\_->False)

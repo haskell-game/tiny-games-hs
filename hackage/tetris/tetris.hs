@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --resolver=lts-20.10 --package ansi-terminal-game
+#!/usr/bin/env -S stack script --resolver=lts-20 --package ansi-terminal-game
 import Imports;main=playGame(Game 6(p!!0,r 20 0)l d(\_->False));z=zipWith;h=map
 p=[[[120],[32,32,32,32]],[[32,112],[32,48,32],[112,32],[32,96,32]],l,y$m l,z,m z
  ,[[48,48]]]where{m=h y;l=[[16,112],[32,32,48],[112,64],[48,16,16]];z=[[24,48],[

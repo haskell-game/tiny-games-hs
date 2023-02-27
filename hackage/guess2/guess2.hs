@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-20.9 --package random --verbosity=error
+-- stack script --resolver=lts-20 --package random --verbosity=error
 import System.IO (hFlush, stdout)
 import System.Random (randomRIO)
 main = let m = 10 in do { n <- randomRIO (1,m::Int);

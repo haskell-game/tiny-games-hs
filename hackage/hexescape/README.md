@@ -14,7 +14,7 @@ Here is a less minified version of the code:
 
 ```haskell
 #!/usr/bin/env stack
--- stack script --resolver lts-20.11 --package grid,random
+-- stack script --resolver lts-20 --package grid,random
 
 import Math.Geometry.Grid           (centre,directionTo,indices,neighbours,size)
 import Math.Geometry.Grid.Hexagonal (hexHexGrid, HexHexGrid)

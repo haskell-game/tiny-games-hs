@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver lts-20.11 --package grid,random
+-- stack script --resolver lts-20 --package grid,random
 import Import;c=putStrLn;n=4;u=pure;v z=randomRIO(0,z);main=do{let{gH=
 hexHexGrid n};let{aC=indices gH\\[(0,0)]};e<-(aC!!)<$>v (length aC-1);(_,_,h)<-
 g(gH,e)(head(centre gH),False,100);if h<=0then c"✝"else c"🪜"};m p=do{mapM_(c.(

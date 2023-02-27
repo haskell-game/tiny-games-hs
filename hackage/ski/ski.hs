@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-20.10 --package random
+-- stack script --resolver=lts-20 --package random
 import Import;s=78;ll=6;rl=s-6;c=s`div`2;w=24;m=2;t='🌲';h=(`div`2);q=p.show
 ra=randomRIO;rp=replicate;rm=replicateM_;d=threadDelay 50000;p s=putStrLn s>>d
 sc=rm 10$p"";main=hSetEcho stdin False>>hSetBuffering stdin NoBuffering>>p"Ski!"
