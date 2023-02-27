@@ -66,7 +66,7 @@ color when the last playable empty square is filled.
   * How many black pieces on the board? 2.
   * How many white pieces on the board? 2.
 
-2) The second line is for values of the x-axis.
+2) The last line is for values of the x-axis.
 
 3) The rest is the printout of the board:
   * The first column is for values of the "y-axis".
