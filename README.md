@@ -261,9 +261,6 @@ xxx: user error (unknown GLUT entry glutInit)
 
 That usually means that you should install "freeglut" library using your system package manager.
 
-Special tips for NixOS users:
+### Using Nix
 
-```
-$ nix-shell -p freeglut # Or add to your global packages list
-$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`nix eval --impure --raw --expr 'let pkgs = import <nixpkgs>{}; in pkgs.freeglut'`/lib;
-```
+A flake.nix is provided, just run `nix develop .` to have a reproduciable tiny game environment!
