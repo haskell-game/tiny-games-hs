@@ -80,13 +80,24 @@ sudoku()            { runghc "$1"; }
 tsp()               { runghc "$1"; }
 
 # Help
-printTitle() {
+printFileWithTitle() {
     printf '%0.1s' "="{1..80};echo
     echo "= " "$1"
     printf '%0.1s' "="{1..80};echo
+    cat "$1"
 }
 gamecat()  { echo "$1" | cut -d/ -f1; }
 gamename() { basename "$1" .hs; }
+detectAndWarnAboutFreeglut() {
+    # NOTE: The detection logic requires gcc, without it will produce false alarm.
+    #       But can you imagine the life of people without gcc?
+    which gcc &>/dev/null || return
+    (LIBRARY_PATH=$LD_LIBRARY_PATH gcc -lglut --shared -o /dev/null &>/dev/null) ||
+        cat <<HERE
+Freeglut library not found! You should install freeglut in order to play some games.
+Checkout the README freeglut section for more information.
+HERE
+}
 help() {
     cat <<HERE
 --------------------------------------------------------
@@ -107,6 +118,7 @@ HERE
 	printf "%2d) %-20s  %s\n" "$k" "$(gamename "$g")" "[$(gamecat "$g")]"
     done
     echo
+    detectAndWarnAboutFreeglut
 }
 
 # Select Game
@@ -145,14 +157,11 @@ elif [[ "$2" == "-h" ||  "$2" == "--help" ]];then
     gh=$(echo "$(dirname "$g")"/README*)
     {
         if [[ -f "$gi" ]];then
-            printTitle "$gi"
-            cat "$gi"
+            printFileWithTitle "$gi"
         fi
-        printTitle "$g"
-        cat "$g"
+        printFileWithTitle "$g"
         if [[ -f "$gh" ]];then
-            printTitle "$gh"
-            cat "$gh"
+            printFileWithTitle "$gh"
         fi
     } | ${PAGPER:-less};
 else
