@@ -200,6 +200,7 @@ It works with most games but may cost a little performance.
 
 ### Experience reports
 
+- <http://miaozc.me/2023-02-27-hs-tiny-games.html>
 - <https://tristancacqueray.github.io/blog/tiny-game-engine>
 - <https://www.cole-k.com/2023/02/21/tiny-games-hs/>
 
