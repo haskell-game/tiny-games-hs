@@ -40,6 +40,8 @@ default/shmupemup/shmupemup.hs
 default/tsp/tsp.hs
 default/lol/lol.hs
 default/space-invaders/space-invaders.hs
+default/swish/swish.easy.hs
+default/swish/swish.survival.hs
 hackage/guess2/guess2.hs
 hackage/wordle/wordle.hs
 hackage/ski/ski.hs
@@ -76,6 +78,8 @@ matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=m
 mini-othello()      { stack script --resolver lts-20 --optimize "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
 shmupemup()         { cd "$(dirname "$1")" || exit 1; stack runghc --resolver lts-20.12 --package ghc-9.2.6 --package parsec "$(basename "$1")"; }
+swish.easy()        { cd "$(dirname "$1")" || exit 1; ./"$(basename "$1")"; }
+swish.survival()    { cd "$(dirname "$1")" || exit 1; ./"$(basename "$1")"; }
 short-guess()       { stack runghc --resolver lts-20 --package random "$1"; }
 space-invaders()    { cd "$(dirname "$1")" || exit 1; runghc "$(basename "$1")"; }
 sudoku()            { runghc "$1"; }
