@@ -13,23 +13,23 @@ import System.IO
 main = do
   {putStr}
     ( unlines
-        ( ({replicate} 40 '$blank' ++ "$avatar" ++ {replicate} 39 '$blank')
-            : {replicate} $before_depth ({replicate} 80 '$blank')
+        ( ({replicate} $start '$blank' ++ "$avatar" ++ {replicate} $after_start '$blank')
+            : {replicate} $before_depth ({replicate} $width '$blank')
         )
     )
   hSetEcho {stdin} False
   hSetBuffering {stdin} NoBuffering
-  {loop} (0, $map, $enemies : repeat [], 40)
+  {loop} (0, $map, $enemies : repeat [], $start)
 
 {loop} ({iteration}, {random}, {enemies}, {hero}) = do
   let
     {moreEnemies} =
       zipWith
-        (\{index} {enemy} → (((({random} `div` 3 ^ {index}) `{mod}` 3) - 1) + {enemy}) `{mod}` 80)
+        (\{index} {enemy} → (((({random} `div` 3 ^ {index}) `{mod}` 3) - 1) + {enemy}) `{mod}` $width)
         [1 ..]
         ({enemies} !! 0)
         ++ if {random} `{mod}` $odds_of_new_enemy_denominator < $odds_of_new_enemy_numerator
-          then [{random} `{mod}` 80]
+          then [{random} `{mod}` $width]
           else []
     {updatedEnemies} =
       if {random} `{mod}` $odds_of_enemy_death_denominator < length {moreEnemies} * $odds_of_enemy_death_numerator
@@ -38,7 +38,7 @@ main = do
 
   input ← getChar
 
-  {updatedHero} ← fmap (`{mod}` 80) $ case input of
+  {updatedHero} ← fmap (`{mod}` $width) $ case input of
     'a' → {pure} ({hero} - 1)
     'd' → {pure} ({hero} + 1)
     '\ESC' → {score} {iteration}
@@ -46,9 +46,9 @@ main = do
 
   {putStr}
     ( "\^[[${depth}A\^[["
-        ++ show ({hero} + 1)
+        ++ show ({hero} * $tile_width + 1)
         ++ "G.\^[[B\^[["
-        ++ show ({updatedHero} + 1)
+        ++ show ({updatedHero} * $tile_width + 1)
         ++ "G$avatar\^[[${before_depth}E"
     )
   {putStr}
@@ -58,7 +58,7 @@ main = do
               then '$enemy'
               else '$blank'
         )
-        [0 .. 79]
+        [0 .. $almost_width]
         ++ "\n"
     )
 

@@ -13,6 +13,8 @@ fi
 
 export before_depth="$(($depth - 1))"
 export after_depth="$(($depth + 1))"
+export after_start="$((width - start - 1))"
+export almost_width="$((width - 1))"
 target=woosh."${settings%.env}".hs
 
 envsubst < woosh.hs > woosh.envsubst.hs
