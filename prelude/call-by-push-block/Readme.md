@@ -15,6 +15,14 @@ There are 15 levels of roughly increasing difficulty. They will take around an
 hour to complete, depending on experience. Your scores for each level are given
 at the end: compete with your friends to see who can get the lowest scores!
 
+## Running
+
+`call-by-push-block.hs` can be run as the sole argument to `runghc`, e.g.
+
+``` bash
+$ runghc call-by-push-block.hs
+```
+
 ## External links
 
 I wrote a blog post about the process of creating this submission, which you can
