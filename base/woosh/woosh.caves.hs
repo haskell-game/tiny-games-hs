@@ -1,4 +1,4 @@
-#!/usr/bin/env -S runghc-9.2 -XUnicodeSyntax
+#!/usr/bin/env runghc -XUnicodeSyntax
 {import System.Exit;import System.IO;ऄ=replicate;अ=putStr;आ=mod;इ=stdin;ई=pure;
 main=do{अ(unlines((ऄ 40 ' '++"v"++ऄ 39 ' '):ऄ 5(ऄ 80 ' ')));hSetEcho इ False;
 hSetBuffering इ NoBuffering;उ(0,2^30,[30,40,50]:repeat[],40)};उ(ऊ,ऋ,ऌ,ऍ)=do{let{

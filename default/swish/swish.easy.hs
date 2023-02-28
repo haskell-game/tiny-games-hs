@@ -1,4 +1,4 @@
-#!/usr/bin/env -S runghc-9.2 -XUnicodeSyntax
+#!/usr/bin/env runghc -XUnicodeSyntax
 {import Imports;ऄ=replicate;अ=putStr;आ=mod;इ=stdin;ई=pure;उ=(\उ ऊ ऋ→if उ then ऊ
 else ऋ);main=do{अ("\^[[?25l"++unlines((ऄ 40 ' '++"▼"++ऄ 39 ' '):ऄ 29(ऄ 80 ' ')))
 ;hSetBuffering इ NoBuffering;ऌ(0,2^30,[]:repeat[],40)};ऌ(ऍ,ऎ,ए,ऐ)=do{threadDelay
