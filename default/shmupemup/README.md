@@ -9,21 +9,21 @@ A terminal shmup game.
 ![A screenrecording of gameplay](shmupemup-long.gif)
 
 Tap the WASD keys to move and Space to fire. Shoot down as many enemy space
-ships as you can before one hits you!
+ships as you can before one hits you. Be careful not to let your gun overheat!
 
 ## Running
 
 On Linux and MacOS (untested, but it should work) you can run the game with
-`runghc shmupemup.hs` or if that doesn't work, with `stack runghc --package
-parsec shmupemup.hs`.
+`runghc -package=ghc shmupemup` or if that doesn't work, with `stack runghc
+--resolver lts-20.12 --package ghc-9.2.6 --package parsec shmupemup`.
 
 On Windows, because of GHC issue #2189, the game must be compiled with the
-native io manager which you can do with the command `ghc -with-rtsopts
---io-manager=native shmupemup.hs`. You will also have to enable VT100 support if
-you don't want the screen to be repeated which you can do by running `reg add
-HKCU\Console /v VirtualTerminalLevel /t REG_DWORD /d 1`.  There is also jitter
-on Windows, Command Prompt seems to have less jitter than PowerShell or Windows
-Terminal though.
+native io manager which you can do with the command `ghc -package=ghc
+-with-rtsopts --io-manager=native shmupemup.hs`. You will also have to enable
+VT100 support if you don't want the screen to be repeated which you can do by
+running `reg add HKCU\Console /v VirtualTerminalLevel /t REG_DWORD /d 1`.  There
+is also jitter on Windows, Command Prompt seems to have less jitter than
+PowerShell or Windows Terminal though.
 
 ## Implementation
 
@@ -53,66 +53,76 @@ import Data.Functor (($>))
 import Data.List (transpose)
 import GHC.Clock (getMonotonicTimeNSec)
 import GHC.Conc (threadDelay)
+import GHC.Utils.Misc (changeLast, count)
 import System.IO (hReady, hSetBuffering, hSetEcho, BufferMode(..), stdin)
 import Text.Parsec ((<|>), anyChar, eof, many, oneOf, parse, string, try)
 
 main = do
   hSetBuffering stdin NoBuffering
-  hSetEcho stdin False
-  loop 0 $ ('>' : replicate 79 ' ') : replicate 9 (replicate 80 ' ')
+  hSetEcho stdin (1 < 0)
+  loop 0 (('>' : replicate 79 ' ') : replicate 9 (replicate 80 ' '))
 
 -- Renamed: !
-loop n s=do
-  putStr $ "\27[2J" ++ unlines (init <$> s) ++ "Score: "
-  print n;
-  time <- getMonotonicTimeNSec;
-  threadDelay 50000;
-  input <- getInput;
-  loop
-    (n + sum [ 1 | 'X' <- fold $ init <$> s ])
-    (zipWith (\x-> (++[x]) . init . (applyParser $ horizontal input))
-      (chr . (`mod` 150) . fromIntegral <$> iterate (0xe817fb2d*) time)
-      (transpose . map (applyParser $ vertical input) $ transpose s))
+loop score screen = do
+  putStr $ "\27[2J" ++ unlines (init <$> screen) ++ "Score: "
+  print score
+  time <- getMonotonicTimeNSec
+  threadDelay 50000
+  input <- getInput
+  loop (score + countOnScreen 'X'screen)
+    $ zipWith
+      (changeLast . runParser (horizontal input $ countOnScreen '-' screen < 9))
+      (transpose . map (runParser $ vertical input) $ transpose screen)
+    $ chr . fromEnum . (`mod` 150) <$> iterate (0xe817fb2d *) time
 
 -- Renamed: g
-getInput = getInput' =<< hReady stdin;
-
+getInput = go =<< hReady stdin where
 -- Renamed: l
-getInput' ready | ready = getChar <* getInput;
-getInput' _ = pure '#';
+  go ready | ready = getChar <* getInput
+  go _ = pure '#'
+
+-- Renamed: c
+countOnScreen char = count (char ==) . (init =<<)
 
 -- Renamed: b
-applyParser r = fold . fold . parse (many r) "";
+runParser parser = fold . fold . parse (many parser) ""
+
+-- Renamed: m
+options = asum . map try
+
+p # f = try p <|> f
 
 -- Renamed: %
-x --> y = string x $> y;
-
-p # f = try p <|> f '#';
+x --> y = string x $> y
 
 -- Renamed: f
 enemy = oneOf "{[@\\/"
 
 -- Renamed: h
-horizontal 'a' = " >" --> "> " # horizontal
-horizontal 'd' = "> " --> " >" # horizontal
-horizontal ' ' = "> " --> ">-" # horizontal
-horizontal _ = asum $ map try
+horizontal ' ' fire | fire = "> " --> ">-" # horizontal'
+horizontal 'a' _ = " >" --> "> " # horizontal'
+horizontal 'd' _ = "> " --> " >" # horizontal'
+horizontal _ _ = horizontal'
+-- Renamed: y
+horizontal' = options
   [ "- " --> " X " <* enemy
   , (:" ") <$> (string " " *> enemy)
   , "-" --> " X" <* enemy
   , ">" --> "X " <* enemy
   , enemy $> " "
-  , string "-" *> anyChar $> " -"
+  , "-" --> " -" <* anyChar
   , (:[]) <$> anyChar
   ]
 
 -- Renamed: v
-vertical 's' = "> " --> " >" # vertical
-vertical 'w' = " >" --> "> " # vertical
-vertical _ = asum $ map try
+vertical 's' = "> " --> " >" # vertical'
+vertical 'w' = " >" --> "> " # vertical'
+vertical _ = vertical'
+-- Renamed: p
+vertical' = options
   [ "X" --> " "
   , "/>" --> " X"
-  , string "/" *> anyChar $> " /"
+  , "/" --> " /" <* anyChar
   , "/" --> "\\" <* eof
   , ">\\" --> "X "
   , anyChar *> "\\" --> "\\ "
