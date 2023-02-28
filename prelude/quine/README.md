@@ -20,20 +20,21 @@ Here is the less-minified version:
 #!/usr/bin/env runghc
 -- | quine expanded
 -- Copyright 2023, Tristan de Cacqueray
--- SPDX-License-Identifier: CC-BY-4.0
-
-rot13 :: Int -> Int
-rot13 x | x - 97 < 26 && x - 97 >= 0 = 97 + rem (x - 84) 26
-        | otherwise = x
+-- SPDX-License-Identifier: CC0-1.0
 
 newLine, quote, backSlash :: Char
 newLine = toEnum 10
 quote = toEnum 34
 backSlash = toEnum 92
 
+sep, comment, license :: String
+sep = "-- ^ 10 " ++ ['-' | _ <- [0..66]] ++ " 80> --"
+comment = "{- prelude-10-80/quine (tristanC)"
+license = "SPDX: CC0-1.0" ++ newLine : "-}"
+
 fmt :: String -> String
 -- Insert last quote and comment
-fmt [] = quote : newLine : "-- prelude-10-80/quine (tristanC)"
+fmt [] = quote : newLine : sep ++ newLine : comment ++ newLine : license
 -- Insert initial quote
 fmt ('#': '!': y) = quote : '#' : '!': fmt y
 fmt (c:rest)
@@ -44,7 +45,7 @@ fmt (c:rest)
   | otherwise = c : fmt rest
 
 main :: IO ()
-main = putStrLn ((toEnum . rot13 . fromEnum <$> s) ++ fmt s)
+main = putStrLn (src ++ fmt src)
   where
-    s = "<insert-rot13-source-here>"
+    src = "<insert output of (fmt <$> readFile quine.hs)>"
 ```
