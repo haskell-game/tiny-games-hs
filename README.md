@@ -6,7 +6,7 @@ Inspired by the ongoing [BASIC 10Liner contest](https://www.homeputerium.de)
 (see their english rules at the bottom of that page, and [their 2023 entries](https://gkanold.wixsite.com/homeputerium/games-list-2023))..
 
 The first Haskell tiny games contest runs through February 2023!
-([<24h remaining](https://www.timeanddate.com/countdown/generic?iso=20230228T235959&p0=1440&msg=Haskell+Tiny+Game+Jam+1+deadline&font=cursive&csz=1))
+([a few hours remaining till 2023-02-28 23:59:59 UTC !](https://www.timeanddate.com/countdown/generic?iso=20230228T235959&p0=1440&msg=Haskell+Tiny+Game+Jam+1+deadline&font=cursive&csz=1)).
 Your mission: make a playable game in 10 lines of 80 characters of Haskell.
 The prize.. glory! 
 Also fun, learning, and advancing Haskell's suitability for game dev and programming in the small.
@@ -74,7 +74,7 @@ Here are the contest rules for this round (HTG1):
 
 8. An unminified version of the code, easier to read and learn from, is optional but welcome.
 
-9. You can update your entries freely until the contest end, 2023-02-28 11:59:59 UTC,
+9. You can update your entries freely until the contest end, 2023-02-28 23:59:59 UTC,
    at which time they are frozen for posterity and judging (no exceptions).
    If you need to share post-contest improvements, you are welcome to publish as new files in the same directory.
 
