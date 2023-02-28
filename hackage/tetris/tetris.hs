@@ -7,7 +7,7 @@ p=[[[120],[32,32,32,32]],[[32,112],[32,48,32],[112,32],[32,96,32]],l,y$m l,z,m z
  );l _ s(KeyPress k)|k=='k',let y=o s,c y=y|k=='j',let y=m(`div`2)s,c y=y|k=='l'
  ,let y=m(*2)s,c y=y;l _ s _|let y=f s,c y=y|True=g s;d _ s=stringPlane$u(w$a s)
 m x(p,f)=(h(h x)p,f);f(p,f)=(h(0:)p,f);c(p,f)=all(<1)$z(.&.)(p!!0)$w f;y=reverse
-t=z(.|.);g s=(p!!(sum k`mod`7),h(\_->0)e++k)where(k,e)=partition(<2046)(a s)
+t=z(.|.);g s=(p!!(sum q`mod`7),h(\_->0)e++k)where{q=a s;(k,e)=partition(<2046)q}
 -- ^10 ------------------------------------------------------------------ 80> --
 {- hackage-10-80/tetris (gergoerdi)
 
