@@ -23,6 +23,7 @@ prelude/expressit/expressit.hs
 prelude/life/life.hs
 prelude/call-by-push-block/call-by-push-block.hs
 prelude/companion/companion.hs
+prelude/hangman/hangman.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
@@ -66,6 +67,7 @@ call-by-push-block() { runghc "$1"; }
 fifteen()           { runghc -XPatternSynonyms -XLambdaCase "$1"; }
 brickbreaker()      { stack script --compile --resolver lts-20 --package gloss "$1"; }
 hallway-to-hell()   { stack runghc --resolver lts-20 --package random --package rio "$1"; }
+hangman()           { runghc -XCPP -XMultiWayIf -XLambdaCase "$1"; }
 lambda-ray()        { stack script --resolver lts-20 --optimize "$1"; }
 life()              { runghc "$1"; }
 log2048()           { runghc "$1"; }
