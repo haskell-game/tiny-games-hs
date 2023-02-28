@@ -88,16 +88,6 @@ printFileWithTitle() {
 }
 gamecat()  { echo "$1" | cut -d/ -f1; }
 gamename() { basename "$1" .hs; }
-detectAndWarnAboutFreeglut() {
-    # NOTE: The detection logic requires gcc, without it will produce false alarm.
-    #       But can you imagine the life of people without gcc?
-    which gcc &>/dev/null || return
-    (LIBRARY_PATH=$LD_LIBRARY_PATH gcc -lglut --shared -o /dev/null &>/dev/null) ||
-        cat <<HERE
-Freeglut library not found! You should install freeglut in order to play some games.
-Checkout the README freeglut section for more information.
-HERE
-}
 help() {
     cat <<HERE
 --------------------------------------------------------
@@ -118,7 +108,6 @@ HERE
 	printf "%2d) %-20s  %s\n" "$k" "$(gamename "$g")" "[$(gamecat "$g")]"
     done
     echo
-    detectAndWarnAboutFreeglut
 }
 
 # Select Game
