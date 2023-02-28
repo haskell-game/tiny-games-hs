@@ -77,7 +77,7 @@ lol()               { stack script --resolver lts-20 --optimize --package proces
 matchmaking()       { runghc -cpp -DD='a=replicate;b=putStrLn;c=length;p=map;u=max(2)' "$1"; }
 mini-othello()      { stack script --resolver lts-20 --optimize "$1"; }
 pong2()             { stack runghc --resolver lts-20 --package ansi-terminal-game "$1"; }
-shmupemup()         { cd "$(dirname "$1")" || exit 1; stack runghc --package parsec "$(basename "$1")"; }
+shmupemup()         { cd "$(dirname "$1")" || exit 1; stack runghc --resolver lts-20.12 --package ghc-9.2.6 --package parsec "$(basename "$1")"; }
 swish.easy()         { cd "$(dirname "$1")" || exit 1; ./"$(basename "$1")"; }
 swish.survival()         { cd "$(dirname "$1")" || exit 1; ./"$(basename "$1")"; }
 short-guess()       { stack runghc --resolver lts-20 --package random "$1"; }
@@ -94,16 +94,6 @@ printFileWithTitle() {
 }
 gamecat()  { echo "$1" | cut -d/ -f1; }
 gamename() { basename "$1" .hs; }
-detectAndWarnAboutFreeglut() {
-    # NOTE: The detection logic requires gcc, without it will produce false alarm.
-    #       But can you imagine the life of people without gcc?
-    which gcc &>/dev/null || return
-    (LIBRARY_PATH=$LD_LIBRARY_PATH gcc -lglut --shared -o /dev/null &>/dev/null) ||
-        cat <<HERE
-Freeglut library not found! You should install freeglut in order to play some games.
-Checkout the README freeglut section for more information.
-HERE
-}
 help() {
     cat <<HERE
 --------------------------------------------------------
@@ -124,7 +114,6 @@ HERE
 	printf "%2d) %-20s  %s\n" "$k" "$(gamename "$g")" "[$(gamecat "$g")]"
     done
     echo
-    detectAndWarnAboutFreeglut
 }
 
 # Select Game
