@@ -127,6 +127,10 @@ Here are the entries received so far!
 <td><a href="base/7up7down"><img src="base/7up7down/7up7down.png" width=140 height=140><br>7up7down</a><br>(akshaymankar)</td>
 <td><a href="base/snake"><img src="base/snake/snake.png" width=140 height=140><br>snake</a><br>(akshaymankar)</td>
 </tr>
+<tr>
+<td><img src="base/woosh/woosh.caves.gif" width=140 height=140><a href="base/woosh">woosh.caves</a><br>(Kindaro)</td>
+<td><img src="base/woosh/woosh.forest.gif" width=140 height=140><a href="base/woosh">woosh.forest</a><br>(Kindaro)</td>
+</tr>
 </table>
 
 ### default-10-80
@@ -138,6 +142,10 @@ Here are the entries received so far!
 <td><img src="default/tsp/tsp.gif" width=140 height=140><br><a href="default/tsp">tsp</a><br>(tristanC)</td>
 <td><img src="default/lol/lol.gif" width=140 height=140><br><a href="default/lol">lol</a><br>(hellwolf)</td>
 <td><a href="default/space-invaders"><img src="default/space-invaders/space-invaders.png" width=140 height=140><br>space-invaders</a><br>(meooow25)</td>
+</tr>
+<tr>
+<td><img src="default/swish/swish.easy.gif" width=140 height=140><a href="default/swish">swish.easy</a><br>(Kindaro)</td>
+<td><img src="default/swish/swish.survival.gif" width=140 height=140><a href="default/swish">swish.survival</a><br>(Kindaro)</td>
 </tr>
 </table>
 
