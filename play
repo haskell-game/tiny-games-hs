@@ -24,6 +24,7 @@ prelude/life/life.hs
 prelude/call-by-push-block/call-by-push-block.hs
 prelude/companion/companion.hs
 prelude/hangman/hangman.hs
+prelude/quine/quine.hs
 base/timing/timing.hs
 base/shoot/shoot.hs
 base/log2048/log2048.hs
