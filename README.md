@@ -108,6 +108,7 @@ Here are the entries received so far!
 <td><img src="prelude/call-by-push-block/call-by-push-block.gif" width=140 height=140><br><a href="prelude/call-by-push-block">call-by-push-block</a><br>(cole-k)</td>
 <td><a href="prelude/companion"><img src="prelude/companion/companion.png" width=140 height=140><br>companion</a><br>(Greg8128)</td>
 <td><a href="prelude/hangman"><img src="prelude/hangman/hangman.png" width=140 height=140><br>hangman</a><br>(kukimik)</td>
+<td><a href="prelude/quine"><img src="prelude/quine/quine.png" width=140 height=140><br>quine</a><br>(tristanC)</td>
 </tr>
 </table>
 
