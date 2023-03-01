@@ -1,4 +1,4 @@
-module Imports
+module Import
   ( module Data.Bits
   , module Data.Bool
   , module Data.List

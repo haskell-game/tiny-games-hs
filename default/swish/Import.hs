@@ -1,4 +1,4 @@
-module Imports
+module Import
   (module System.Exit
   , module System.IO, module Text.Printf, module Control.Concurrent) where
 

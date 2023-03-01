@@ -1,6 +1,6 @@
 #!/usr/bin/env stack
 -- stack script --compile --resolver=lts-20 --package gloss --package random
-import Imports;m(x,y)=translate x y;z x=scale x x;f=fromIntegral;w=show;t=text
+import Import;m(x,y)=translate x y;z x=scale x x;f=fromIntegral;w=show;t=text
 main=do{g<-getStdGen;play(InWindow""(512,512)(0,0))white 30(randomRs(1,4)g,0,16,
 0)(\(g,s,y,h)->z 16$m(0,-13)(rectangleWire 33 2)<>foldMap(\x->m(-20+8*f x,-13.5)
 (z 0.01$t$w$x))[1..4]<>(m(-12,-9)$z 0.05$t$w s<>(guard(s/=h)>>("/"<>w h)))<>

@@ -1,7 +1,7 @@
 #!/usr/bin/env -S runghc-9.2 -XUnicodeSyntax
 module Main where
 
-import Imports
+import Import
 
 {replicate} = replicate
 {putStr} = putStr

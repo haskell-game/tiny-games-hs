@@ -1,4 +1,4 @@
-module Imports(module I) where
+module Import(module I) where
 
 import Text.Printf  as I (printf)
 import Control.Monad as I (when, void, forever)

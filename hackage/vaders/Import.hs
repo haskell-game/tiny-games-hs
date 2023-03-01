@@ -1,4 +1,4 @@
-module Imports
+module Import
   ( module Graphics.Gloss.Interface.Pure.Game
   , module Data.Bits
   , module Control.Applicative

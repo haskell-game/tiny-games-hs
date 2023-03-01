@@ -1,5 +1,5 @@
 #!/usr/bin/env -S stack script --resolver=lts-20 --package ansi-terminal-game
-import Imports
+import Import
 
 type Line = Int
 type Piece = [[Line]]

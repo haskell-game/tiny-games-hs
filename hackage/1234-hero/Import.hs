@@ -1,4 +1,4 @@
-module Imports
+module Import
   ( guard
   , ord
   , getStdGen, randomRs

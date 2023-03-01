@@ -1,4 +1,4 @@
-import Imports;
+import Import;
 
 printSec :: Double -> IO ()
 printSec sec = do {

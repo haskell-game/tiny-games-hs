@@ -1,6 +1,6 @@
 #!/usr/bin/env stack
 -- stack script --resolver=lts-20 --package ansi-terminal-game
-import Imports;end ps (y,dy,x)=y>120||y<0||x>3950||
+import Import;end ps (y,dy,x)=y>120||y<0||x>3950||
   (x`mod`40==0&&let(t,b)=ps!!(x`div`40)in y`div`5<t||y`div`5>(t+b)); main=do
 {s<-fromIntegral.(`mod`100)<$>getMonotonicTimeNSec
 ;let _:(ps@((y0,_):_))=iterate(\(x,y)->(3+((x+9)`mod`7),5+((y+12)`mod`5)))(s,s)
