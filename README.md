@@ -149,6 +149,7 @@ Here are all the entriesg!
 <tr>
 <td><img src="default/swish/swish.easy.gif" width=140 height=140><a href="default/swish">swish.easy</a><br>(Kindaro)</td>
 <td><img src="default/swish/swish.survival.gif" width=140 height=140><a href="default/swish">swish.survival</a><br>(Kindaro)</td>
+<td><img src="default/lc/lc.png" width=140 height=140><a href="default/lc">lc</a><br>(byorgey)</td>
 </tr>
 </table>
 
