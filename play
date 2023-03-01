@@ -44,6 +44,7 @@ default/lol/lol.hs
 default/space-invaders/space-invaders.hs
 default/swish/swish.easy.hs
 default/swish/swish.survival.hs
+default/lc/lc.hs
 hackage/guess2/guess2.hs
 hackage/wordle/wordle.hs
 hackage/ski/ski.hs
@@ -74,6 +75,7 @@ brickbreaker()      { stack script --compile --resolver lts-20 --package gloss "
 hallway-to-hell()   { stack runghc --resolver lts-20 --package random --package rio "$1"; }
 hangman()           { runghc -XCPP -XMultiWayIf -XLambdaCase "$1"; }
 lambda-ray()        { stack script --resolver lts-20 --optimize "$1"; }
+lc()                { cd "$(dirname "$1")" || exit 1; runghc "$(basename "$1")"; }
 life()              { runghc "$1"; }
 log2048()           { runghc "$1"; }
 lol()               { stack script --resolver lts-20 --optimize --package process --package text -- "$1" "${args[@]}"; }
