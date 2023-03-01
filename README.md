@@ -2,14 +2,15 @@
 
 ![](hackage/ski/ski-lol10-fs8.png)
 
+The first Haskell tiny games contest has taken place in February 2023.
 Inspired by the ongoing [BASIC 10Liner contest](https://www.homeputerium.de)
-(see their english rules at the bottom of that page, and [their 2023 entries](https://gkanold.wixsite.com/homeputerium/games-list-2023))..
-
-The first Haskell tiny games contest runs through February 2023!
-([a few hours remaining till 2023-02-28 23:59:59 UTC !](https://www.timeanddate.com/countdown/generic?iso=20230228T235959&p0=1440&msg=Haskell+Tiny+Game+Jam+1+deadline&font=cursive&csz=1)).
+(see their english rules at the bottom of that page, and [their 2023 entries](https://gkanold.wixsite.com/homeputerium/games-list-2023)).
 Your mission: make a playable game in 10 lines of 80 characters of Haskell.
 The prize.. glory! 
 Also fun, learning, and advancing Haskell's suitability for game dev and programming in the small.
+
+The contest ended 2023-02-28 23:59:59 UTC and is now in judging phase.
+
 
 <div align=center>
 
@@ -25,12 +26,12 @@ Also fun, learning, and advancing Haskell's suitability for game dev and program
 
 ## Rules
 
-Submit your [entries](#games) between now and end of February!
-sm and f-a will be your judges.
+Entries were submitted in the last three weeks of February 2023.
+sm and f-a are your judges.
 See the #haskell-game [Matrix] or [IRC] chat 
 or this repo's [issue tracker](issues) for help/feedback/announcements.
 
-Here are the contest rules for this round (HTG1):
+Here were the contest rules for this round:
 
 1. You can submit any number of entries to the official repo, haskell-game/tiny-games-hs.
    Each should be a playable game or amusement in one haskell file
@@ -84,7 +85,7 @@ Here are the contest rules for this round (HTG1):
 
 ## Games
 
-Here are the entries received so far!
+Here are all the entriesg!
 
 ### prelude-10-80
 <!-- (No imports) -->
@@ -208,11 +209,7 @@ It works with most games but may cost a little performance.
 
 ## Development
 
-### Experience reports
-
-- <http://miaozc.me/2023-02-27-hs-tiny-games.html>
-- <https://tristancacqueray.github.io/blog/tiny-game-engine>
-- <https://www.cole-k.com/2023/02/21/tiny-games-hs/>
+Tips for developers while the jam was in progress, and for future jams.
 
 ### Runnability
 
@@ -285,3 +282,9 @@ That usually means that you should install "freeglut" library using your system 
 ### Using Nix
 
 A flake.nix is provided, just run `nix develop .` to have a reproduciable tiny game environment!
+
+### Experience reports
+
+- <http://miaozc.me/2023-02-27-hs-tiny-games.html>
+- <https://tristancacqueray.github.io/blog/tiny-game-engine>
+- <https://www.cole-k.com/2023/02/21/tiny-games-hs/>
