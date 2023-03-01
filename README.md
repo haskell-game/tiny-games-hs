@@ -3,7 +3,7 @@
 ![](hackage/ski/ski-lol10-fs8.png)
 
 The first Haskell tiny games contest has taken place in February 2023.
-Inspired by the ongoing [BASIC 10Liner contest](https://www.homeputerium.de)
+Inspired by the [BASIC 10Liner contest](https://www.homeputerium.de)
 (see their english rules at the bottom of that page, and [their 2023 entries](https://gkanold.wixsite.com/homeputerium/games-list-2023)).
 Your mission: make a playable game in 10 lines of 80 characters of Haskell.
 The prize.. glory! 
@@ -85,7 +85,7 @@ Here were the contest rules for this round:
 
 ## Games
 
-Here are all the entriesg!
+Here are all the entries!
 
 ### prelude-10-80
 <!-- (No imports) -->
