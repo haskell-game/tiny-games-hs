@@ -76,8 +76,11 @@ Here were the contest rules for this round:
 8. An unminified version of the code, easier to read and learn from, is optional but welcome.
 
 9. You can update your entries freely until the contest end, 2023-02-28 23:59:59 UTC,
-   at which time they are frozen for posterity and judging (no exceptions).
-   If you need to share post-contest improvements, you are welcome to publish as new files in the same directory.
+   at which time they are frozen (in the `contest` branch) for posterity and judging
+   (no exceptions except minor updates at judges' discretion, eg metadata fixes).
+   Also the last commit received before deadline has been tagged with the `pre-deadline` tag.
+   If you need to share post-contest improvements, you are welcome to keep publishing updates in the `main` branch.
+   The main version is the one that will be presented to players.
 
 [runghc]: https://downloads.haskell.org/ghc/latest/docs/users_guide/runghc.html
 [stack]:  https://docs.haskellstack.org/en/stable/script_command
