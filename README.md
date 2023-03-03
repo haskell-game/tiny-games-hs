@@ -176,7 +176,7 @@ Here are all the entries!
 <tr>
 <td><a href="hackage/pong2"><img src="hackage/pong2/pong2.png" width=140 height=140><br>pong2</a><br>(sm)</td>
 <td><a href="hackage/brickbreaker"><img src="hackage/brickbreaker/brickbreaker.png" width=140 height=140><br>brickbreaker</a><br>(fgaz)</td>
-<td><img src="hackage/lazy-march/lazy-march.gif" width=140 height=140><br><a href="hackage/lazy-march">lazy-march</a><br>(tristanc)</td>
+<td><img src="hackage/lazy-march/lazy-march.gif" width=140 height=140><br><a href="hackage/lazy-march">lazy-march</a><br>(tristanC)</td>
 <td><a href="hackage/balances"><img src="hackage/balances/balances.png" width=140 height=140><br>balances</a><br>(sm)</td>
 <td><a href="hackage/vaders"><img src="hackage/vaders/vaders.png" width=140 height=140><br>vaders</a><br>(gergoerdi)</td>
 </tr>
