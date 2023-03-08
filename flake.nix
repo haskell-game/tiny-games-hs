@@ -8,7 +8,7 @@
   outputs = { self, nixpkgs, flake-utils }: flake-utils.lib.eachDefaultSystem (system:
     let
       pkgs = import nixpkgs { inherit system; };
-      hPkgs = pkgs.haskell.packages.ghc926; # need to match Stackage LTS version
+      hPkgs = pkgs.haskell.packages.ghc927; # need to match stack program wrapper below
 
       myDevTools = [
         pkgs.zlib
@@ -23,8 +23,8 @@
 
       # Wrap Stack to work with our Nix integration. We don't want to modify
       # stack.yaml so non-Nix users don't notice anything.
-      # - no-nix: We don't want Stack's way of integrating Nix.
-      # --system-ghc    # Use the existing GHC on PATH (will come from this Nix file)
+      # --no-nix: We don't want Stack's way of integrating Nix.
+      # --compiler      # Use the specific GHC specified in this Nix file
       # --no-install-ghc  # Don't try to install GHC if no matching GHC found on PATH
       stack-wrapped = pkgs.symlinkJoin {
         name = "stack"; # will be available as the usual `stack` in terminal
@@ -34,7 +34,7 @@
         wrapProgram $out/bin/stack \
           --add-flags "\
             --no-nix \
-            --system-ghc \
+            --compiler ghc-9.2.7 \
             --no-install-ghc \
           "
       '';
