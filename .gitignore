@@ -1,5 +1,6 @@
 *.o
 *.hi
+dist-*
 /prelude/mini-othello/mini-othello
 /base/lambda-ray/lambda-ray
 /default/lambda-ray/lambda-ray
