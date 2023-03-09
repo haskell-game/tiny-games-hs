@@ -1,7 +1,7 @@
 #!/usr/bin/env -S stack script --compile --resolver lts-20.13 --package gloss
 import Import;g=translate;o=True;d f=foldMap(\(x,y)->g x y f);q=circle;main=
  play FullScreen white 60((0,1,[],0),0,20,mzero)r i st;y0= -28;r((_,_,m,z),x,_,
- b)=text(show z)<>(scale 18 18$g x y0 sh<>d(q 0.4)b<>d v m);sh=q 1;v=line[(-1,2)
+ b)=text(show z)<>(scale 15 15$g x y0 sh<>d(q 0.4)b<>d v m);sh=q 1;v=line[(-1,2)
  ,(0,0),(1,2)];i(EventKey(Char k)Down _ _)(s,x,d,b)|k=='a'=(s,x,-20,b)|k=='d'=(s
  ,x,20,b)|k=='.'=(s,x,d,b<|>Just(x,y0));i _ s=s;n(a,b)(x,y)=(a-x)^2<1&&(b-y)^2<1
  ;st t((w,s,m,z),a,d,b)=((v,p,l,q),a+t*e,e,u)where{p=(s`div`2)`xor`bool 0 96(odd
