@@ -11,5 +11,5 @@ main=putStrLn "Guess the word!" >> randomRIO (0,length w - 1::Int) >>= \r -> do
 -- ^10 ------------------------------------------------------------------ 80> --
 {- hackage-10-80/short-guess (RimuhRimu). random 
 
-stack runghc --resolver lts-20 --package random "$1"
+stack runghc --resolver lts-20.13 --package random "$1"
 -}

@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-20
+-- stack script --resolver=lts-20.13
 import GHC.Clock (getMonotonicTime)
 import System.Environment (getArgs)
 main = do -- base-10-80/timing (TravisCardwell)

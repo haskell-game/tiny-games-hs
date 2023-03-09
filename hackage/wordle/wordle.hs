@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack --verbosity=error script --resolver=lts-20 --package random
+-- stack --verbosity=error script --resolver=lts-20.13 --package random
 import System.Random (randomRIO)
 main=let d=["pearl","rogue","rusty","sheet","label","fjord","orate","haunt"] in
   (!!) d <$> randomRIO (0,7) >>= \ws -> let

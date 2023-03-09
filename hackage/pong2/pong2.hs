@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --resolver lts-20 --package ansi-terminal-game
+#!/usr/bin/env -S stack script --resolver lts-20.13 --package ansi-terminal-game
 {import Terminal.Game;k(KeyPress a)=a;k _=' ';t=17;w=50;h=24;xl=1;xh=w-2;yl=2;yh
 =h;pw=10;p=(w-pw)`div`2;py=h-3;y0=(h-pw)`div`2;main=playGame$Game t[0,p,1,2,y0,1
 ,0,0]up dr ((>0).head);up _[_,p,x,u,y,v,s,hi]e=(if k e=='q' then 1 else 0):if y

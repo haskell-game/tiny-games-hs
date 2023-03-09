@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --resolver lts-20 --package ansi-terminal-game
+#!/usr/bin/env -S stack script --resolver lts-20.13 --package ansi-terminal-game
 {import Terminal.Game;
 k (KeyPress a)=a;k _=' ';
 t=20;w=50;h=24;xl=1;xh=w-2;yl=2;yh=h;pw=10;p=(w+pw)`div`2;py=h-3;y0=(h-pw)`div`2;

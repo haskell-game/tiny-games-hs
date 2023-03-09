@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver lts-20 --package random
+-- stack script --resolver lts-20.13 --package random
 import Control.Monad (when);import System.Random (uniformR, newStdGen)
 l=length;f=sum. fmap fromEnum;p=putStrLn;(x:xs)!!!0=(x,xs);(x:xs)!!!n=(x:)<$>(xs
  !!!(n-1));r n x g=let{(i,h)=uniformR(0,l x-1)g;(z,y)= x!!!i}in if n==1 then[z]

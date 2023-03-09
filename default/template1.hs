@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack --verbosity=error script --resolver=lts-20 --package process
+-- stack --verbosity=error script --resolver=lts-20.13 --package process
 import System.Process (system)
 main = do
   putStr "The current date/time is: "

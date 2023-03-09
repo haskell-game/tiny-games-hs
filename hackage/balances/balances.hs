@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver lts-20 --package "random text hledger-lib"
+-- stack script --resolver lts-20.13 --package "random text hledger-lib"
 import Import;p=putStrLn;main=defaultJournal>>=g.fst.balanceReport defreportspec
  {_rsQuery=Type[Cash,Liability]};g bs=if null bs then p"no balances" else do{i<-
 randomRIO(0,length bs-1);let{(a,_,_,b0) = bs !! i};u<-p(unpack a++" balance ? ")

@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --compile --resolver lts-20 --package gloss
+#!/usr/bin/env -S stack script --compile --resolver lts-20.13 --package gloss
 import Import
 
 type State =

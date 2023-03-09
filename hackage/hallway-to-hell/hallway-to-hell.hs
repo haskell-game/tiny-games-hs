@@ -11,6 +11,6 @@ main = hSetBuffering stdin NoBuffering >> newIORef 11 >>= \v->
 -- ^10 ------------------------------------------------------------------ 80> --
 {- hackage-10-80/hallway-to-hell (juliendehos)
 
-stack runghc hallway-to-hell.hs --resolver lts-20 --package rio --package random
+stack runghc hallway-to-hell.hs --resolver lts-20.13 --package rio --package random
 
 -}

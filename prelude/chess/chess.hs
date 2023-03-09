@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver=lts-20
+-- stack script --resolver=lts-20.13
 at [c,r] f = fmap reverse.traverse (\(j,row) -> traverse (\(i,p) -> if [i,j]==[c
   ,r] then f p else pure p) (zip ['a'..] row)) . zip ['1'..].reverse
 ([fc,fr]>-[tc,tr])b=(head.at[fc,fr](pure.const '⋅').head.at

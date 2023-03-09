@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --resolver lts-20 --package ansi-terminal-game
+#!/usr/bin/env -S stack script --resolver lts-20.13 --package ansi-terminal-game
 import Terminal.Game;a=80;b=20;c(p,q,r)=sqrt(p*p+q*q+r*r);k=abs;l=const;m=cos
 d(p,q,r)=(max p 0,max q 0,max r 0);e p q(r,s,t)=c.d$(k r-q,k s-p,k t-0.03)
 n=round;o=sin;j p=foldr(i(p/10)0)(blankPlane(n a)(n b))q;i _ 10 _=id

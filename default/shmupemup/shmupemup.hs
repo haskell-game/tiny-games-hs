@@ -17,7 +17,7 @@ your gun overheat!
 
 On Linux and MacOS (untested, but it should work) you can run the game with
 `runghc -package=ghc shmupemup` or if that doesn't work, with `stack runghc
---resolver lts-20.12 --package ghc-9.2.6 --package parsec shmupemup`. On
+--resolver lts-20.13 --package ghc-9.2.6 --package parsec shmupemup`. On
 Windows, because of GHC issue #2189, the game must be compiled with the native
 io manager which you can do with the command `ghc -with-rtsopts
 --io-manager=native shmupemup.hs`. You will also have to enable VT100 support if

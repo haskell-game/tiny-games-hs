@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver lts-20 --package "random text hledger-lib" --verbosity error
+-- stack script --resolver lts-20.13 --package "random text hledger-lib" --verbosity error
 
 import Data.Text (unpack)
 import Hledger

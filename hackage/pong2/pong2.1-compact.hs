@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --resolver lts-20 --package ansi-terminal-game
+-- stack script --resolver lts-20.13 --package ansi-terminal-game
 {-# LANGUAGE RecordWildCards #-}
 {
 import Terminal.Game;

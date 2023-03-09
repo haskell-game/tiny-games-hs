@@ -1,4 +1,4 @@
-#!/usr/bin/env -S stack script --resolver=lts-20 --package ansi-terminal-game
+#!/usr/bin/env -S stack script --resolver=lts-20.13 --package ansi-terminal-game
 import Import
 
 type State =

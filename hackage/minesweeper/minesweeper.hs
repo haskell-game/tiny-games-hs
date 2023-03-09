@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack script --compile --resolver=lts-20 --package random-shuffle
+-- stack script --compile --resolver=lts-20.13 --package random-shuffle
 import System.Random.Shuffle;import System.IO;import Data.Bool(bool);
 p=putStrLn;q=(>>readLn).putStr;s=show;l=length;j=bool;e=elem;r a=[0..a]
 main=do{hSetBuffering stdout NoBuffering;l<-q"w:";h<-q"h:";n<-q"mines:";b<-
