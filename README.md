@@ -211,7 +211,7 @@ It works with most games but may cost a little performance.
 
 ![](play-lol.dark.png)
 
-### More install tips
+### More install/run tips
 
 Some games use unicode glyphs, emojis and/or double-width characters.
 For best results:
@@ -236,6 +236,15 @@ Note:
   (or even a quite different one that you think might work), you can try using it instead,
   to save on install time and disk space. In the games' shebang lines or run command in `play`,
   change the `--resolver` argument to your snapshot and see if they run.
+
+To quit graphical games built with the gloss library, press the ESCAPE key.
+
+If you see an error message like "user error (unknown GLUT entry glutInit)",
+install the system package named "freeglut" or similar using your system package manager.
+
+Nix users: a flake.nix is provided; running `nix develop .` should give you
+a reproducible environment for running the games.
+
 
 ## Development
 
@@ -298,20 +307,6 @@ It helps gif2apng a lot also.
 [APNGs](https://github.com/haskell-game/tiny-games-hs/issues/70) are preferable if you can manage it:
 they will not be obscured by Github's gif player button, they can be hyperlinks, and they can have smaller file size.
 https://sourceforge.net/projects/gif2apng works well, it can be built from its source tarball.
-
-### Freeglut
-
-You may encounter the following error when playing some of the games:
-
-```
-xxx: user error (unknown GLUT entry glutInit)
-```
-
-That usually means that you should install "freeglut" library using your system package manager.
-
-### Using Nix
-
-A flake.nix is provided, just run `nix develop .` to have a reproduciable tiny game environment!
 
 ### Experience reports
 
