@@ -211,6 +211,32 @@ It works with most games but may cost a little performance.
 
 ![](play-lol.dark.png)
 
+### More install tips
+
+Some games use unicode glyphs, emojis and/or double-width characters.
+For best results:
+
+- Use a terminal with good support for double-width characters
+- And with a font configured that contains attractive unicode glyphs and emojis.
+- On mac, don't use the default Terminal or iTerm 3.4 or less, they render emojis slowly.
+  Use a faster terminal, such as iTerm 3.5 beta, or the terminal built in to VS Code.
+
+Many games are implemented as [stack scripts](https://docs.haskellstack.org/en/stable/script_command/)
+for reliable running and compactness. You can install stack with ghcup (see the get-started link above).
+Note:
+
+- When you run a game for the first time, stack will automatically fetch the latest package database
+  and install the required GHC version and haskell dependencies if needed.
+  This can take a long time (eg minutes), up to 1-2G of disk space, and may or may not show progress output.
+  The OpenGLRaw package required by the graphical, gloss-based games is particularly slow to build.
+  If you need more progress output, you can add --verbosity info to the game's shebang line or run command in `play`.
+
+- We have configured all games to use the same GHC version (from the latest LTS snapshot at stackage.org). 
+  If you have a similar GHC version/stackage snapshot already installed
+  (or even a quite different one that you think might work), you can try using it instead,
+  to save on install time and disk space. In the games' shebang lines or run command in `play`,
+  change the `--resolver` argument to your snapshot and see if they run.
+
 ## Development
 
 Tips for developers while the jam was in progress, and for future jams.
