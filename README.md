@@ -154,7 +154,7 @@ Creating a 10-line tiny game in Haskell and shipping a contest entry is a non-tr
 If you succeeded, double congratulations!
 You are one of very few people in the world who could complete this task in the next few hours.
 
-The judges were sm and f-a.
+The judges were [sm] and [f-a].
 Below you will find our reviews, by category and submission order, followed by the contest winners.
 Our ratings aimed to reflect playable and fun Haskell tiny games satisfying the contest rules.
 With single ratings and human biases, judging will of course be imperfect.
@@ -1394,3 +1394,5 @@ Developer experience reports:
 
 [Matrix]: https://matrix.to/#/#haskell-game:matrix.org
 [IRC]:    https://web.libera.chat/#haskell-game
+[sm]:     https://joyful.com
+[f-a]:    http://www.ariis.it
