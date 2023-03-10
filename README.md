@@ -188,7 +188,7 @@ the level of headings and the format of **nick:** and Rating: lines.
 
 ### Prelude
 
-#### guess1 (sm)
+#### [guess1](prelude/guess1) (sm)
 
 **f-a:**
 what can I say, it is a short game… Probably the
@@ -201,7 +201,7 @@ The most minimal "game" I could think of, just a demo/template while setting up 
 Also the most unbeatable game in the collection; the only winning move is not to play.
 Rating: my entry
 
-#### pure-doors (tristanC)
+#### [pure-doors](prelude/pure-doors) (tristanC)
 
 **f-a:**
 A vertical type of Angry Birds game. I actually enjoyed
@@ -219,7 +219,7 @@ Nicely documented, read the docs for best scoring.
 See also the dev write-up at <https://tristancacqueray.github.io/blog/tiny-game-engine>.
 Rating: 6/10
 
-#### fifteen (bradrn)
+#### [fifteen](prelude/fifteen) (bradrn)
 
 **f-a:**
 Excellent user experience on this one: controls explained in-game,
@@ -236,7 +236,7 @@ I'm not sure how difficult this is to solve.. more than enough for me.
 Seems to work by a ton of clever pattern matching.
 Rating: 7/10
 
-#### chess (fizruk)
+#### [chess](prelude/chess) (fizruk)
 
 **f-a:**
 Not a game but a chessboard implementation. Rules are not
@@ -252,7 +252,7 @@ Not documented except in the [PR](https://github.com/haskell-game/tiny-games-hs/
 but fairly self explanatory.
 Rating: 7/10
 
-#### 🔷 sudoku (elderephemera)
+#### [🔷 sudoku](prelude/sudoku) (elderephemera)
 
 **f-a:**
 Tremendous effort to have a sudoku implementation in 796 characters.
@@ -274,7 +274,7 @@ Possibly unique among these games in producing entertainment
 you can share to anyone including non-computer users.
 Rating: 9/10
 
-#### 🔷 matchmaking (migmit)
+#### [🔷 matchmaking](prelude/matchmaking) (migmit)
 
 **f-a:**
 One of the best stories of the competition, which puts you in the
@@ -290,7 +290,7 @@ Good player docs; no dev notes or readable source version.
 Uses runghc's `-cpp` option to cram more code into the shebang line.
 Rating: 6/10
 
-#### tiny-brot (tristanC)
+#### [tiny-brot](prelude/tiny-brot) (tristanC)
 
 **f-a:**
 A seven-liner demo showcasing a fractal. Not a game, but a good
@@ -305,7 +305,7 @@ One of the tiniest entries, using only six lines of Haskell code.
 See also the dev write-up at <https://tristancacqueray.github.io/blog/tiny-game-engine>.
 Rating: 7/10
 
-#### mini-othello (hellwolf)
+#### [mini-othello](prelude/mini-othello/mini-othello) (hellwolf)
 
 **f-a:**
 This is a remarkable implementation of the classic Othello in just
@@ -324,7 +324,7 @@ in the source, visible with `./play mini-othello -h`,
 and fine dev notes published at <http://miaozc.me/2023-02-27-hs-tiny-games.html>.
 Rating: 8/10
 
-#### one-dot (OsePedro)
+#### [one-dot](prelude/one-dot) (OsePedro)
 
 **f-a:**
 Very good puzzle game: ASCII representation is clean and uncluttered (other
@@ -340,7 +340,7 @@ Restore a randomised board to order by flipping 3x3 sections.
 Good docs, no readable source version but does come with a description of each function.
 Rating: 7/10
 
-#### 🔷 expressit (Greg8128)
+#### [🔷 expressit](prelude/expressit) (Greg8128)
 
 **f-a:**
 A game that does away from 2D ASCII trickes, refreshing.
@@ -364,7 +364,7 @@ Eg, for n=1, target=1, `n1*` is rejected, but `n` works.
 For n=1, target=2, `n2*` is rejected, but `nn+` works.
 Rating: 6/10
 
-#### life (Rens van Hienen)
+#### [life](prelude/life) (Rens van Hienen)
 
 **f-a:**
 Implementation of Conway’s game of life. On-screen command hints
@@ -383,7 +383,7 @@ Provides on-screen help, unlike many tiny games.
 Comes with dev notes in the source file.
 Rating: 6/10
 
-#### 🏆🏅 call-by-push-block (cole-k)
+#### [🏆🏅 call-by-push-block](prelude/call-by-push-block) (cole-k)
 
 **f-a:**
 What can I say, a beautiful game which is among the most polished
@@ -404,7 +404,7 @@ Uses some clever data compression tricks,
 explained in a detailed and entertaining dev write-up at <https://www.cole-k.com/2023/02/21/tiny-games-hs>.
 Rating: 10/10
 
-#### companion (Greg8128)
+#### [companion](prelude/companion) (Greg8128)
 
 **f-a:**
 A chatbot which starts from a blank slate and should learn to speak
@@ -421,7 +421,7 @@ If it really will improve, more details of the "training" required,
 or a demo of a trained example, would be motivating.
 Rating: 4/10
 
-#### hangman (kukimik)
+#### [hangman](prelude/hangman) (kukimik)
 
 **f-a:**
 A faithful hangman implementation. Uses the same unicode trick of
@@ -436,7 +436,7 @@ Minimal docs. Uses some clever tricks, including unicode-based compression
 and the CPP __TIME__ macro.
 Rating: 8/10
 
-#### quine (tristanC)
+#### [quine](prelude/quine) (tristanC)
 
 **f-a:**
 A quine! I am always fascinated with these, reminds me of Oulipo
@@ -452,7 +452,7 @@ Rating: 7/10
 
 ### Base
 
-#### timing (TravisCardwell)
+#### [timing](base/timing) (TravisCardwell)
 
 **sm:**
 An unusual tiny game: one implemented with perfectly normal, ungolfed haskell code.
@@ -470,7 +470,7 @@ being `You waited 30.39618408700335 seconds`, beat that! Bonus points for
 clean code.
 Rating: 7/10
 
-#### shoot (migmit)
+#### [shoot](base/shoot) (migmit)
 
 **sm:**
 Our closest entry to Missile Command!
@@ -488,7 +488,7 @@ a tad short and I am not exactly sure what the numbers/`*`/`X` on the
 bottom of the screen represents, but the action is solid an I had fun.
 Rating: 7/10
 
-#### log2048 (Lysxia)
+#### [log2048](base/log2048) (Lysxia)
 
 **sm:**
 Not completely self-contained (no room for a shebang line), probably
@@ -511,7 +511,7 @@ Once you get this, it is very fun to try to match numbers together
 or try to work them in a position where you can pair them.
 Rating: 7/10
 
-#### rhythm (elderephemera)
+#### [rhythm](base/rhythm) (elderephemera)
 
 **sm:**
 Guitar Hero in the terminal!
@@ -534,7 +534,7 @@ It plays smooth, it has colours, a score counter; graphically minimal
 and clean, thumbs up for me!
 Rating: 8/10
 
-#### peyton-says (gergoerdi)
+#### [peyton-says](base/peyton-says) (gergoerdi)
 
 **sm:**
 A tiny version of the classic Simon electronic game,
@@ -554,7 +554,7 @@ is clear and interesting for longer than most other 10-line
 productions.
 Rating 7/10
 
-#### acey-deucey (trevarj)
+#### [acey-deucey](base/acey-deucey) (trevarj)
 
 **sm:**
 A classic from the BASIC era, discovered by many as the [first game](https://www.atariarchives.org/basicgames/showpage.php?page=2) in David Ahl's BASIC Computer Games (1978).
@@ -575,7 +575,7 @@ the display is a bit messy), but it is playable and fun while your bankroll
 lasts!
 Rating: 6/10
 
-#### flower-seeds (tristanC)
+#### [flower-seeds](base/flower-seeds) (tristanC)
 
 **sm:**
 Not a playable game; displays a lovely spiral of hearts, for St. Valentine's day.
@@ -592,7 +592,7 @@ that you can control the display parameters in real time, interesting to see how
 the structure changes.
 Rating: 7/10.
 
-#### lambda-ray (tristanC)
+#### [lambda-ray](base/lambda-ray) (tristanC)
 
 **sm:**
 Not a playable game; displays a large Haskell-logo lambda,
@@ -607,7 +607,7 @@ Another rendering demo, and another one with the haskell logo
 explanation which is interesting enough.
 Rating: 6/10
 
-#### 7up7down (akshaymankar)
+#### [7up7down](base/7up7down) (akshaymankar)
 
 **sm:**
 Bet on dice rolls.
@@ -623,7 +623,7 @@ icons a bit too small on my terminal. Bonus: unfurled code, taunting if you lose
 all of your money.
 Rating: 5/10
 
-#### snake (akshaymankar)
+#### [snake](base/snake) (akshaymankar)
 
 **sm:**
 A turn-based snake game. The snake gets longer when it eats the thing.
@@ -637,7 +637,7 @@ play to your metronome or some kind of fast-tempo music. Fun part: the snake
 can cross itself without dying.
 Rating: 6/10
 
-#### 🏅 woosh.caves (Kindaro)
+#### [🏅 woosh.caves](base/woosh) (Kindaro)
 
 **sm:**
 The first of several variants of a cave-diving game (woosh.* and swish.*).
@@ -651,7 +651,7 @@ which can generate and minify new game variants based on a config file.
 Uses some non-roman unicode glyphs as abbreviations, which look cool (and might be mnemonic ?)
 Rating: 9/10
 
-#### woosh.forest (Kindaro)
+#### [woosh.forest](base/woosh) (Kindaro)
 
 **sm:**
 Another variant of woosh, using double-width emoji characters.
@@ -673,7 +673,7 @@ Rating: 8/10
 
 ### Default
 
-#### type-and-furious (lsmor)
+#### [type-and-furious](default/type-and-furious) (lsmor)
 
 **sm:**
 A typing speed test! How fast can you type the letters a to z ?
@@ -690,7 +690,7 @@ without failure, in the allotted time. There are four difficulty levels
 and I failed multiple time at the easiest one. Anxiety inducing!
 Rating: 5/10
 
-#### 🏅 shmupemup (elderephemera)
+#### [🏅 shmupemup](default/shmupemup) (elderephemera)
 
 **sm:**
 One of three shoot-em-ups in this contest:
@@ -711,7 +711,7 @@ explains everything in its gory details. The game itself is good to play if a bi
 easy after a while.
 Rating: 7/10
 
-#### 🔷 tsp (tristanC)
+#### [🔷 tsp](default/tsp) (tristanC)
 
 **sm:**
 This is a cool real-time arcade game in essentially one screen line!
@@ -730,7 +730,7 @@ but it is a very good mechanic and you will feel accomplished succeeding. Among 
 games, the layout of this one (a single, long stripe) is unique.
 Rating: 7/10
 
-#### lol (hellwolf)
+#### [lol](default/lol) (hellwolf)
 
 **sm:**
 This "game" is in fact an enhancer of other games. In the spirit of the lolcat program,
@@ -747,7 +747,7 @@ Meme mod for (almost) all terminal games to get that Nyan cat vibe your producti
 No readme, imperscrutable code, 100% kaleidoscopic.
 Rating: Mondrian/10
 
-#### 🏅 space-invaders (meooow25)
+#### [🏅 space-invaders](default/space-invaders) (meooow25)
 
 **sm:**
 Another shoot-em-up, an homage to the [first in the genre: Space Invaders](https://en.wikipedia.org/wiki/Shoot_%27em_up)!
@@ -764,7 +764,7 @@ maybe?). README contains easy-to-follow unminified code (with minified vars refe
 It was fun, it was hectic, it felt great to beat it!
 Rating: 8/10
 
-#### swish.easy (Kindaro)
+#### [swish.easy](default/swish) (Kindaro)
 
 **sm:**
 Like woosh, swish is about piloting your ship as far as you can through a fiendish (but learnable) cave.
@@ -783,7 +783,7 @@ multiple times while adjacent to a block but not overlapping with it. In any
 case good production!
 Rating: 7/10
 
-#### 🔷 swish.survival (Kindaro)
+#### [🔷 swish.survival](default/swish) (Kindaro)
 
 **sm:**
 A more challenging variant of swish, with longer tunnels and more dead ends.
@@ -792,7 +792,7 @@ Rating: 9/10
 **f-a:**
 See above.
 
-#### lc (byorgey)
+#### [lc](default/lc) (byorgey)
 
 **sm:**
 A puzzle game for computer scientists; you are provided a series of 
@@ -816,7 +816,7 @@ Rating: 6/10
 
 ### Hackage
 
-#### guess2 (sm)
+#### [guess2](hackage/guess2) (sm)
 
 **f-a:**
 N/A judge made, test game.
@@ -826,7 +826,7 @@ Guess the number. A golfed version of my [first Haskell game](https://hub.darcs.
 (made for the LA Haskell Users Group in 2013).
 Rating: my entry
 
-#### wordle (halogenandtoast)
+#### [wordle](hackage/wordle) (halogenandtoast)
 
 **f-a:**
 Only nine readable lines for this beauty, for a game we all love.
@@ -842,7 +842,7 @@ in the form of o (right letter wrong place) or x (right letter right place).
 Could have included more words for more replayability.
 Rating: 5/10
 
-#### ski (sm)
+#### [ski](hackage/ski) (sm)
 
 **f-a:**
 Thrilling, fantastic action-packed game which will not give you a moment to catch your
@@ -862,7 +862,7 @@ slows it doen horribly. Be sure to use a better terminal app like
 iTerm 3.5 beta or newer, or VS Code's terminal.
 Rating: my entry
   
-#### guesscolor (TravisCardwell)
+#### [guesscolor](hackage/guesscolor) (TravisCardwell)
 
 **f-a:**
 Unique game the pack, asking you to guess a colour in its
@@ -879,7 +879,7 @@ Like Travis's `timing` entry, this is implemented with perfectly readable unmini
 Haskell code.
 Rating: 7/10
 
-#### bulls-n-cows (akadude)
+#### [bulls-n-cows](hackage/bulls-n-cows) (akadude)
 
 **f-a:**
 *In medias res* game which might have benefitted from some ingame instructions or a
@@ -893,7 +893,7 @@ No docs. Enter four digits to see clues, bull means right number right place,
 cow means right number wrong place.
 Rating: 5/10
 
-#### hallway-to-hell (juliendehos)
+#### [hallway-to-hell](hackage/hallway-to-hell) (juliendehos)
 
 **f-a:**
 Another — aptly named — “don’t hit the walls” game. Less hectic than `ski`, easier
@@ -911,7 +911,7 @@ When you hit a wall the game hangs, not printing a score alas.
 The code is readable.
 Rating: 6/10
 
-#### 1234-hero (gelisam)
+#### [1234-hero](hackage/1234-hero) (gelisam)
 
 **f-a:**
 A very good production, which gets away from the terminal. 1234-hero is a game in
@@ -926,7 +926,7 @@ to increase your score. As you get the timing right it gradually accelerates,
 creating a nice rising tension!
 Rating: 8/10
 
-#### crappy-flappy (gergoerdi)
+#### [crappy-flappy](hackage/crappy-flappy) (gergoerdi)
 
 **f-a:**
 Another game inspired by a classic (*Flappy Bird*), `crappy-flappy` sports
@@ -943,7 +943,7 @@ the screen, through the gaps.
 No scoring - game ends when you crash or when you win.
 Rating: 7/10
 
-#### pong (gergoerdi)
+#### [pong](hackage/pong) (gergoerdi)
 
 **f-a:**
 Clone of one of the famous games of the past, you start the game with your paddle
@@ -961,7 +961,7 @@ you'll need to hold down the key but that also speeds up the ball.
 I like it!
 Rating: 8/10
 
-#### minesweeper (Greg8128)
+#### [minesweeper](hackage/minesweeper) (Greg8128)
 
 **f-a:**
 Minesweeper clone with clunkyness added, since we do not play with a mouse
@@ -977,7 +977,7 @@ Enter width, height, number of mines, then successive x and y coordinates
 as you try to clear the mine field without going boom.
 Rating: 6/10
 
-#### pong2 (sm)
+#### [pong2](hackage/pong2) (sm)
 
 **f-a:**
 Like `pong`, but on speed. Very difficult to keep the ball in play, I succumbed
@@ -992,7 +992,7 @@ Some display bugs but playable.
 New games start automatically, and high score is displayed.
 Rating: my entry
 
-#### 🔷 brickbreaker (fgaz)
+#### [🔷 brickbreaker](hackage/brickbreaker) (fgaz)
 
 **f-a:**
 Another pong/arkanoid inspired game, and in my opinion the best of the lot. First
@@ -1011,7 +1011,7 @@ A "soggy" ball-bat bounce hurts the game feel.
 Comes with docs and a readable source version.
 Rating: 8/10
 
-#### lazy-march (tristanC)
+#### [lazy-march](hackage/lazy-march) (tristanC)
 
 **f-a:**
 Not a game but a demo implementing a ray-marcher in ten lines. The spinning lambda
@@ -1026,7 +1026,7 @@ Comes with docs and a readable source version.
 See also the dev write-up at <https://tristancacqueray.github.io/blog/tiny-game-engine>.
 Rating: 7/10
   
-#### balances (sm)
+#### [balances](hackage/balances) (sm)
 
 **f-a:**
 Another game that will take its time to compile, but it is worth it! The most unique
@@ -1045,7 +1045,7 @@ it reads a hledger journal and tests your knowledge of account balances
 Comes with a readme and readable source version.
 Rating: my entry
 
-#### vaders (gergoerdi)
+#### [vaders](hackage/vaders) (gergoerdi)
 
 **f-a:**
 Space invaders clone made slightly more difficult by the facts that ammo is scarce,
@@ -1064,7 +1064,7 @@ Unfortunately, the playfield was too large for some displays (eg a macbook air),
 causing the player's ship to be offscreen. (Now fixed, so this is now playable.)
 Rating: 4/10
 
-#### tetris (gergoerdi)
+#### [tetris](hackage/tetris) (gergoerdi)
 
 **f-a:**
 Tetris clone, *fast* Tetris clone. You will have little time to think, so get
@@ -1079,7 +1079,7 @@ Uses unicode glyphs, may require a good unicode font.
 Another game capable of creating panic in the terminal - good to see!
 Rating: 9/10
 
-#### short-guess (RimuhRimu)
+#### [short-guess](hackage/short-guess) (RimuhRimu)
 
 **f-a:**
 Simple “guess the word”, one of the few games where you won’t get claustrophobic
@@ -1094,7 +1094,7 @@ This knows only a few different words so won't hold your interest,
 but it earns an extra rating point for being the first project of a brand new Haskeller!
 Rating: 6/10
 
-#### hexescape (nevrome)
+#### [hexescape](hackage/hexescape) (nevrome)
 
 **f-a:**
 An embryo of a survival horror, with the novel touch of playing on a hexagonal
@@ -1115,7 +1115,7 @@ Movement is challenging because the keys change based on your location.
 Comes with a readme and readable source version.
 Rating: 7/10
 
-#### snake-lemma (gergoerdi)
+#### [snake-lemma](hackage/snake-lemma) (gergoerdi)
 
 **f-a:**
 *Snake* clone. Aesthetically the author uses a 2×1
@@ -1130,7 +1130,7 @@ Smooth, speedy and increasingly tense as your snake grows larger!
 A score is printed when you die.
 Rating: 9/10
 
-#### 🏅 subpar-hexagon (gergoerdi)
+#### [🏅 subpar-hexagon](hackage/subpar-hexagon) (gergoerdi)
 
 **f-a:**
 Wow, the most trippy experience of them all, an abstract game where you have
