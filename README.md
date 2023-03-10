@@ -19,6 +19,7 @@ were used for discussion/help/feedback/announcements.
 | [How to play](#lets-play)
 | [Contest rules](#contest-rules)
 | [Development tips](#development-tips)
+|
 
 </div>
 
@@ -27,11 +28,13 @@ were used for discussion/help/feedback/announcements.
 
 ## Games
 
-Here are all the entries, with links to their README if any!
+Here are all the entries, by category and submission order, with links to their README if any!
 For reviews and judges' picks, keep scrolling.
 
 ### prelude-10-80
-<!-- (No imports) -->
+
+In this category, no imports were allowed.
+
 <table>
 <tr>
 <td><a href="prelude/guess1"><img src="prelude/guess1/guess1.png" width=140 height=140><br>guess1</a><br>(sm)</td>
@@ -57,7 +60,9 @@ For reviews and judges' picks, keep scrolling.
 </table>
 
 ### base-10-80
-<!-- (Just the base package) -->
+
+In this category, imports from the base package were allowed.
+
 <table>
 <tr>
 <td><a href="base/timing"><img src="base/timing/timing.png" width=140 height=140><br>timing</a><br>(TravisCardwell)</td>
@@ -80,7 +85,9 @@ For reviews and judges' picks, keep scrolling.
 </table>
 
 ### default-10-80
-<!-- (Just the packages that come with GHC) -->
+
+In this category, imports from GHC's default packages were allowed, plus an optional `Import.hs` file for import declarations.
+
 <table>
 <tr>
 <td><a href="default/type-and-furious"><img src="default/type-and-furious/type-and-furious.png" width=140 height=140><br>type-and-furious</a><br>(lsmor)</td>
@@ -97,7 +104,9 @@ For reviews and judges' picks, keep scrolling.
 </table>
 
 ### hackage-10-80
-<!-- (All of Hackage) -->
+
+In this category, imports from all of Hackage were allowed, plus an optional `Import.hs` file for import declarations.
+
 <table>
 <tr>
 <td><a href="hackage/guess2"><img src="hackage/guess2/guess2.png" width=140 height=140><br>guess2</a><br>(sm)</td>
