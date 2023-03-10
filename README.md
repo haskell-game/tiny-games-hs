@@ -149,7 +149,9 @@ You are one of very few people in the world who could complete this task in the 
 The judges were sm and f-a.
 Below you will find our reviews, by category and submission order, followed by the contest winners.
 Our ratings aimed to reflect playable and fun Haskell tiny games satisfying the contest rules.
-With single ratings and human biases, judging will of course be imperfect. More:
+With single ratings and human biases, judging will of course be imperfect.
+We invite the players to try all games, as the selection is impressive.
+More:
 
 **sm**:
 
