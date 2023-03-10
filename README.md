@@ -141,7 +141,20 @@ In this category, imports from all of Hackage were allowed, plus an optional `Im
 
 ## Results
 
-Congratulations to all participants!
+<!-- announcement -->
+We are very pleased to announce.. the results of Haskell Tiny Game Jam 2023 !
+Congratulations and thanks to all participants!
+
+- 55 entries in 4 categories from 28 entrants in 3 weeks
+- 109 reviews, 5 winners and 6 honourable mentions from 2 judges
+- Shell script to browse and play the games on all major platforms (single binary coming later maybe)
+- Readable source versions, useful development tips, informative blog posts
+
+This was the first Haskell game dev contest. We invite you to come and play, read, and get inspired for the next one!
+
+<!-- https://github.com/haskell-game/tiny-games-hs -->
+<!-- end announcement -->
+
 Creating a 10-line tiny game in Haskell and shipping a contest entry is a non-trivial task.
 If you succeeded, double congratulations!
 You are one of very few people in the world who could complete this task in the next few hours.
