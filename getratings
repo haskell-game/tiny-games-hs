@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Save and print ratings from README.md
+
+set -e
+
+echo "Printing ratings by category and entry order:"; sleep 1
+grep -E '^(####|\*\*f-a:\*\*$|\*\*sm:\*\*$|Rating)' README.md | sed -e 's/^#/\n#/'
+
+echo
+echo "Saving ratings in ratings.tsv (depends on README.md's structure, keep synced)..."
+./getratingstsv.hs
+
+# echo; echo "Printing ratings by score (suggest tab width 20):"; sleep 1
+# for s in $(seq 10 -1 -1); do
+#     echo; echo "Rating $s:"; grep --no-filename -E $'\t'"$s$" ratings-sorted.tsv || true
+# done
