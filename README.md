@@ -19,6 +19,7 @@ were used for discussion/help/feedback/announcements.
 | [How to play](#lets-play)
 | [Contest rules](#contest-rules)
 | [Development tips](#development-tips)
+| [Experience reports](#experience-reports)
 |
 
 </div>
@@ -1171,8 +1172,9 @@ Our hats are off to the Haskell Tiny Game Jam winners! GLORY IS YOURS!
 
 ## How to play
 
-You will need a suitable version of GHC (9.2.5+ or 9.4.4+ recommended), and stack (or cabal).
-See <https://www.haskell.org/get-started/>.
+You will need a suitable version of GHC (9.2.5+ or 9.4.4+ recommended), and stack (or cabal and a little know-how).
+You can install these with `ghcup`, see <https://www.haskell.org/get-started/>.
+
 Once Haskell is installed, and if you have bash, you can run `./play` in this repo:
 
 ![](play.dark.png)
@@ -1185,25 +1187,13 @@ If you don't have bash, cd into each `*/GAME` directory and try running `GAME.hs
 If that fails, look for running clues in that file, a readme, or the `play` script.
 You can also run `./play GAME -h` to view a game's source code and readme.
 
-The [lol](default/lol/) entry is a meta "game" that colourises other games.
-It works with most games but may cost a little performance.
-(Hint: each extra "lol" argument modifies the effect.)
+Nix users: a flake.nix is provided; running `nix develop .` should give you
+a reproducible environment for running the games.
 
-![](play-lol.dark.png)
+### stack
 
-### More install/run tips
-
-Some games use unicode glyphs, emojis and/or double-width characters.
-For best results:
-
-- Use a terminal with good support for double-width characters
-- And with a font configured that contains attractive unicode glyphs and emojis.
-- On mac, don't use the default Terminal or iTerm 3.4 or less, they render emojis slowly.
-  Use a faster terminal, such as iTerm 3.5 beta, or the terminal built in to VS Code.
-
-Many games are implemented as [stack scripts](https://docs.haskellstack.org/en/stable/script_command/)
-for reliable running and compactness. You can install stack with ghcup (see the get-started link above).
-Note:
+Many of the games are implemented as [stack scripts](https://docs.haskellstack.org/en/stable/script_command/) for reliable running and compactness. 
+Some tips:
 
 - When you run a game for the first time, stack will automatically fetch the latest package database
   and install the required GHC version and haskell dependencies if needed.
@@ -1217,14 +1207,32 @@ Note:
   to save on install time and disk space. In the games' shebang lines or run command in `play`,
   change the `--resolver` argument to your snapshot and see if they run.
 
-To quit graphical games built with the gloss library, press the ESCAPE key.
+### Fonts
 
+Some games use unicode glyphs, emojis and/or double-width characters.
+For best results:
+
+- Use a terminal with good support for double-width characters
+- And with a font configured that contains attractive unicode glyphs and emojis.
+- Mac users: don't use the default Terminal or iTerm 3.4 or less, they render emojis slowly.
+  Use a faster terminal, such as iTerm 3.5 beta, or the terminal built in to VS Code.
+
+### gloss
+
+Some games use the gloss library (and OpenGL) to show graphics.
 If you see an error message like "user error (unknown GLUT entry glutInit)",
-install the system package named "freeglut" or similar using your system package manager.
+install the system package named "freeglut" or similar,
+using your system package manager.
 
-Nix users: a flake.nix is provided; running `nix develop .` should give you
-a reproducible environment for running the games.
+To quit gloss-based games, press the ESCAPE key.
 
+### lol
+
+The [lol](default/lol/) entry is a meta "game" that colourises other games, in the spirit of `lolcat`.
+It works with most of the games but may cost a little performance.
+Hint: each extra "lol" argument modifies the effect.
+
+![](play-lol.dark.png)
 
 ## Contest rules
 
@@ -1319,13 +1327,11 @@ a brick of inscrutable code no more than 80 characters wide.
 
 - [minify.hs](minify.hs) (from haskell-game/tiny-games-hs#14; contact @kindaro with issues/feedback)
 
-  #### Features
+  This minifier:
 
-  * Will automatically add curly braces for you so long as you put the line
-    `module Main where` into your source file. _(This line will then be
-    automatically removed, so you lose no space.)_
-  * Will automatically replace variables and constructors surrounded with curly
-    braces `{example}` with single letters, for extra minification.
+  * automatically adds curly braces for you so long as you put the line `module Main where` into your source file.
+    (This line will then be automatically removed, so you lose no space.)
+  * automatically replaces variables and constructors surrounded with curly braces `{example}` with single letters, for extra minification.
 
 ### Animations
 
@@ -1350,7 +1356,7 @@ It helps gif2apng a lot also.
 they will not be obscured by Github's gif player button, they can be hyperlinks, and they can have smaller file size.
 https://sourceforge.net/projects/gif2apng works well, it can be built from its source tarball.
 
-### Experience reports
+## Experience reports
 
 - <http://miaozc.me/2023-02-27-hs-tiny-games.html>
 - <https://tristancacqueray.github.io/blog/tiny-game-engine>
