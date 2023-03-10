@@ -159,27 +159,24 @@ Below you will find our reviews, by category and submission order, followed by t
 Our ratings aimed to reflect playable and fun Haskell tiny games satisfying the contest rules.
 With single ratings and human biases, judging will of course be imperfect.
 We invite the players to try all games, as the selection is impressive.
-More:
 
 **sm**:
-
-- I highly value games that caused me to experience Fun.
-  Good feel, gameplay, challenge, replayability, etc. all help.
-- I have a fondness for real-time action/arcade games, which in my early programming days
-  were always the most rare, desirable, exciting and difficult to achieve.
-- I value games that are easy to get started with.
-  So, if documentation must be used, I appreciate it being there and being clear.
-- I highly value games that are straightforward to install and that just work.
-  This was mostly ensured before the deadline, so wasn't often factor in the judging.
-- I value the creativity, innovation and extreme cleverness required
-  to deliver these things in a tiny package!
+I highly value games that caused me to experience Fun.
+Good feel, gameplay, challenge, replayability, etc. all help.
+I have a fondness for real-time action/arcade games, which in my early programming days
+were always the most rare, desirable, exciting and difficult to achieve.
+I value games that are easy to get started with.
+So, if documentation must be used, I appreciate it being there and being clear.
+I highly value games that are straightforward to install and that just work.
+This was mostly ensured before the deadline, so wasn't often factor in the judging.
+I value the creativity, innovation and extreme cleverness required
+to deliver these things in a tiny package!
   
 **f-a**:
-
-- The trifecta of game-making is: running without fuss; clear controls; fun to play!
-- In a ten-liner, cornes have to be cut and decision have to be made, so I try to understand
-  what the developers had in mind and how they balanced those factors. 
-- Innovation, immersion and efficient usage of scarce means are welcome.
+The trifecta of game-making is: running without fuss; clear controls; fun to play!
+In a ten-liner, cornes have to be cut and decision have to be made, so I try to understand
+what the developers had in mind and how they balanced those factors. 
+Innovation, immersion and efficient usage of scarce means are welcome.
 
 `ratings.tsv` has a summary of the ratings, or run `./getratings` to see another view.
 
