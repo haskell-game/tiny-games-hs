@@ -141,9 +141,12 @@ In this category, imports from all of Hackage were allowed, plus an optional `Im
 ## Results
 
 Congratulations to all participants!
-Below you will find our reviews, by category and submission order, followed by the contest winners.
+Creating a 10-line tiny game in Haskell and shipping a contest entry is a non-trivial task.
+If you succeeded, double congratulations!
+You are one of very few people in the world who could complete this task in the next few hours.
 
 The judges were sm and f-a.
+Below you will find our reviews, by category and submission order, followed by the contest winners.
 Our ratings aimed to reflect playable and fun Haskell tiny games satisfying the contest rules.
 With single ratings and human biases, judging will of course be imperfect. More:
 
@@ -1146,32 +1149,25 @@ Rating: 10/10
 
 ### Judges' picks
 
-And here are the winners chosen by your judges!
+And here are the winners of the first Haskell Tiny Game Jam, as chosen by your judges!
 
-Creating a 10-line tiny game in Haskell and shipping a contest entry is a non-trivial task.
-If you succeeded, congratulations!
-You are one of very few people in the world who could complete this task in the next few hours.
+- In the Prelude category (🏅): **call-by-push-block** by cole-k.
 
-Based on ratings and various other factors, here are the winners
-of the first Haskell Tiny Game Jam as chosen by your judges!
+- In the Base category (🏅): **woosh.caves** by Kindaro.
 
-In the Prelude category (🏅): **call-by-push-block** by cole-k.
+- In the Default category (🏅): **shmupemup** by elderephemera and **space-invaders** by meooow25 (tied).
 
-In the Base category (🏅): **woosh.caves** by Kindaro.
-
-In the Default category (🏅): **shmupemup** by elderephemera and **space-invaders** by meooow25 (tied).
-
-In the Hackage category (🏅): **subpar-hexagon** by gergoerdi.
+- In the Hackage category (🏅): **subpar-hexagon** by gergoerdi.
 
 Honourable mentions (🔷):
 
-sm: **sudoku** by elderephemera, **tsp** by tristanC, and **swish.survival** by Kindaro.
+- sm: **sudoku** by elderephemera, **tsp** by tristanC, and **swish.survival** by Kindaro.
 
-f-a: **matchmaking** by migmit, **expressit** by Greg8128, and **brickbreaker** by fgaz.
+- f-a: **matchmaking** by migmit, **expressit** by Greg8128, and **brickbreaker** by fgaz.
 
 And the overall contest winner (🏆) is...
 
-**call-by-push-block** by cole-k !
+- **call-by-push-block** by cole-k !
 
 Our hats are off to the Haskell Tiny Game Jam winners! GLORY IS YOURS!
 
