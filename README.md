@@ -17,13 +17,10 @@ The contest ran from 2023-02-07 to 2023-02-28 23:59:59 UTC and the results were 
 | [How to play](#lets-play)
 | [Contest rules](#contest-rules)
 | [Development tips](#development-tips)
-| [Experience reports](#experience-reports)
+| [Discussion](#discussion)
 |
 
 </div>
-
-[Matrix]: https://matrix.to/#/#haskell-game:matrix.org
-[IRC]:    https://web.libera.chat/#haskell-game
 
 ## Games
 
@@ -1369,8 +1366,34 @@ It helps gif2apng a lot also.
 they will not be obscured by Github's gif player button, they can be hyperlinks, and they can have smaller file size.
 https://sourceforge.net/projects/gif2apng works well, it can be built from its source tarball.
 
-## Experience reports
+## Discussion
+
+General:
+
+- #haskell-game [Matrix] or [IRC] chat
+- this repo's [issue tracker](issues)
+
+Game jam:
+
+- <https://www.reddit.com/r/haskellgamedev/comments/10we66u/the_first_haskell_tiny_game_jam_is_now_open/>
+- <https://www.reddit.com/r/haskell/comments/10we7ha/the_first_haskell_tiny_game_jam_is_now_open/>
+- <https://discourse.haskell.org/t/haskell-tiny-game-jam/5754>
+- <https://mail.haskell.org/pipermail/haskell-cafe/2023-February/135912.html>
+
+Results:
+
+- <https://www.reddit.com/r/haskellgamedev/comments/11o2yv9/haskell_tiny_game_jam_2023_results/>
+- <https://www.reddit.com/r/haskell/comments/11o2zu8/haskell_tiny_game_jam_2023_results/>
+- <https://discourse.haskell.org/t/haskell-tiny-game-jam-2023-results/5971>
+- <https://mail.haskell.org/pipermail/haskell-cafe/2023-March/136009.html>
+- <https://fosstodon.org/@simonmic/110001376683610546>
+
+Developer experience reports:
 
 - <http://miaozc.me/2023-02-27-hs-tiny-games.html>
 - <https://tristancacqueray.github.io/blog/tiny-game-engine>
 - <https://www.cole-k.com/2023/02/21/tiny-games-hs/>
+
+
+[Matrix]: https://matrix.to/#/#haskell-game:matrix.org
+[IRC]:    https://web.libera.chat/#haskell-game
