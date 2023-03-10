@@ -350,10 +350,10 @@ Rating: 9/10
 A mathematical puzzler. You must create expressions for a stack-based
 calculator in order to transform a value to a given target value.
 Puzzles increase in difficulty.
-No dev notes; fairly hood player docs, but I stil had trouble
-trouble figuring out acceptable entries.
-Eg, for n=1, target=1, n1* is rejected, but n works.
-For n=1, target=2, n2* is rejected, but nn+ works.
+No dev notes; fairly good player docs, but I still had trouble
+figuring out acceptable entries.
+Eg, for n=1, target=1, `n1*` is rejected, but `n` works.
+For n=1, target=2, `n2*` is rejected, but `nn+` works.
 Rating: 6/10
 
 #### life (Rens van Hienen)
@@ -686,14 +686,13 @@ Rating: 5/10
 
 **sm:**
 One of three shoot-em-ups in this contest:
-this is an unusually hectic terminal game, a defender-esque shooter with lots of moving objects, all of them fatal!
+this is an unusually hectic terminal game, a Defender-esque shooter with lots of moving objects, all of them fatal!
 It's just as well you are armed with a powerful laser. WASD to move, space to shoot.
 Nicely documented with running, playing, and dev notes and a readable source version.
 This game very cleverly implements a lot of animation and game logic by 
 repeatedly parsing the whole playfield, which is probably key to its small size.
 Avoid the slight flaw that it's fairly easy if you hold the fire key and don't move much -
-instead dive in and fly as in the 
-[Quantum Asteroid Field in Guardians of the Galaxy 2](https://youtu.be/5ROiWmnWJHw?t=26)!
+instead dive in and fly as in the [Quantum Asteroid Field](https://youtu.be/5ROiWmnWJHw?t=26)!
 Rating: 10/10
 
 **f-a:**
@@ -793,7 +792,7 @@ equations and must define lambda calculus functions to implement them.
 I believe it provides about a dozen such puzzles.
 Comes with readable source version and good docs, which you will need to study!
 See the README or run `./play lc -h`.
-I must admit to yet not completing a level, but I suspect you will find
+I must admit to not completing a level, but I suspect you will find
 a rather tough and good brain workout here. Recommend enhancing with lol.
 Rating: 7/10
   
@@ -815,8 +814,8 @@ Rating: 6/10
 N/A judge made, test game.
   
 **sm:**
-A minimised version of my minimal [first Haskell game](https://hub.darcs.net/simon/guess-the-number/browse/guess-the-number.hs),
-made for the LA Haskell Users Group in 2013.
+Guess the number. A golfed version of my [first Haskell game](https://hub.darcs.net/simon/guess-the-number/browse/guess-the-number.hs)
+(made for the LA Haskell Users Group in 2013).
 Rating: my entry
 
 #### wordle (halogenandtoast)
@@ -1000,7 +999,7 @@ Rating: 9/10
 A good minimal graphical breakout game - using your mouse to control the bat,
 bounce the ball to destroy all bricks, aiming for the green screen of victory,
 not the red screen of failure. At game end, press the ESCAPE key to exit.
-A "soggy" ball-bat bounce hurts the game feel slightly.
+A "soggy" ball-bat bounce hurts the game feel.
 Comes with docs and a readable source version.
 Rating: 8/10
 
@@ -1034,9 +1033,7 @@ Rating: N/A judge made
 This "game" bridges two of my hobbies, Plain Text Accounting and game development.
 Mainly of interest to hledger users (or someone wanting to learn an organisation's finances),
 it reads a hledger journal and tests your knowledge of account balances
-(just liquid assets and liabilities), with the goal of improving your financial awareness.
-(Because it's possible to keep detailed financial records yet still be unclear
-on your financial status.)
+(just liquid assets and liabilities), with the goal of improving your financial situational awareness.
 Comes with a readme and readable source version.
 Rating: my entry
 
@@ -1106,7 +1103,7 @@ Use the number keys to move around an unusual hex grid,
 looking for the exit before you run out of hit points;
 if the game prints 🪜, you have found it and won
 A miniature adventure with a definite outcome!
-Movement is a little more challenging because the keys change based on your location.
+Movement is challenging because the keys change based on your location.
 Comes with a readme and readable source version.
 Rating: 7/10
 
@@ -1140,7 +1137,7 @@ Rating: 9/10
 A minimal, stylish graphical version of Super Hexagon!
 Use the AD keys to manouever your dot out of endless enclosing hexagons.
 Players of that game will find this one a little easier, but still challenging.
-The pulsing animation and floating score create a create arcade feel.
+The pulsing animation and floating score create a pleasing arcade feel.
 Your score will reset as soon as you die, so you have to keep an eye on it.
 As with the other gloss games, press ESCAPE to quit.
 Rating: 10/10
