@@ -1382,7 +1382,8 @@ https://sourceforge.net/projects/gif2apng works well, it can be built from its s
 General:
 
 - #haskell-game [Matrix] or [IRC] chat
-- this repo's [issue tracker](issues)
+- this repo's [Discussions](discussions)
+- this repo's [Issues](issues)
 
 Game jam:
 
