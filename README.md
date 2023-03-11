@@ -252,7 +252,7 @@ Not documented except in the [PR](https://github.com/haskell-game/tiny-games-hs/
 but fairly self explanatory.
 Rating: 7/10
 
-#### [🔷 sudoku](prelude/sudoku) (elderephemera)
+#### [sudoku](prelude/sudoku) (elderephemera) 🔷
 
 **f-a:**
 Tremendous effort to have a sudoku implementation in 796 characters.
@@ -274,7 +274,7 @@ Possibly unique among these games in producing entertainment
 you can share to anyone including non-computer users.
 Rating: 9/10
 
-#### [🔷 matchmaking](prelude/matchmaking) (migmit)
+#### [matchmaking](prelude/matchmaking) (migmit) 🔷
 
 **f-a:**
 One of the best stories of the competition, which puts you in the
@@ -340,7 +340,7 @@ Restore a randomised board to order by flipping 3x3 sections.
 Good docs, no readable source version but does come with a description of each function.
 Rating: 7/10
 
-#### [🔷 expressit](prelude/expressit) (Greg8128)
+#### [expressit](prelude/expressit) (Greg8128) 🔷
 
 **f-a:**
 A game that does away from 2D ASCII trickes, refreshing.
@@ -383,7 +383,7 @@ Provides on-screen help, unlike many tiny games.
 Comes with dev notes in the source file.
 Rating: 6/10
 
-#### [🏆🏅 call-by-push-block](prelude/call-by-push-block) (cole-k)
+#### [call-by-push-block](prelude/call-by-push-block) (cole-k) 🏆🏅
 
 **f-a:**
 What can I say, a beautiful game which is among the most polished
@@ -637,7 +637,7 @@ play to your metronome or some kind of fast-tempo music. Fun part: the snake
 can cross itself without dying.
 Rating: 6/10
 
-#### [🏅 woosh.caves](base/woosh) (Kindaro)
+#### [woosh.caves](base/woosh) (Kindaro) 🏅
 
 **sm:**
 The first of several variants of a cave-diving game (woosh.* and swish.*).
@@ -690,7 +690,7 @@ without failure, in the allotted time. There are four difficulty levels
 and I failed multiple time at the easiest one. Anxiety inducing!
 Rating: 5/10
 
-#### [🏅 shmupemup](default/shmupemup) (elderephemera)
+#### [shmupemup](default/shmupemup) (elderephemera) 🏅
 
 **sm:**
 One of three shoot-em-ups in this contest:
@@ -711,7 +711,7 @@ explains everything in its gory details. The game itself is good to play if a bi
 easy after a while.
 Rating: 7/10
 
-#### [🔷 tsp](default/tsp) (tristanC)
+#### [tsp](default/tsp) (tristanC) 🔷
 
 **sm:**
 This is a cool real-time arcade game in essentially one screen line!
@@ -747,7 +747,7 @@ Meme mod for (almost) all terminal games to get that Nyan cat vibe your producti
 No readme, imperscrutable code, 100% kaleidoscopic.
 Rating: Mondrian/10
 
-#### [🏅 space-invaders](default/space-invaders) (meooow25)
+#### [space-invaders](default/space-invaders) (meooow25) 🏅
 
 **sm:**
 Another shoot-em-up, an homage to the [first in the genre: Space Invaders](https://en.wikipedia.org/wiki/Shoot_%27em_up)!
@@ -783,7 +783,7 @@ multiple times while adjacent to a block but not overlapping with it. In any
 case good production!
 Rating: 7/10
 
-#### [🔷 swish.survival](default/swish) (Kindaro)
+#### [swish.survival](default/swish) (Kindaro) 🔷
 
 **sm:**
 A more challenging variant of swish, with longer tunnels and more dead ends.
@@ -992,7 +992,7 @@ Some display bugs but playable.
 New games start automatically, and high score is displayed.
 Rating: my entry
 
-#### [🔷 brickbreaker](hackage/brickbreaker) (fgaz)
+#### [brickbreaker](hackage/brickbreaker) (fgaz) 🔷
 
 **f-a:**
 Another pong/arkanoid inspired game, and in my opinion the best of the lot. First
@@ -1130,7 +1130,7 @@ Smooth, speedy and increasingly tense as your snake grows larger!
 A score is printed when you die.
 Rating: 9/10
 
-#### [🏅 subpar-hexagon](hackage/subpar-hexagon) (gergoerdi)
+#### [subpar-hexagon](hackage/subpar-hexagon) (gergoerdi) 🏅
 
 **f-a:**
 Wow, the most trippy experience of them all, an abstract game where you have
@@ -1154,27 +1154,27 @@ Rating: 10/10
 
 ### Judges' picks
 
-And here are the winners of the first Haskell Tiny Game Jam, as chosen by your judges!
+And here are the winners of the first Haskell Tiny Game Jam as chosen by your judges!
 
-- In the Prelude category (🏅): **call-by-push-block** by cole-k.
+- In the Prelude category: **call-by-push-block** by cole-k 🏅
 
-- In the Base category (🏅): **woosh.caves** by Kindaro.
+- In the Base category: **woosh.caves** by Kindaro 🏅
 
-- In the Default category (🏅): **shmupemup** by elderephemera and **space-invaders** by meooow25 (tied).
+- In the Default category: **shmupemup** by elderephemera 🏅 and **space-invaders** by meooow25 🏅 (tied)
 
-- In the Hackage category (🏅): **subpar-hexagon** by gergoerdi.
+- In the Hackage category: **subpar-hexagon** by gergoerdi 🏅
 
-Honourable mentions (🔷):
+Honourable mentions:
 
-- sm: **sudoku** by elderephemera, **tsp** by tristanC, and **swish.survival** by Kindaro.
+- sm: **sudoku** by elderephemera 🔷, **tsp** by tristanC 🔷, and **swish.survival** by Kindaro 🔷
 
-- f-a: **matchmaking** by migmit, **expressit** by Greg8128, and **brickbreaker** by fgaz.
+- f-a: **matchmaking** by migmit 🔷, **expressit** by Greg8128 🔷, and **brickbreaker** by fgaz 🔷
 
-And the overall contest winner (🏆) is...
+And the overall contest winner is...
 
-- **call-by-push-block** by cole-k !
+- **call-by-push-block** by cole-k ! 🏆
 
-Our hats are off to the Haskell Tiny Game Jam winners! GLORY IS YOURS!
+Our hats are off to the winners! GLORY IS YOURS!
 
 
 ## How to play
