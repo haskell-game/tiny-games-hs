@@ -58,7 +58,7 @@ Balance Sheet 2013-01-31
  Then test your recall:
  ```
 $ clear
-$ ./play balances.hs
+$ ./play balances
 assets:bank:checking balance ? 
 8000
 ❌ 15900% off, balance is $-50
