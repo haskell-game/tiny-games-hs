@@ -1195,9 +1195,10 @@ or:
 
 ![](play-2.dark.png)
 
+You can also run `./play GAME -h` to view a game's source code and documentation, if any.
+
 If you don't have bash, cd into each `*/GAME` directory and try running `GAME.hs`.
 If that fails, look for running clues in that file, a readme, or the `play` script.
-You can also run `./play GAME -h` to view a game's source code and readme.
 
 Nix users: a flake.nix is provided; running `nix develop .` should give you
 a reproducible environment for running the games.
@@ -1211,13 +1212,14 @@ Some tips:
   and install the required GHC version and haskell dependencies if needed.
   This can take a long time (eg minutes), up to 1-2G of disk space, and may or may not show progress output.
   The OpenGLRaw package required by the graphical, gloss-based games is particularly slow to build.
-  If you need more progress output, you can add --verbosity info to the game's shebang line or run command in `play`.
+  If you need more progress output, you can add `--verbosity=info` to the game's shebang line (its first line, beginning with `#!`)
+  or play command (its custom run command in the `play` script).
 
 - We have configured all games to use the same GHC version (from the latest LTS snapshot at stackage.org). 
   If you have a similar GHC version/stackage snapshot already installed
-  (or even a quite different one that you think might work), you can try using it instead,
-  to save on install time and disk space. In the games' shebang lines or run command in `play`,
-  change the `--resolver` argument to your snapshot and see if they run.
+  (or even a quite different one that you think might work), you can try using that instead
+  so as to save on install time and disk space. In the games' shebang lines and play commands,
+  change the `--resolver` argument to your already-installed stackage snapshot and see if they run.
 
 ### Fonts
 
