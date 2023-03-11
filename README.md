@@ -8,7 +8,7 @@ f-a linked that in the #haskell-game chat, sm organised the contest, and Haskell
 Our mission was to make playable games in 10 lines of 80 characters of Haskell.
 The prize.. Glory!
 Also fun, learning, and advancing Haskell's suitability for game dev and programming in the small.
-The contest ran from 2023-02-07 to 2023-02-28 23:59:59 UTC and the results were announced on 2023-03-10.
+The contest ran from 2023-02-07 to 2023-02-28 and the results were announced on 2023-03-10.
 
 <div align=center>
 
