@@ -14,7 +14,7 @@ The contest ran from 2023-02-07 to 2023-02-28 23:59:59 UTC and the results were 
 
 | [Games](#games)
 | [Results](#results)
-| [How to play](#lets-play)
+| [How to play](#how-to-play)
 | [Contest rules](#contest-rules)
 | [Development tips](#development-tips)
 | [Discussion](#discussion)
