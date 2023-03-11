@@ -1332,15 +1332,15 @@ Tips for developers while the jam was in progress, and for future jams.
 
 ### Minifying
 
-Here are some minifiers you can try; either or both may be able to turn your game into
-a brick of inscrutable code no more than 80 characters wide.
+The developer blog posts below have many minifying tips.
 
-- [hackage/brickbreaker/minify.hs](hackage/brickbreaker/minify.hs) (from haskell-game/tiny-games-hs#63; contact @fgaz)
+Here are some minifier tools you can try; either or both may be able to
+turn your game into a brick of inscrutable code no more than 80 characters wide.
 
+- [hackage/brickbreaker/minify.hs](hackage/brickbreaker/minify.hs) (from haskell-game/tiny-games-hs#63; contact @fgaz).
   This minifier requires that you first add curled braces and semicolons throughout your code to make it white space insensitive.
 
-- [minify.hs](minify.hs) (from haskell-game/tiny-games-hs#14; contact @kindaro with issues/feedback)
-
+- [minify.hs](minify.hs) (from haskell-game/tiny-games-hs#14; contact @kindaro with issues/feedback).
   This minifier:
 
   * automatically adds curly braces for you so long as you put the line `module Main where` into your source file.
@@ -1392,7 +1392,7 @@ Results:
 - <https://mail.haskell.org/pipermail/haskell-cafe/2023-March/136009.html>
 - <https://fosstodon.org/@simonmic/110001376683610546>
 
-Developer experience reports:
+Developer blog posts:
 
 - <http://miaozc.me/2023-02-27-hs-tiny-games.html>
 - <https://tristancacqueray.github.io/blog/tiny-game-engine>
