@@ -1183,11 +1183,18 @@ For now, playing these games requires typing commands in a terminal window
 to install and run Haskell programming tools.
 If you don't want to do this, check back here in future; perhaps easier install methods will become available.
 
-You will need the `ghc` compiler (9.2.5+ or 9.4.4+ recommended)
+First, get a copy of this github repo:
+```
+$ git clone https://github.com/haskell-game/tiny-games-hs
+$ cd tiny-games-hs
+```
+
+You will also need the `ghc` compiler (9.2.5+ or 9.4.4+ recommended)
 and the `stack` build tool (or, the `cabal` build tool and a little know-how).
 You can install these easily using the `ghcup` install tool; see <https://www.haskell.org/get-started> .
 
-Once Haskell is installed, and if you have bash, you can run `./play` in this repo:
+Now if you have bash, and Haskell installed, you can run `./play` in this repo
+to list and run games:
 
 ![](play.dark.png)
 
@@ -1195,7 +1202,7 @@ or:
 
 ![](play-2.dark.png)
 
-You can also run `./play GAME -h` to view a game's source code and documentation, if any.
+or `./play GAME -h` to view a game's source code and documentation if any.
 
 If you don't have bash, cd into each `*/GAME` directory and try running `GAME.hs`.
 If that fails, look for running clues in that file, a readme, or the `play` script.
