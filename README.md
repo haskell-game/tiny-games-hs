@@ -1179,8 +1179,13 @@ Our hats are off to the winners! GLORY IS YOURS!
 
 ## How to play
 
-You will need a suitable version of GHC (9.2.5+ or 9.4.4+ recommended), and stack (or cabal and a little know-how).
-You can install these with `ghcup`, see <https://www.haskell.org/get-started/>.
+For now, playing these games requires typing commands in a terminal window
+to install and run Haskell programming tools.
+If you don't want to do this, check back here in future; perhaps easier install methods will become available.
+
+You will need the `ghc` compiler (9.2.5+ or 9.4.4+ recommended)
+and the `stack` build tool (or, the `cabal` build tool and a little know-how).
+You can install these easily using the `ghcup` install tool; see <https://www.haskell.org/get-started> .
 
 Once Haskell is installed, and if you have bash, you can run `./play` in this repo:
 
