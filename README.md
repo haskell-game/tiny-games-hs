@@ -24,8 +24,7 @@ The contest ran from 2023-02-07 to 2023-02-28 and the results were announced on 
 
 ## Games
 
-Here are all the entries, by category and submission order, with links to their README if any!
-For reviews and judges' picks, keep scrolling.
+Here are all the entries, by category and submission order, with links to their reviews, readmes, and source.
 
 ### prelude-10-80
 
