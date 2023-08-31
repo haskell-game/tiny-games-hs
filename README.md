@@ -1164,7 +1164,7 @@ And here are the winners of the first Haskell Tiny Game Jam as chosen by your ju
   **[tsp](#tsp-tristanc-)** by **tristanC** 🔷, 
   and **[swish.survival](#swishsurvival-kindaro-)** by **Kindaro** 🔷
 
-- f-a's honourable mentions:\ 
+- f-a's honourable mentions:\
   **[matchmaking](#matchmaking-migmit-)** by **migmit** 🔷, 
   **[expressit](#expressit-greg8128-)** by **Greg8128** 🔷, 
   and **[brickbreaker](#brickbreaker-fgaz-)** by **fgaz** 🔷
