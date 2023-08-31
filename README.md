@@ -1188,7 +1188,7 @@ And here are the winners of the first Haskell Tiny Game Jam as chosen by your ju
 
 And the overall contest winner is...
 
-- **[call-by-push-block](#call-by-push-block-cole-k)** by **cole-k** ! 🏆
+- **[call-by-push-block](#call-by-push-block-cole-k-)** by **cole-k** ! 🏆
 
 
 Our hats are off to you. GLORY IS YOURS!
