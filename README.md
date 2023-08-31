@@ -86,16 +86,16 @@ In this category, imports from GHC's default packages were allowed, plus an opti
 
 <table>
 <tr>
-<td><a href="#type-and-furious-lsmor-"><img src="default/type-and-furious/type-and-furious.png" width=140 height=140><br>type-and-furious</a><br>(lsmor)</td>
+<td><a href="#type-and-furious-lsmor"><img src="default/type-and-furious/type-and-furious.png" width=140 height=140><br>type-and-furious</a><br>(lsmor)</td>
 <td><a href="#shmupemup-elderephemera-"><img src="default/shmupemup/shmupemup.png" width=140 height=140><br>shmupemup</a><br>(elderephemera)</td>
 <td><img src="default/tsp/tsp.gif" width=140 height=140><br><a href="#tsp-tristanc-">tsp</a><br>(tristanC)</td>
-<td><img src="default/lol/lol.gif" width=140 height=140><br><a href="#lol-hellwolf-">lol</a><br>(hellwolf)</td>
+<td><img src="default/lol/lol.gif" width=140 height=140><br><a href="#lol-hellwolf">lol</a><br>(hellwolf)</td>
 <td><a href="#space-invaders-meooow25-"><img src="default/space-invaders/space-invaders.png" width=140 height=140><br>space-invaders</a><br>(meooow25)</td>
 </tr>
 <tr>
-<td><img src="default/swish/swish.easy.gif" width=140 height=140><a href="#swisheasy-kindaro-">swish.easy</a><br>(Kindaro)</td>
+<td><img src="default/swish/swish.easy.gif" width=140 height=140><a href="#swisheasy-kindaro">swish.easy</a><br>(Kindaro)</td>
 <td><img src="default/swish/swish.survival.gif" width=140 height=140><a href="#swishsurvival-kindaro-">swish.survival</a><br>(Kindaro)</td>
-<td><a href="#lc-byorgey-"><img src="default/lc/lc.png" width=140 height=140><br>lc</a><br>(byorgey)</td>
+<td><a href="#lc-byorgey"><img src="default/lc/lc.png" width=140 height=140><br>lc</a><br>(byorgey)</td>
 </tr>
 </table>
 
@@ -105,31 +105,31 @@ In this category, imports from all of Hackage were allowed, plus an optional `Im
 
 <table>
 <tr>
-<td><a href="#guess2-sm-"><img src="hackage/guess2/guess2.png" width=140 height=140><br>guess2</a><br>(sm)</td>
-<td><a href="#wordle-halogenandtoast-"><img src="hackage/wordle/wordle.png" width=140 height=140><br>wordle</a><br>(halogenandtoast)</td>
-<td><a href="#ski-sm-"><img src="hackage/ski/ski.png" width=140 height=140><br>ski</a><br>(sm)</td>
-<td><a href="#guesscolor-traviscardwell-"><img src="hackage/guesscolor/guesscolor.png" width=140 height=140><br>guesscolor</a><br>(TravisCardwell)</td>
-<td><a href="#bulls-n-cows-akadude-"><img src="hackage/bulls-n-cows/bulls-n-cows.png" width=140 height=140><br>bulls-n-cows</a><br>(akadude)</td>
+<td><a href="#guess2-sm"><img src="hackage/guess2/guess2.png" width=140 height=140><br>guess2</a><br>(sm)</td>
+<td><a href="#wordle-halogenandtoast"><img src="hackage/wordle/wordle.png" width=140 height=140><br>wordle</a><br>(halogenandtoast)</td>
+<td><a href="#ski-sm"><img src="hackage/ski/ski.png" width=140 height=140><br>ski</a><br>(sm)</td>
+<td><a href="#guesscolor-traviscardwell"><img src="hackage/guesscolor/guesscolor.png" width=140 height=140><br>guesscolor</a><br>(TravisCardwell)</td>
+<td><a href="#bulls-n-cows-akadude"><img src="hackage/bulls-n-cows/bulls-n-cows.png" width=140 height=140><br>bulls-n-cows</a><br>(akadude)</td>
 </tr>
 <tr>
-<td><img src="hackage/hallway-to-hell/hallway-to-hell.gif" width=140 height=140><br><a href="#hallway-to-hell-juliendehos-">hallway-to-hell</a><br>(juliendehos)</td>
-<td><a href="#1234-hero-gelisam-"><img src="hackage/1234-hero/1234-hero.png" width=140 height=140><br>1234-hero</a><br>(gelisam)</td>
-<td><a href="#crappy-flappy-gergoerdi-"><img src="hackage/crappy-flappy/crappy-flappy.png" width=140 height=140><br>crappy-flappy</a><br>(gergoerdi)</td>
-<td><a href="#pong-gergoerdi-"><img src="hackage/pong/pong.png" width=140 height=140><br>pong</a><br>(gergoerdi)</td>
-<td><a href="#minesweeper-greg8128-"><img src="hackage/minesweeper/minesweeper.png" width=140 height=140><br>minesweeper</a><br>(Greg8128)</td>
+<td><img src="hackage/hallway-to-hell/hallway-to-hell.gif" width=140 height=140><br><a href="#hallway-to-hell-juliendehos">hallway-to-hell</a><br>(juliendehos)</td>
+<td><a href="#1234-hero-gelisam"><img src="hackage/1234-hero/1234-hero.png" width=140 height=140><br>1234-hero</a><br>(gelisam)</td>
+<td><a href="#crappy-flappy-gergoerdi"><img src="hackage/crappy-flappy/crappy-flappy.png" width=140 height=140><br>crappy-flappy</a><br>(gergoerdi)</td>
+<td><a href="#pong-gergoerdi"><img src="hackage/pong/pong.png" width=140 height=140><br>pong</a><br>(gergoerdi)</td>
+<td><a href="#minesweeper-greg8128"><img src="hackage/minesweeper/minesweeper.png" width=140 height=140><br>minesweeper</a><br>(Greg8128)</td>
 </tr>
 <tr>
-<td><a href="#pong2-sm-"><img src="hackage/pong2/pong2.png" width=140 height=140><br>pong2</a><br>(sm)</td>
+<td><a href="#pong2-sm"><img src="hackage/pong2/pong2.png" width=140 height=140><br>pong2</a><br>(sm)</td>
 <td><a href="#brickbreaker-fgaz-"><img src="hackage/brickbreaker/brickbreaker.png" width=140 height=140><br>brickbreaker</a><br>(fgaz)</td>
 <td><img src="hackage/lazy-march/lazy-march.gif" width=140 height=140><br><a href="#lazy-march-tristanc-">lazy-march</a><br>(tristanC)</td>
 <td><a href="#balances-sm-"><img src="hackage/balances/balances.png" width=140 height=140><br>balances</a><br>(sm)</td>
-<td><a href="#vaders-gergoerdi-"><img src="hackage/vaders/vaders.png" width=140 height=140><br>vaders</a><br>(gergoerdi)</td>
+<td><a href="#vaders-gergoerdi"><img src="hackage/vaders/vaders.png" width=140 height=140><br>vaders</a><br>(gergoerdi)</td>
 </tr>
 <tr>
-<td><a href="#tetris-gergoerdi-"><img src="hackage/tetris/tetris.png" width=140 height=140><br>tetris</a><br>(gergoerdi)</td>
-<td><a href="#short-guess-rimuhrimu-"><img src="hackage/short-guess/short-guess.png" width=140 height=140><br>short-guess</a><br>(RimuhRimu)</td>
-<td><a href="#hexescape-nevrome-"><img src="hackage/hexescape/hexescape.png" width=140 height=140><br>hexescape</a><br>(nevrome)</td>
-<td><a href="#snake-lemma-gergoerdi-"><img src="hackage/snake-lemma/snake-lemma.png" width=140 height=140><br>snake-lemma</a><br>(gergoerdi)</td>
+<td><a href="#tetris-gergoerdi"><img src="hackage/tetris/tetris.png" width=140 height=140><br>tetris</a><br>(gergoerdi)</td>
+<td><a href="#short-guess-rimuhrimu"><img src="hackage/short-guess/short-guess.png" width=140 height=140><br>short-guess</a><br>(RimuhRimu)</td>
+<td><a href="#hexescape-nevrome"><img src="hackage/hexescape/hexescape.png" width=140 height=140><br>hexescape</a><br>(nevrome)</td>
+<td><a href="#snake-lemma-gergoerdi"><img src="hackage/snake-lemma/snake-lemma.png" width=140 height=140><br>snake-lemma</a><br>(gergoerdi)</td>
 <td><a href="#subpar-hexagon-gergoerdi-"><img src="hackage/subpar-hexagon/subpar-hexagon.png" width=140 height=140><br>subpar-hexagon</a><br>(gergoerdi)</td>
 </tr>
 </table>
