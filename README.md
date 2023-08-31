@@ -1156,25 +1156,32 @@ Rating: 10/10
 
 And here are the winners of the first Haskell Tiny Game Jam as chosen by your judges!
 
-- In the Prelude category: **call-by-push-block** by cole-k 🏅
+### Honourable mentions
 
-- In the Base category: **woosh.caves** by Kindaro 🏅
+- sm's honourable mentions: 
+  **sudoku** by **elderephemera** 🔷, **tsp** by **tristanC** 🔷, and **swish.survival** by **Kindaro** 🔷
 
-- In the Default category: **shmupemup** by elderephemera 🏅 and **space-invaders** by meooow25 🏅 (tied)
+- f-a's honourable mentions: 
+  **matchmaking** by **migmit** 🔷, **expressit** by **Greg8128** 🔷, and **brickbreaker** by **fgaz** 🔷
 
-- In the Hackage category: **subpar-hexagon** by gergoerdi 🏅
+### Category winners
 
-Honourable mentions:
+- In the Prelude category: **call-by-push-block** by **cole-k** 🏅
 
-- sm: **sudoku** by elderephemera 🔷, **tsp** by tristanC 🔷, and **swish.survival** by Kindaro 🔷
+- In the Base category: **woosh.caves** by **Kindaro** 🏅
 
-- f-a: **matchmaking** by migmit 🔷, **expressit** by Greg8128 🔷, and **brickbreaker** by fgaz 🔷
+- In the Default category: **shmupemup** by **elderephemera** 🏅 and **space-invaders** by **meooow25** 🏅 (tied)
+
+- In the Hackage category: **subpar-hexagon** by **gergoerdi** 🏅
+
+### Contest winner
 
 And the overall contest winner is...
 
-- **call-by-push-block** by cole-k ! 🏆
+- **call-by-push-block** by **cole-k** ! 🏆
 
-Our hats are off to the winners! GLORY IS YOURS!
+
+Our hats are off to you. GLORY IS YOURS!
 
 
 ## How to play
