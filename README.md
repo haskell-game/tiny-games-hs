@@ -33,25 +33,25 @@ In this category, no imports were allowed.
 
 <table>
 <tr>
-<td><a href="#guess1-sm-"><img src="prelude/guess1/guess1.png" width=140 height=140><br>guess1</a><br>(sm)</td>
-<td><a href="#pure-doors-tristanc-"><img src="prelude/pure-doors/pure-doors.png" width=140 height=140><br>pure-doors</a><br>(tristanC)</td>
-<td><a href="#fifteen-bradrn-"><img src="prelude/fifteen/fifteen.png" width=140 height=140><br>fifteen</a><br>(bradrn)</td>
-<td><img src="prelude/chess/chess.gif" width=140 height=140><a href="#chess-fizruk-"><br>chess</a><br>(fizruk)</td>
+<td><a href="#guess1-sm"><img src="prelude/guess1/guess1.png" width=140 height=140><br>guess1</a><br>(sm)</td>
+<td><a href="#pure-doors-tristanc"><img src="prelude/pure-doors/pure-doors.png" width=140 height=140><br>pure-doors</a><br>(tristanC)</td>
+<td><a href="#fifteen-bradrn"><img src="prelude/fifteen/fifteen.png" width=140 height=140><br>fifteen</a><br>(bradrn)</td>
+<td><img src="prelude/chess/chess.gif" width=140 height=140><a href="#chess-fizruk"><br>chess</a><br>(fizruk)</td>
 <td><a href="#sudoku-elderephemera-"><img src="prelude/sudoku/sudoku.png" width=140 height=140><br>sudoku</a><br>(elderephemera)</td>
 </tr>
 <tr>
 <td><img src="prelude/matchmaking/matchmaking.gif" width=140 height=140><br><a href="#matchmaking-migmit-">matchmaking</a><br>(migmit)</td>
-<td><img src="prelude/tiny-brot/tiny-brot.gif" width=140 height=140><br><a href="#tiny-brot-tristanc-">tiny-brot</a><br>(tristanC)</td>
-<td><img src="prelude/mini-othello/mini-othello-1.gif" width=140 height=140><br><a href="#mini-othello-hellwolf-">mini-othello</a><br>(hellwolf)</td>
-<td><a href="#one-dot-osepedro-"><img src="prelude/one-dot/one-dot.png" width=140 height=140><br>one-dot</a><br>(OsePedro)</td>
-<td><a href="#expressit-greg8128-"><img src="prelude/expressit/expressit.png" width=140 height=140><br>expressit</a><br>(Greg8128)</td>
+<td><img src="prelude/tiny-brot/tiny-brot.gif" width=140 height=140><br><a href="#tiny-brot-tristanc">tiny-brot</a><br>(tristanC)</td>
+<td><img src="prelude/mini-othello/mini-othello-1.gif" width=140 height=140><br><a href="#mini-othello-hellwolf">mini-othello</a><br>(hellwolf)</td>
+<td><a href="#one-dot-osepedro"><img src="prelude/one-dot/one-dot.png" width=140 height=140><br>one-dot</a><br>(OsePedro)</td>
+<td><a href="#expressit-greg8128"><img src="prelude/expressit/expressit.png" width=140 height=140><br>expressit</a><br>(Greg8128)</td>
 </tr>
 <tr>
-<td><a href="#life-rens-van-hienen-"><img src="prelude/life/life.png" width=140 height=140><br>life</a><br>(Rens van Hienen)</td>
+<td><a href="#life-rens-van-hienen"><img src="prelude/life/life.png" width=140 height=140><br>life</a><br>(Rens van Hienen)</td>
 <td><img src="prelude/call-by-push-block/call-by-push-block.gif" width=140 height=140><br><a href="#call-by-push-block-cole-k-">call-by-push-block</a><br>(cole-k)</td>
-<td><a href="#companion-greg8128-"><img src="prelude/companion/companion.png" width=140 height=140><br>companion</a><br>(Greg8128)</td>
-<td><a href="#hangman-kukimik-"><img src="prelude/hangman/hangman.png" width=140 height=140><br>hangman</a><br>(kukimik)</td>
-<td><a href="#quine-tristanc-"><img src="prelude/quine/quine.png" width=140 height=140><br>quine</a><br>(tristanC)</td>
+<td><a href="#companion-greg8128"><img src="prelude/companion/companion.png" width=140 height=140><br>companion</a><br>(Greg8128)</td>
+<td><a href="#hangman-kukimik"><img src="prelude/hangman/hangman.png" width=140 height=140><br>hangman</a><br>(kukimik)</td>
+<td><a href="#quine-tristanc"><img src="prelude/quine/quine.png" width=140 height=140><br>quine</a><br>(tristanC)</td>
 </tr>
 </table>
 
@@ -61,22 +61,22 @@ In this category, imports from the base package were allowed.
 
 <table>
 <tr>
-<td><a href="#timing-traviscardwell-"><img src="base/timing/timing.png" width=140 height=140><br>timing</a><br>(TravisCardwell)</td>
-<td><a href="#shoot-migmit-"><img src="base/shoot/shoot.png" width=140 height=140><br>shoot</a><br>(migmit)</td>
-<td><img src="base/log2048/log2048.gif" width=140 height=140><a href="#log2048-lysxia-"><br>log2048</a><br>(Lysxia)</td>
-<td><img src="base/rhythm/rhythm.gif" width=140 height=140><a href="#rhythm-elderephemera-"><br>rhythm</a><br>(elderephemera)</td>
-<td><a href="#peyton-says-gergoerdi-"><img src="base/peyton-says/peyton-says.png" width=140 height=140><br>peyton-says</a><br>(gergoerdi)</td>
+<td><a href="#timing-traviscardwell"><img src="base/timing/timing.png" width=140 height=140><br>timing</a><br>(TravisCardwell)</td>
+<td><a href="#shoot-migmit"><img src="base/shoot/shoot.png" width=140 height=140><br>shoot</a><br>(migmit)</td>
+<td><img src="base/log2048/log2048.gif" width=140 height=140><a href="#log2048-lysxia"><br>log2048</a><br>(Lysxia)</td>
+<td><img src="base/rhythm/rhythm.gif" width=140 height=140><a href="#rhythm-elderephemera"><br>rhythm</a><br>(elderephemera)</td>
+<td><a href="#peyton-says-gergoerdi"><img src="base/peyton-says/peyton-says.png" width=140 height=140><br>peyton-says</a><br>(gergoerdi)</td>
 </tr>
 <tr>
-<td><a href="#acey-deucey-trevarj-"><img src="base/acey-deucey/acey-deucey.png" width=140 height=140><br>acey-deucey</a><br>(trevarj)</td>
-<td><a href="#flower-seeds-tristanc-"><img src="base/flower-seeds/flower-seeds.png" width=140 height=140><br>flower-seeds</a><br>(tristanC)</td>
-<td><img src="base/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="#lambda-ray-tristanc-">lambda-ray</a><br>(tristanC)</td>
-<td><a href="#7up7down-akshaymankar-"><img src="base/7up7down/7up7down.png" width=140 height=140><br>7up7down</a><br>(akshaymankar)</td>
-<td><a href="#snake-akshaymankar-"><img src="base/snake/snake.png" width=140 height=140><br>snake</a><br>(akshaymankar)</td>
+<td><a href="#acey-deucey-trevarj"><img src="base/acey-deucey/acey-deucey.png" width=140 height=140><br>acey-deucey</a><br>(trevarj)</td>
+<td><a href="#flower-seeds-tristanc"><img src="base/flower-seeds/flower-seeds.png" width=140 height=140><br>flower-seeds</a><br>(tristanC)</td>
+<td><img src="base/lambda-ray/lambda-ray.gif" width=140 height=140><br><a href="#lambda-ray-tristanc">lambda-ray</a><br>(tristanC)</td>
+<td><a href="#7up7down-akshaymankar"><img src="base/7up7down/7up7down.png" width=140 height=140><br>7up7down</a><br>(akshaymankar)</td>
+<td><a href="#snake-akshaymankar"><img src="base/snake/snake.png" width=140 height=140><br>snake</a><br>(akshaymankar)</td>
 </tr>
 <tr>
 <td><img src="base/woosh/woosh.caves.gif" width=140 height=140><a href="#wooshcaves-kindaro-">woosh.caves</a><br>(Kindaro)</td>
-<td><img src="base/woosh/woosh.forest.gif" width=140 height=140><a href="#wooshforest-kindaro-">woosh.forest</a><br>(Kindaro)</td>
+<td><img src="base/woosh/woosh.forest.gif" width=140 height=140><a href="#wooshforest-kindaro">woosh.forest</a><br>(Kindaro)</td>
 </tr>
 </table>
 
@@ -121,8 +121,8 @@ In this category, imports from all of Hackage were allowed, plus an optional `Im
 <tr>
 <td><a href="#pong2-sm"><img src="hackage/pong2/pong2.png" width=140 height=140><br>pong2</a><br>(sm)</td>
 <td><a href="#brickbreaker-fgaz-"><img src="hackage/brickbreaker/brickbreaker.png" width=140 height=140><br>brickbreaker</a><br>(fgaz)</td>
-<td><img src="hackage/lazy-march/lazy-march.gif" width=140 height=140><br><a href="#lazy-march-tristanc-">lazy-march</a><br>(tristanC)</td>
-<td><a href="#balances-sm-"><img src="hackage/balances/balances.png" width=140 height=140><br>balances</a><br>(sm)</td>
+<td><img src="hackage/lazy-march/lazy-march.gif" width=140 height=140><br><a href="#lazy-march-tristanc">lazy-march</a><br>(tristanC)</td>
+<td><a href="#balances-sm"><img src="hackage/balances/balances.png" width=140 height=140><br>balances</a><br>(sm)</td>
 <td><a href="#vaders-gergoerdi"><img src="hackage/vaders/vaders.png" width=140 height=140><br>vaders</a><br>(gergoerdi)</td>
 </tr>
 <tr>
