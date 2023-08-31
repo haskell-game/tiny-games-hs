@@ -13,7 +13,8 @@ The contest ran from 2023-02-07 to 2023-02-28 and the results were announced on 
 <div align=center>
 
 | [Games](#games)
-| [Results](#results)
+| [Reviews](#reviews)
+| [Winners](#winners)
 | [How to play](#how-to-play)
 | [Contest rules](#contest-rules)
 | [Development tips](#development-tips)
@@ -134,7 +135,7 @@ In this category, imports from all of Hackage were allowed, plus an optional `Im
 </tr>
 </table>
 
-## Results
+## Reviews
 
 <!-- announcement -->
 We are very pleased to announce.. the results of Haskell Tiny Game Jam 2023 !
@@ -1152,7 +1153,7 @@ Rating: 10/10
 
 <!-- END -->
 
-### Judges' picks
+## Winners
 
 And here are the winners of the first Haskell Tiny Game Jam as chosen by your judges!
 
