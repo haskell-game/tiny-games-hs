@@ -44,7 +44,7 @@ In this category, no imports were allowed.
 <td><img src="prelude/tiny-brot/tiny-brot.gif" width=140 height=140><br><a href="#tiny-brot-tristanc">tiny-brot</a><br>(tristanC)</td>
 <td><img src="prelude/mini-othello/mini-othello-1.gif" width=140 height=140><br><a href="#mini-othello-hellwolf">mini-othello</a><br>(hellwolf)</td>
 <td><a href="#one-dot-osepedro"><img src="prelude/one-dot/one-dot.png" width=140 height=140><br>one-dot</a><br>(OsePedro)</td>
-<td><a href="#expressit-greg8128"><img src="prelude/expressit/expressit.png" width=140 height=140><br>expressit</a><br>(Greg8128)</td>
+<td><a href="#expressit-greg8128-"><img src="prelude/expressit/expressit.png" width=140 height=140><br>expressit</a><br>(Greg8128)</td>
 </tr>
 <tr>
 <td><a href="#life-rens-van-hienen"><img src="prelude/life/life.png" width=140 height=140><br>life</a><br>(Rens van Hienen)</td>
