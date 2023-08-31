@@ -1159,27 +1159,37 @@ And here are the winners of the first Haskell Tiny Game Jam as chosen by your ju
 
 ### Honourable mentions
 
-- sm's honourable mentions: 
-  **sudoku** by **elderephemera** 🔷, **tsp** by **tristanC** 🔷, and **swish.survival** by **Kindaro** 🔷
+- sm's honourable mentions:\
+  **[sudoku](#sudoku-elderephemera-)** by **elderephemera** 🔷,
+  **[tsp](#tsp-tristanc-)** by **tristanC** 🔷, 
+  and **[swish.survival](#swishsurvival-kindaro-)** by **Kindaro** 🔷
 
-- f-a's honourable mentions: 
-  **matchmaking** by **migmit** 🔷, **expressit** by **Greg8128** 🔷, and **brickbreaker** by **fgaz** 🔷
+- f-a's honourable mentions:\ 
+  **[matchmaking](#matchmaking-migmit-)** by **migmit** 🔷, 
+  **[expressit](#expressit-greg8128-)** by **Greg8128** 🔷, 
+  and **[brickbreaker](#brickbreaker-fgaz-)** by **fgaz** 🔷
 
 ### Category winners
 
-- In the Prelude category: **call-by-push-block** by **cole-k** 🏅
+- In the Prelude category:\
+  **[call-by-push-block](#call-by-push-block-cole-k)** by **cole-k** 🏅
 
-- In the Base category: **woosh.caves** by **Kindaro** 🏅
+- In the Base category:\
+  **[woosh.caves](#wooshcaves-kindaro-)** by **Kindaro** 🏅
 
-- In the Default category: **shmupemup** by **elderephemera** 🏅 and **space-invaders** by **meooow25** 🏅 (tied)
+- In the Default category:\
+  **[shmupemup](#shmupemup-elderephemera-)** by **elderephemera** 🏅 
+  and **[space-invaders](#space-invaders-meooow25-)** by **meooow25** 🏅
+  (tied)
 
-- In the Hackage category: **subpar-hexagon** by **gergoerdi** 🏅
+- In the Hackage category:\
+  **[subpar-hexagon](#subpar-hexagon-gergoerdi-)** by **gergoerdi** 🏅
 
 ### Contest winner
 
 And the overall contest winner is...
 
-- **call-by-push-block** by **cole-k** ! 🏆
+- **[call-by-push-block](#call-by-push-block-cole-k)** by **cole-k** ! 🏆
 
 
 Our hats are off to you. GLORY IS YOURS!
