@@ -12,14 +12,13 @@ The contest ran from 2023-02-07 to 2023-02-28 and the results were announced on 
 
 <div align=center>
 
-| [Games](#games)
+  [Games](#games)
 | [Reviews](#reviews)
 | [Winners](#winners)
 | [How to play](#how-to-play)
 | [Contest rules](#contest-rules)
 | [Development tips](#development-tips)
 | [Discussion](#discussion)
-|
 
 </div>
 
